@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CommonFailure" xml:space="preserve">
+    <value>failure</value>
+    <comment>失敗値（共通）</comment>
+  </data>
+  <data name="CommonFalse" xml:space="preserve">
+    <value>false</value>
+    <comment>偽値（共通）</comment>
+  </data>
+  <data name="CommonSuccess" xml:space="preserve">
+    <value>success</value>
+    <comment>成功値（共通）</comment>
+  </data>
+  <data name="CommonTrue" xml:space="preserve">
+    <value>true</value>
+    <comment>真値（共通）</comment>
+  </data>
+  <data name="KKE03001" xml:space="preserve">
+    <value>予期しないエラーが発生しました。システム管理者に連絡してください。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03002" xml:space="preserve">
+    <value>該当データが見つかりませんでした。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03003" xml:space="preserve">
+    <value>ユーザーIDが登録されていません。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03004" xml:space="preserve">
+    <value>パスワードに誤りがあります。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03005" xml:space="preserve">
+    <value>{0}が未入力です。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03006" xml:space="preserve">
+    <value>{0}が数値として判断できません。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03007" xml:space="preserve">
+    <value>{0}が日付として判断できません。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03008" xml:space="preserve">
+    <value>{0}が桁数の最大値を超えています。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03009" xml:space="preserve">
+    <value>入力された{0}はすでに登録されています。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03010" xml:space="preserve">
+    <value>{0}にはこのシステムを利用する権限がありません。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03011" xml:space="preserve">
+    <value>{0}が桁数の最大値を超えています。半角{1}桁または全角{2}桁以内で入力してください。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03012" xml:space="preserve">
+    <value>{0}にカタカナ以外の文字が含まれています。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03013" xml:space="preserve">
+    <value>{0}のファイルパスが取得できませんでした。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03014" xml:space="preserve">
+    <value>指定されたユーザーIDはActiveDirectoryに存在しません。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03015" xml:space="preserve">
+    <value>日付範囲に誤りがあります。{0}に{1}を超える日付は入力できません。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03016" xml:space="preserve">
+    <value>{0}に指定されたファイルは存在しません。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03017" xml:space="preserve">
+    <value>{0}が許容範囲値外です。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03018" xml:space="preserve">
+    <value>コピー・移動元の情報が正しく取得できませんでした。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03019" xml:space="preserve">
+    <value>コピー・移動先に指定された開発符号は既に存在しています。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03020" xml:space="preserve">
+    <value>パラメータが不正です。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03021" xml:space="preserve">
+    <value>ログインに失敗しました。入力内容を確認して下さい。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03022" xml:space="preserve">
+    <value>ログイン権限がありません。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03023" xml:space="preserve">
+    <value>入力されたスケジュールは重複しています。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03024" xml:space="preserve">
+    <value>本予約作業出来ませんでした。ご指定の予約要望は、既に本予約作業実施済のようです。</value>
+    <comment>共通：JSON</comment>
+  </data>
+  <data name="KKE03025" xml:space="preserve">
+    <value>定期便丸数字の最大数20を超えています。いずれか不要な定期便を削除してください。</value>
+    <comment>共通：JSON</comment>
+  </data>
+</root>
