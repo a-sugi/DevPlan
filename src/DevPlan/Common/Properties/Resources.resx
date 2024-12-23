@@ -1,0 +1,938 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DateStamp" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DateStamp.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DateStampGray" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DateStampGray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Holiday" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Holiday.xml;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;utf-8</value>
+  </data>
+  <data name="KKM00001" xml:space="preserve">
+    <value>{0}を入力してください。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00002" xml:space="preserve">
+    <value>登録しました。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00003" xml:space="preserve">
+    <value>削除しました。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00004" xml:space="preserve">
+    <value>検索条件を一つ以上指定してください。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00005" xml:space="preserve">
+    <value>検索結果がありませんでした。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00006" xml:space="preserve">
+    <value>登録していない変更があります。登録しますか？</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00007" xml:space="preserve">
+    <value>削除してもよろしいですか？</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00008" xml:space="preserve">
+    <value>選択中の行を削除します。よろしいですか？</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00009" xml:space="preserve">
+    <value>対象を選択してください。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00010" xml:space="preserve">
+    <value>承認してもよろしいですか？</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00011" xml:space="preserve">
+    <value>承認しました。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00012" xml:space="preserve">
+    <value>承認を解除してもよろしいですか？</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00013" xml:space="preserve">
+    <value>承認を解除しました。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00014" xml:space="preserve">
+    <value>同期してもよろしいですか？</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00015" xml:space="preserve">
+    <value>同期しました。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00016" xml:space="preserve">
+    <value>お気に入りはこれ以上登録できません。（画面毎に5件まで）</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00017" xml:space="preserve">
+    <value>お気に入りが上限数に達していたたため、お気に入りの自動登録はできませんでした。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00018" xml:space="preserve">
+    <value>終了日は開始日以降の日付を指定してください。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00019" xml:space="preserve">
+    <value>対象は1件のみ指定してください。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00020" xml:space="preserve">
+    <value>指定されたお気に入りは、開発符号の閲覧権限が無効となったため利用できません。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00021" xml:space="preserve">
+    <value>すでに削除されています。再検索してください。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00022" xml:space="preserve">
+    <value>1つ以上の項目を入力してください。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00025" xml:space="preserve">
+    <value>{0}が数値として判断できません。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00026" xml:space="preserve">
+    <value>{0}が日付として判断できません。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00027" xml:space="preserve">
+    <value>{0}が桁数の最大値を超えています。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00028" xml:space="preserve">
+    <value>{0}にカタカナ以外の文字が含まれています。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00029" xml:space="preserve">
+    <value>{0}に指定されたファイルは存在しません。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00032" xml:space="preserve">
+    <value>{0}の書式が不正です。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00033" xml:space="preserve">
+    <value>スケジュールが登録されているため、削除できません。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00034" xml:space="preserve">
+    <value>1行しかないため行削除できません。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00035" xml:space="preserve">
+    <value>行数が上限数に達したため、行追加できません。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00036" xml:space="preserve">
+    <value>お気に入りが1件も登録されていません。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00037" xml:space="preserve">
+    <value>WebAPIに接続できませんでした。システム管理者に連絡してください。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM00039" xml:space="preserve">
+    <value>利用できる開発符号がないため、システムの利用ができません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM00040" xml:space="preserve">
+    <value>指定されたお気に入りは、無効となったため利用できません。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00041" xml:space="preserve">
+    <value>登録権限対象のユーザーを選択して下さい。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00042" xml:space="preserve">
+    <value>以下のデータを削除します。よろしいですか？
+
+{0}：{1}
+{2}：{3}</value>
+    <comment>共通：設計チェック</comment>
+  </data>
+  <data name="KKM00043" xml:space="preserve">
+    <value>終了日時は開始日時より後の日時を指定して下さい。</value>
+    <comment>警告：ダイヤログ</comment>
+  </data>
+  <data name="KKM00044" xml:space="preserve">
+    <value>ファイルの保存に失敗しました。
+同じ名前のファイルを開いている場合は閉じてください。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00045" xml:space="preserve">
+    <value>移譲しました。</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00046" xml:space="preserve">
+    <value>保存しました。</value>
+    <comment>共通：ダイアログ</comment>
+  </data>
+  <data name="KKM00047" xml:space="preserve">
+    <value>GPS搭載車は1列目を右クリックし車両位置検索が行なえます。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00048" xml:space="preserve">
+    <value>データを読み込みました。
+登録ボタンを押下して保存を行ってください。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="KKM00049" xml:space="preserve">
+    <value>取り込んだすべてのデータは既存データとして存在している為、取り込みを中止します。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM00050" xml:space="preserve">
+    <value>取り込んだデータの号車は存在しないため、先に号車を追加してください。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM00051" xml:space="preserve">
+    <value>フォーマットが異なります。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM00052" xml:space="preserve">
+    <value>登録していないデータがありますがよろしいですか？</value>
+    <comment>共通：ダイヤログ</comment>
+  </data>
+  <data name="KKM00053" xml:space="preserve">
+    <value>取り込んだすべてのデータの登録を中止します。</value>
+    <comment>警告：ダイヤログ</comment>
+  </data>
+  <data name="KKM00054" xml:space="preserve">
+    <value>更新対象の行がありません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM01001" xml:space="preserve">
+    <value>５日を超える予約は出来ません。
+期間を修正して下さい。
+
+５日を超える予約が必要な場合は、各車系管理者にご相談下さい｡</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01002" xml:space="preserve">
+    <value>試験車日程を表示する権限がありません。
+
+
+試験車日程を見たい場合は、他部署情報閲覧権を所属長に設定してもらって下さい。
+
+他部署情報閲覧権はメインメニューの設定メニュー（閲覧権限）から設定出来ます。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01003" xml:space="preserve">
+    <value>表示期間を変更することは出来ません。
+
+表示期間外に予約する必要がある場合は、各車系管理者にご依頼下さい｡</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01004" xml:space="preserve">
+    <value>ご指定の予約要望を最終調整結果画面にコピーし、本予約としました。
+
+最終調整結果画面を開いて、内容ご確認下さい。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01005" xml:space="preserve">
+    <value>本予約作業出来ませんでした。
+
+まず仮予約作業を実施してから、本予約作業を実施して下さい。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01006" xml:space="preserve">
+    <value>最終予約可能日を設定して下さい。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01007" xml:space="preserve">
+    <value>カーシェア日程上で3か月の表示期間をこえるスケジュールの閲覧は出来ません｡確認したい場合は､システム管理者にご連絡下さい｡</value>
+    <comment>情報：画面</comment>
+  </data>
+  <data name="KKM01008" xml:space="preserve">
+    <value>表示期間をこえるスケジュールの予約は出来ません。
+
+表示期間外に予約する必要がある場合は、各車系管理者にご依頼下さい。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM01009" xml:space="preserve">
+    <value>{0}か月の制限期間をこえるスケジュールの予約はできません。
+制限期間外に予約する必要がある場合は、各車系管理者にご依頼下さい。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01010" xml:space="preserve">
+    <value>表示期間を変更する事は出来ません｡</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01011" xml:space="preserve">
+    <value>指定のトラックは、現在予約を受け付けていません。
+
+不明の点がありましたら、{0}（{1}）までお問い合わせください。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01012" xml:space="preserve">
+    <value>定期便を 仮予約 しました。
+
+仮予約のままでは定期便を利用出来ませんのでご注意下さい。
+本予約とするには、管理者（{0} tel:{1}）まで承認をご依頼下さい。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01013" xml:space="preserve">
+    <value>予約を解除する権限がありません。
+
+定期便の本予約を解除出来るのは、管理部署(主)員のみです。
+予約を解除したい場合は管理者（{0} tel:{1}）までご依頼下さい。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01014" xml:space="preserve">
+    <value>予約解除する権限がありません。
+
+予約を解除出来るのは、予約者本人・依頼者・管理部署員のいずれかです。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01015" xml:space="preserve">
+    <value>予約解除する権限がありません。
+
+予約を解除出来るのは、予約者・運転者・管理部署員のいずれかです。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01016" xml:space="preserve">
+    <value>トラックを予約しますか？</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01017" xml:space="preserve">
+    <value>他の指摘をコピーしますか？</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01018" xml:space="preserve">
+    <value>ご指定の「往復空」便については、ドライバーの手配上、予約時間を
+AM便は前日17：00まで、PM便は当日11：40まで　としており、
+この時間は予約を受付けられません。ご了承願います。
+（片道が空となっている便の利用は可能です。）</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01019" xml:space="preserve">
+    <value>{0}～{1}のスケジュールを{2}</value>
+    <comment>情報：画面</comment>
+  </data>
+  <data name="KKM01020" xml:space="preserve">
+    <value>セッションの有効期限が切れました。
+ログイン画面より再度ログインしてください。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01021" xml:space="preserve">
+    <value>{0}作成の項目です。
+{1}に管理を移譲してもよろしいですか？</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01022" xml:space="preserve">
+    <value>管理票No.{0}の車両に既に登録済みです。
+
+駐車場番号を別の車両に付与しなおす場合は、すでに登録済みの駐車場番号を変更してください。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="KKM01023" xml:space="preserve">
+    <value>管理票の種類を選択してください。</value>
+    <comment>情報：ダイヤログ</comment>
+  </data>
+  <data name="KKM01024" xml:space="preserve">
+    <value>上書き不可のデータが含まれています。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM02001" xml:space="preserve">
+    <value>ログオフしてもよろしいですか？</value>
+    <comment>警告：ダイヤログ</comment>
+  </data>
+  <data name="KKM02002" xml:space="preserve">
+    <value>指定の期間は通常の週報の期間とは違います。間違っている場合は修正してください。
+</value>
+    <comment>警告：ダイヤログ</comment>
+  </data>
+  <data name="KKM02003" xml:space="preserve">
+    <value>対象期間は1年以内で指定してください。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02004" xml:space="preserve">
+    <value>開始日時と終了日時が逆転するため、本操作は行なえません。
+スケジュール詳細より調整してください。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02005" xml:space="preserve">
+    <value>残業便の予約となります。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02006" xml:space="preserve">
+    <value>下記内容の予約を解除します。
+よろしいですか？
+
+号車・・・・{0}
+予約時間帯・・・・・・{1}発（{2}）</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02007" xml:space="preserve">
+    <value>下記内容の予約を解除します。
+よろしいですか？
+
+号車・・・・{0}
+予約期間・・・・・・{1} - {2}</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02008" xml:space="preserve">
+    <value>その車両は指摘ですでに利用されています。
+削除してもよろしいですか？</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02009" xml:space="preserve">
+    <value>指定の車種に関するCAP情報は閲覧許可されていないため、表示できません。
+閲覧あるいは編集する必要がある場合は、所属の課長・主査に設定を依頼してください。</value>
+    <comment>警告：ダイヤログ</comment>
+  </data>
+  <data name="KKM02010" xml:space="preserve">
+    <value>指定の専門部門が利用している車種に関するCAP情報は閲覧許可されていないため、表示できません。
+閲覧あるいは編集する必要がある場合は、所属の課長・主査に設定を依頼してください。</value>
+    <comment>警告：ダイヤログ</comment>
+  </data>
+  <data name="KKM02011" xml:space="preserve">
+    <value>{0}のチェックボックスにチェックを入れて下さい｡</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02012" xml:space="preserve">
+    <value>既に20日始業前チェック期間に登録されているスケジュールがあります。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02013" xml:space="preserve">
+    <value>回答期限をCAP確認済みの他の課題にも反映しますか？</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02014" xml:space="preserve">
+    <value>本日以降のスケジュールで仮予約のものがあります。
+{0}へ戻り、黄色いスケジュールを確認してください。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02015" xml:space="preserve">
+    <value>すでに同じ車両の試験車使用履歴画面が開いています。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM02016" xml:space="preserve">
+    <value>過去日が入力されています。よろしいですか？</value>
+    <comment>警告：ダイヤログ</comment>
+  </data>
+  <data name="KKM02017" xml:space="preserve">
+    <value>衝突済み車両にしますか？
+※衝突済み車両にすることで割り当てられた駐車場が削除されます。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="KKM03000" xml:space="preserve">
+    <value>システムエラーが発生しました。管理者に連絡して下さい。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03001" xml:space="preserve">
+    <value>ログインに失敗しました。入力内容を確認して下さい。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03002" xml:space="preserve">
+    <value>ログイン権限がありません。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03003" xml:space="preserve">
+    <value>コピー/移動先に、同名の項目が既に存在しています。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03004" xml:space="preserve">
+    <value>別の項目に移動することはできません。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03005" xml:space="preserve">
+    <value>他のスケジュールと重複しないよう日付を設定してください</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03006" xml:space="preserve">
+    <value>月頭未承認のため、月末データは表示できません</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03007" xml:space="preserve">
+    <value>目標進度リストが変更されています。登録しますか？</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03008" xml:space="preserve">
+    <value>部署別表示中は新規作成できません。性能別表示に切り替えますか？</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03009" xml:space="preserve">
+    <value>指定の目標進度リスト名は既に存在しているため、指定できません。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03010" xml:space="preserve">
+    <value>指定された日は、最終予約可能日を過ぎているため予約出来ません。
+他の車両をご予約下さい。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03011" xml:space="preserve">
+    <value>月次計画表で作成した項目のため進捗履歴は利用できません。</value>
+    <comment>エラー：画面</comment>
+  </data>
+  <data name="KKM03012" xml:space="preserve">
+    <value>開発符号の閲覧権限がないため、予約画面は開けません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03013" xml:space="preserve">
+    <value>パスワードは8文字以上13文字以内で入力して下さい。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03014" xml:space="preserve">
+    <value>ユーザーIDは1文字以上50文字以内で入力して下さい。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03015" xml:space="preserve">
+    <value>空車期間を検索する場合は日付を全て入力してください。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03016" xml:space="preserve">
+    <value>指定された期間に対象となるスケジュールがありませんでした。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03017" xml:space="preserve">
+    <value>同じ行で日付が重複しているため、登録できません。別の行に登録してください。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03018" xml:space="preserve">
+    <value>同じ単位の権限が存在するため、登録できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03019" xml:space="preserve">
+    <value>対象月の月末承認がされているため、月頭承認解除はできません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03020" xml:space="preserve">
+    <value>月次計画表が承認されているため、変更できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03021" xml:space="preserve">
+    <value>開始日、終了日のどちらかは対象月内の日付を入力してください。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03022" xml:space="preserve">
+    <value>同じ単位の権限が存在しています。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03023" xml:space="preserve">
+    <value>月次計画表が承認されているため、業務計画表と同期できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03024" xml:space="preserve">
+    <value>課単位で表示している場合は、業務計画表と同期できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03025" xml:space="preserve">
+    <value>選択された{0}が多すぎます。{1}</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03026" xml:space="preserve">
+    <value>同じ単位の権限が存在するため、削除できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03027" xml:space="preserve">
+    <value>影響部品・出図日程入力画面は20行までしか入力できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03028" xml:space="preserve">
+    <value>開発符号・試作時期・号車の合計が18バイトを超えています。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03029" xml:space="preserve">
+    <value>指定の行は過去の履歴が存在するため削除できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03030" xml:space="preserve">
+    <value>最終予約可能日以降にスケジュールが登録されているため、登録できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03031" xml:space="preserve">
+    <value>指定の登録権限対象は既に存在しているため、指定できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03032" xml:space="preserve">
+    <value>対象は既に存在しているため、指定できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03033" xml:space="preserve">
+    <value>人、または部署・役職がすでに割り当てられているため、削除できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03034" xml:space="preserve">
+    <value>車輛情報がすでに入力されています。反映してもよろしいですか?</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03035" xml:space="preserve">
+    <value>その管理票番号はすでに他のスケジュールで利用されています。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03036" xml:space="preserve">
+    <value>編集できません。
+編集できるのは、"編集者"と同じ課の方、もしくは{0}所属者のみです。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03038" xml:space="preserve">
+    <value>{0}が間違っています。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03039" xml:space="preserve">
+    <value>出力するデータがありません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03040" xml:space="preserve">
+    <value>インポートするデータがありません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03041" xml:space="preserve">
+    <value>専門部署が入力されていないデータがあります。
+インポートデータを確認してください。
+
+{0}</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03042" xml:space="preserve">
+    <value>すでにインポートされた指摘Noが含まれています。
+インポートデータを確認してください。
+
+指摘No：{0}</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="KKM03043" xml:space="preserve">
+    <value>始業前チェックの為、予約出来ません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03044" xml:space="preserve">
+    <value>データが重複しています。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03045" xml:space="preserve">
+    <value>指摘追加ボタンを押して下さい。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03046" xml:space="preserve">
+    <value>{0}がマスターデータに登録されていません。
+システム管理者に連絡してください。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03047" xml:space="preserve">
+    <value>{0}以外のデータの承認欄にチェックを入れる事は出来ません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03048" xml:space="preserve">
+    <value>{0}以外の方は承認欄にチェックを入れる事は出来ません｡</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="KKM03049" xml:space="preserve">
+    <value>対象車両の状況を選ばないと、指摘登録ができません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="ReceiptFixedAssetG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReceiptFixedAssetG.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ReceiptOtherT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReceiptOtherT.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ReceiptTestCarG" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReceiptTestCarG.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ReceiptTestCarT" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ReceiptTestCarT.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TCM00001" xml:space="preserve">
+    <value>表示する列には必ず一つ以上選択して下さい。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="TCM00002" xml:space="preserve">
+    <value>固定列は上から順に指定して下さい。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="TCM00003" xml:space="preserve">
+    <value>ソート順に同じ順番が指定されています。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="TCM00004" xml:space="preserve">
+    <value>この{0}は既に登録されています。上書きしてよろしいですか。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="TCM00005" xml:space="preserve">
+    <value>実行してもよろしいですか？</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="TCM00006" xml:space="preserve">
+    <value>実行しました。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="TCM00007" xml:space="preserve">
+    <value>更新します。よろしいですか？</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="TCM00008" xml:space="preserve">
+    <value>更新しました。</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="TCM00009" xml:space="preserve">
+    <value>更新していない変更があります。更新しますか？</value>
+    <comment>共通：画面</comment>
+  </data>
+  <data name="TCM01001" xml:space="preserve">
+    <value>表示対象は「全て」に、◎ボタンは「全て」に変更されます。
+よろしいですか?</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="TCM01002" xml:space="preserve">
+    <value>廃却処理してください。</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="TCM03001" xml:space="preserve">
+    <value>ラベル印刷時にエラーが発生しました。
+テンプレートファイルが見つかりません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="TCM03002" xml:space="preserve">
+    <value>廃却申請済であるため実行できません。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="TCM03003" xml:space="preserve">
+    <value>同じ車体番号のデータが他にもあります（管理票NO：{0}）
+そのデータに新規の履歴を作成すべきではありませんか？</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="TCM03004" xml:space="preserve">
+    <value>完成日を入力して下さい。
+研命NOがAで始まる固定資産は完成日から1年後を処分予定年月とします。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="TCM03005" xml:space="preserve">
+    <value>｢かつ｣、｢または｣は必要ありません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03006" xml:space="preserve">
+    <value>｢かつ｣、｢または｣が正しく指定されていません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03007" xml:space="preserve">
+    <value>括弧の対応が不完全です。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03008" xml:space="preserve">
+    <value>対象データがありませんでした。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03009" xml:space="preserve">
+    <value>権限がありません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03010" xml:space="preserve">
+    <value>承認ボタンが不適切です。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03011" xml:space="preserve">
+    <value>月例点検が入力されていない月があるため申請できません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03012" xml:space="preserve">
+    <value>処理待ちリストが最新状態ではありません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03013" xml:space="preserve">
+    <value>衝突試験車を移管する事は出来ません。
+移管する必要がある場合は、1KA車両管理担当者にご相談下さい。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03014" xml:space="preserve">
+    <value>中止できません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03015" xml:space="preserve">
+    <value>完成日が登録されているため削除できません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03016" xml:space="preserve">
+    <value>使用履歴が登録されているため削除できません。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03017" xml:space="preserve">
+    <value>検索条件が多すぎます。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03018" xml:space="preserve">
+    <value>ファイルへのアクセスに失敗しました。
+ファイルを開いている場合は閉じてください。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03019" xml:space="preserve">
+    <value>使用履歴の存在しない月があるため保存できません。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="TCM03020" xml:space="preserve">
+    <value>実走行距離が前月より短くなっています。
+間違っている場合は修正して下さい。
+メータ交換等の理由がある場合はその旨ご記入下さい。
+修正しますか?</value>
+    <comment>情報：ダイアログ</comment>
+  </data>
+  <data name="TCM03021" xml:space="preserve">
+    <value>承認処理中であるため実行できません。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="TCM03022" xml:space="preserve">
+    <value>ファイルがほかのプログラムによって使用されています。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="TCM03023" xml:space="preserve">
+    <value>ラベル印刷時にエラーが発生しました。
+ラベル印刷用コンポーネントをインストールしてください。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="TCM03024" xml:space="preserve">
+    <value>変更がありません。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="TCM03025" xml:space="preserve">
+    <value>Adobe Acrobat Readerがインストールされているか確認してください。</value>
+    <comment>エラー：ダイヤログ</comment>
+  </data>
+  <data name="TCM03026" xml:space="preserve">
+    <value>衝突試験車を流用する事は出来ません。
+流用する必要がある場合は、固定資産に計上してください。</value>
+    <comment>エラー：ダイアログ</comment>
+  </data>
+  <data name="TCM03027" xml:space="preserve">
+    <value>管理責任部署が登録されていないため受領票の出力ができません。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="TCM03028" xml:space="preserve">
+    <value>登録ナンバーが入力されています。
+車検期限を入力してください。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="TCM03029" xml:space="preserve">
+    <value>一列目のチェックを選択して下さい。</value>
+    <comment>警告：ダイアログ</comment>
+  </data>
+  <data name="TestCarSheet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TestCarSheet.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

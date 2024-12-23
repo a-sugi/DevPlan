@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BDF4AC93-EE07-4A73-BE4F-39A6F8A59703}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevPlan.UICommon</RootNamespace>
+    <AssemblyName>DevPlan.UICommon</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Sysexe.Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Sysexe.Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Sysexe.Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Sysexe.Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Subaru.Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Subaru.Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Subaru.Staging|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Subaru.Staging\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Sysexe.Staging|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Sysexe.Staging\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Subaru.Develop|AnyCPU'">
+    <OutputPath>bin\Subaru.Develop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Sysexe.Develop|AnyCPU'">
+    <OutputPath>bin\Sysexe.Develop\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\packages\CsvHelper.2.16.3.0\lib\net45\CsvHelper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Framework.CalendarGrid.v24, Version=2.4.4000.2012, Culture=neutral, PublicKeyToken=fdd90f5c44b73170, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Framework.MultiRow.v24, Version=2.4.4001.2012, Culture=neutral, PublicKeyToken=fdd90f5c44b73170" />
+    <Reference Include="GrapeCity.Win.CalendarGrid.v20, Version=2.0.4000.2012, Culture=neutral, PublicKeyToken=f4c1eb1dac5d2351, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Win.MultiRow.v100, Version=10.0.4001.2012, Culture=neutral, PublicKeyToken=0f7a722ee3c2bdd9, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\CellSettingAttribute.cs" />
+    <Compile Include="Config\AppConfigAccessor.cs" />
+    <Compile Include="Config\GridAppConfigAccessor.cs" />
+    <Compile Include="Const.cs" />
+    <Compile Include="Dto\ApplicationApprovalCarDto.cs" />
+    <Compile Include="Dto\NDriveLinkDto.cs" />
+    <Compile Include="Dto\DesignCheckImportDto.cs" />
+    <Compile Include="Dto\DesignCheckExcelInputDto.cs" />
+    <Compile Include="Dto\MultiRowDto.cs" />
+    <Compile Include="Dto\PendingCarDto.cs" />
+    <Compile Include="Dto\BatchDto.cs" />
+    <Compile Include="Dto\CalendarKadouDto.cs" />
+    <Compile Include="Dto\CapSectionUseGeneralCodeDto.cs" />
+    <Compile Include="Dto\DesignCheckDetailDto.cs" />
+    <Compile Include="Dto\FileDto.cs" />
+    <Compile Include="Dto\BrowsingAuthorityStatusDto.cs" />
+    <Compile Include="Dto\OfficialPositionDto.cs" />
+    <Compile Include="Dto\ScheduleCarDetailDto.cs" />
+    <Compile Include="Dto\AllScheduleDto.cs" />
+    <Compile Include="Dto\ScheduleCarDto.cs" />
+    <Compile Include="Dto\RollDto.cs" />
+    <Compile Include="Dto\RollAuthorityDto.cs" />
+    <Compile Include="Dto\ParkingDto.cs" />
+    <Compile Include="Dto\CarInspectionDto.cs" />
+    <Compile Include="Dto\CarShareManagementDto.cs" />
+    <Compile Include="Dto\CarShareReserveDto.cs" />
+    <Compile Include="Dto\CapDto.cs" />
+    <Compile Include="Dto\ControlSheetDto.cs" />
+    <Compile Include="Dto\DesignatedMonthNumberDto.cs" />
+    <Compile Include="Dto\ProductionCarDto.cs" />
+    <Compile Include="Dto\ControlSheetTestCarBasicDto.cs" />
+    <Compile Include="Dto\ControlSheetTestCarHistoryDto.cs" />
+    <Compile Include="Dto\DataGridViewDto.cs" />
+    <Compile Include="Dto\MeetingDocumentNameDto.cs" />
+    <Compile Include="Dto\PCAuthorityDto.cs" />
+    <Compile Include="Dto\DesignCheckUserDto.cs" />
+    <Compile Include="Dto\DesignCheckTestCarDto.cs" />
+    <Compile Include="Dto\DesignCheckProgressSymbolDto.cs" />
+    <Compile Include="Dto\DesignCheckProgressDto.cs" />
+    <Compile Include="Dto\DesignCheckPointDto.cs" />
+    <Compile Include="Dto\DesignCheckDto.cs" />
+    <Compile Include="Dto\DesignCheckCarDto.cs" />
+    <Compile Include="Dto\MeetingDocumentDeptDto.cs" />
+    <Compile Include="Dto\MeetingDocumentDto.cs" />
+    <Compile Include="Dto\RecipientDto.cs" />
+    <Compile Include="Dto\DesignCheckImportPathDto.cs" />
+    <Compile Include="Dto\ScheduleItemDisplayConfigurationDto.cs" />
+    <Compile Include="Dto\ExceptMonthlyInspectionDto.cs" />
+    <Compile Include="Dto\WorkCarSharingHistoryDto.cs" />
+    <Compile Include="Dto\XeyeDataDto.cs" />
+    <Compile Include="Dto\ScheduleToXeyeDto.cs" />
+    <Compile Include="Dto\TargetProgressListMasterDto.cs" />
+    <Compile Include="Dto\FunctionAuthorityDto.cs" />
+    <Compile Include="Dto\FunctionAuthorityNameDto.cs" />
+    <Compile Include="Dto\FunctionDto.cs" />
+    <Compile Include="Dto\GeneralCodeAuthorityDto.cs" />
+    <Compile Include="Dto\HistoryFavoriteDto.cs" />
+    <Compile Include="Dto\MonthlyPlanSynchronizeDto.cs" />
+    <Compile Include="Dto\MonthlyPlanApprovelDto.cs" />
+    <Compile Include="Dto\MonthlyPlanDto.cs" />
+    <Compile Include="Dto\PerformanceNameDto.cs" />
+    <Compile Include="Dto\TargetProgressListDto.cs" />
+    <Compile Include="Dto\TargetProgressListNameDto.cs" />
+    <Compile Include="Dto\TestCarCollisionCarManagementDepartmentDto.cs" />
+    <Compile Include="Dto\TestCarCommonDto.cs" />
+    <Compile Include="Dto\TestCarHistoryDto.cs" />
+    <Compile Include="Dto\TestCarReminderSearchDto.cs" />
+    <Compile Include="Dto\CarGroupSearchDto.cs" />
+    <Compile Include="Dto\CarShareInnerSearchDto.cs" />
+    <Compile Include="Dto\CarShareOuterSearchDto.cs" />
+    <Compile Include="Dto\CarShareScheduleDto.cs" />
+    <Compile Include="Dto\CarModelSearchDto.cs" />
+    <Compile Include="Dto\InformationDto.cs" />
+    <Compile Include="Dto\CarSearchDto.cs" />
+    <Compile Include="Dto\CarShareFavoriteDto.cs" />
+    <Compile Include="Dto\FavoriteDto.cs" />
+    <Compile Include="Dto\OuterCarFavoriteDto.cs" />
+    <Compile Include="Dto\TestCarScheduleCopyDto.cs" />
+    <Compile Include="Dto\TestCarScheduleReserveDto.cs" />
+    <Compile Include="Dto\MonthlyWorkFavoriteDto.cs" />
+    <Compile Include="Dto\TruckMasterDto.cs" />
+    <Compile Include="Dto\TruckScheduleDto.cs" />
+    <Compile Include="Dto\TruckSearchDto.cs" />
+    <Compile Include="Dto\UserDisplayConfigurationDto.cs" />
+    <Compile Include="Dto\OperationLogDto.cs" />
+    <Compile Include="Dto\WorkProgressDto.cs" />
+    <Compile Include="Dto\WorkFavoriteDto.cs" />
+    <Compile Include="Dto\TestCarFavoriteDto.cs" />
+    <Compile Include="Dto\UserAuthorityDto.cs" />
+    <Compile Include="Dto\CarManagerDto.cs" />
+    <Compile Include="Dto\GeneralCodeSearchDto.cs" />
+    <Compile Include="Dto\GoalSearchDto.cs" />
+    <Compile Include="Dto\ScheduleItemCopyDto.cs" />
+    <Compile Include="Dto\ScheduleItemMoveDto.cs" />
+    <Compile Include="Dto\MakerNameSearchDto.cs" />
+    <Compile Include="Dto\PurposeSearchDto.cs" />
+    <Compile Include="Dto\OuterCarDto.cs" />
+    <Compile Include="Dto\OperationPlanDto.cs" />
+    <Compile Include="Dto\FormControlDto.cs" />
+    <Compile Include="Dto\DestinationSearchDto.cs" />
+    <Compile Include="Dto\ClassSearchDto.cs" />
+    <Compile Include="Dto\SectionGroupDto.cs" />
+    <Compile Include="Dto\SectionDto.cs" />
+    <Compile Include="Dto\DepartmentDto.cs" />
+    <Compile Include="Dto\TestCarSearchDto.cs" />
+    <Compile Include="Dto\LocationDto.cs" />
+    <Compile Include="Dto\TransmissionSearchDto.cs" />
+    <Compile Include="Dto\CarDto.cs" />
+    <Compile Include="Dto\WeeklyReportApprovelDto.cs" />
+    <Compile Include="Dto\ReportMaterialDto.cs" />
+    <Compile Include="Dto\MonthlyReportDto.cs" />
+    <Compile Include="Dto\ManagerNameDto.cs" />
+    <Compile Include="Dto\WeeklyReportDto.cs" />
+    <Compile Include="Dto\TestCarScheduleDto.cs" />
+    <Compile Include="Dto\UserSearchDto.cs" />
+    <Compile Include="Dto\WorkHistoryDto.cs" />
+    <Compile Include="Enum\ApiMessageEnum.cs" />
+    <Compile Include="Enum\CalendarScheduleColorEnum.cs" />
+    <Compile Include="Enum\ControllerEnum.cs" />
+    <Compile Include="Enum\DeviceEnum.cs" />
+    <Compile Include="Enum\RollEnum.cs" />
+    <Compile Include="Enum\FunctionEnum.cs" />
+    <Compile Include="Enum\ReservationStautsEnum.cs" />
+    <Compile Include="Enum\XlsEnum.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\ADUtil.cs" />
+    <Compile Include="Utils\BeanUtil.cs" />
+    <Compile Include="Utils\CalendarGridUtil.cs" />
+    <Compile Include="Utils\Calendar\CalendarSettings.cs" />
+    <Compile Include="Utils\Calendar\CalendarTemplateFactory.cs" />
+    <Compile Include="Utils\Calendar\CalendarTemplateTypeSafeEnum.cs" />
+    <Compile Include="Utils\Calendar\SymbolMapTypeSafeEnum.cs" />
+    <Compile Include="Utils\Calendar\Templates\DefaultCalendarTemplate.cs" />
+    <Compile Include="Utils\Calendar\Templates\Expansion1CalendarTemplate.cs" />
+    <Compile Include="Utils\Calendar\Templates\Expansion2CalendarTemplate.cs" />
+    <Compile Include="Utils\Calendar\ICalendarTemplate.cs" />
+    <Compile Include="Utils\DataGridViewUtil.cs" />
+    <Compile Include="Utils\DateTimeUtil.cs" />
+    <Compile Include="Dto\LoginDto.cs" />
+    <Compile Include="Dto\CalendarGridDto.cs" />
+    <Compile Include="Dto\ResponseDto.cs" />
+    <Compile Include="Dto\SampleDto.cs" />
+    <Compile Include="Dto\SessionDto.cs" />
+    <Compile Include="Utils\CsvUtil.cs" />
+    <Compile Include="Utils\FormUtil.cs" />
+    <Compile Include="Utils\MapiUtil.cs" />
+    <Compile Include="Utils\MultiRowUtil.cs" />
+    <Compile Include="Utils\XlsUtil.cs" />
+    <Compile Include="Utils\DeviceUtil.cs" />
+    <Compile Include="Utils\ZipUtil.cs" />
+    <Compile Include="Utils\FileUtil.cs" />
+    <Compile Include="Utils\FormControlUtil.cs" />
+    <Compile Include="Utils\HttpUtil.cs" />
+    <Compile Include="Messenger.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\StringUtil.cs" />
+    <Compile Include="Validator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UICommon_ClassDiagram1.cd" />
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Holiday.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DateStamp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\DateStampGray.png" />
+    <Content Include="Resources\Question.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ReceiptFixedAssetG.xlsx" />
+    <None Include="Resources\ReceiptOtherT.xlsx" />
+    <None Include="Resources\ReceiptTestCarG.xlsx" />
+    <None Include="Resources\ReceiptTestCarT.xlsx" />
+    <None Include="Resources\TestCarSheet.xlsx" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

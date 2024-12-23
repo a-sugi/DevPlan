@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="view_text" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\view_text.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_triangle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UIDevPlan\ProgressList\cursol\arrow_triangle.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="arrow__" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UIDevPlan\ProgressList\cursol\arrow_-.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="package_system" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\package_system.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ksmiletris" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ksmiletris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agt_action_success" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agt_action_success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="agt_forward" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\agt_forward.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="List_manager" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\List manager.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SortGlyphDefaultImageWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\multirow\sortglyphdefaultimagewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_13_DisposalPeriodButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\13.DisposalPeriodButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_12_ControlLabelIssueButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\12.ControlLabelIssueButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DefaultCalendarTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcelTemplate\DefaultCalendarTemplate.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dog_t" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\app.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CommonSortButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MultiRow\CommonSortButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="testcar1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\testcar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_16_TestCarHistoryButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\16.TestCarHistoryButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lassists" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lassists.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_14_DisposalCarryoutButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\14.DisposalCarryoutButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DchkMsg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DchkMsg.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_m" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UIDevPlan\ProgressList\cursol\arrow_m.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="package_graphics" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\package_graphics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SortGlyphFilterdAscendingImageWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\multirow\sortglyphfilterdascendingimagewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_04_CarShareScheduleButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\04.CarShareScheduleButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CarShareManagementHenkyakuTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcelTemplate\CarShareManagementHenkyakuTemplate.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kword" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kword.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SortGlyphAscendingImageWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\multirow\sortglyphascendingimagewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_21_RollButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\21.RollButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SortGlyphFilterdDefaultImageWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\multirow\sortglyphfilterddefaultimagewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_08_ConfigMenuButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\08.ConfigMenuButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_31_TruckButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\menuicons\31.truckbutton.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_18_DesignatedMonthNumberButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\18.DesignatedMonthNumberButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jabber_protocol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jabber_protocol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="opening" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\opening.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SystemName" xml:space="preserve">
+    <value>開発計画表システム</value>
+    <comment>システム名</comment>
+  </data>
+  <data name="kariImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kariImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_19_CarInspectionButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\19.CarInspectionButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Expansion2CalendarTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcelTemplate\Expansion2CalendarTemplate.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="irc_protocol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\irc_protocol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_11_ControlSheetListButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\11.ControlSheetListButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="vcalendar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vcalendar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_06_TestCarManagerButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\06.TestCarManagerButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="testcar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\testcar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_square" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UIDevPlan\ProgressList\cursol\arrow_square.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_02_TestCarScheduleButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\02.TestCarScheduleButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_00_MainMenuBackButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\00.MainMenuBackButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_24_AnnounceButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\24.AnnounceButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_23_BrowsingAuthButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\23.BrowsingAuthButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SortGlyphDescendingImageWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\multirow\sortglyphdescendingimagewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_me" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UIDevPlan\ProgressList\cursol\arrow_me.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_15_ApplicationApprovalCarButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\15.ApplicationApprovalCarButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SortGlyphFilterdDescendingImageWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\multirow\sortglyphfilterddescendingimagewhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_33_DesignCheckButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\menuicons\33.designcheckbutton.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_90_OldDevPlanButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\90.OldDevPlanButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_o" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UIDevPlan\ProgressList\cursol\arrow_o.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="blockdevice" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\blockdevice.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CapExport" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\exceltemplate\capexport.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_03_OuterCarScheduleButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\03.OuterCarScheduleButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_32_CapButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\menuicons\32.capbutton.image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="date" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\date.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Expansion1CalendarTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcelTemplate\Expansion1CalendarTemplate.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CarShareManagementKasiTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcelTemplate\CarShareManagementKasiTemplate.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="chat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_22_FunctionAuthButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\22.FunctionAuthButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CarShareManagementRateTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ExcelTemplate\CarShareManagementRateTemplate.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_17_ControlSheetSearchButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\17.ControlSheetSearchButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="katomic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\katomic.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow_x" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\UIDevPlan\ProgressList\cursol\arrow_x.cur;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_05_CarShareManageButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\05.CarShareManageButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="honyoyakuImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\honyoyakuImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\cal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lists" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lists.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_01_CarSearchButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\01.CarSearchButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kchart" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kchart.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_07_TestCarButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\07.TestCarButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CommonConfigButton" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MultiRow\CommonConfigButton.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_99_XeyeButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\99.XeyeButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProductionCarExportTemplate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\exceltemplate\productioncarexporttemplate.xlsx;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="_98_XeyeImportButton_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\98.XeyeImportButton.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_97_UseHistorySetting_Image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MenuIcons\97.UseHistorySetting.Image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

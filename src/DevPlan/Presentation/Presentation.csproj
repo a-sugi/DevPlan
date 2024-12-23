@@ -1,0 +1,3133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\CefSharp.Common.114.2.120\build\CefSharp.Common.props" Condition="Exists('..\packages\CefSharp.Common.114.2.120\build\CefSharp.Common.props')" />
+  <Import Project="..\packages\cef.redist.x86.114.2.12\build\cef.redist.x86.props" Condition="Exists('..\packages\cef.redist.x86.114.2.12\build\cef.redist.x86.props')" />
+  <Import Project="..\packages\cef.redist.x64.114.2.12\build\cef.redist.x64.props" Condition="Exists('..\packages\cef.redist.x64.114.2.12\build\cef.redist.x64.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C34515CC-6A7D-4072-93A8-E26D431B0DB1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevPlan.Presentation</RootNamespace>
+    <AssemblyName>開発計画表システム（開発）</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <CefSharpAnyCpuSupport>true</CefSharpAnyCpuSupport>
+    <TargetFrameworkProfile />
+    <PublishUrl>\\fgnt5069\gj1tdstest\DevPlanDev\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>true</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://gj1tdstest.subaru.co.jp/devplandev/</InstallUrl>
+    <SupportUrl>https://gj1tdstest.subaru.co.jp/devplan/support/</SupportUrl>
+    <ErrorReportUrl>https://gj1tdstest.subaru.co.jp/devplan/support/</ErrorReportUrl>
+    <TargetCulture>ja-JP</TargetCulture>
+    <ProductName>開発計画表システム（開発）</ProductName>
+    <PublisherName>開発計画表</PublisherName>
+    <MinimumRequiredVersion>4.3.0.11</MinimumRequiredVersion>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>11</ApplicationRevision>
+    <ApplicationVersion>4.3.0.11</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Absolute</BootstrapperComponentsLocation>
+    <BootstrapperComponentsUrl>https://gj1tdstest.subaru.co.jp/Components</BootstrapperComponentsUrl>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Sysexe.Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Sysexe.Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>bin\Sysexe.Debug\開発計画表システム（開発）.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Sysexe.Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Sysexe.Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Subaru.Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Subaru.Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Subaru.Staging|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Subaru.Staging\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DisableOutOfProcTaskHost>1</DisableOutOfProcTaskHost>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Sysexe.Staging|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Sysexe.Staging\</OutputPath>
+    <DefineConstants>DEBUG</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Subaru.Develop|AnyCPU'">
+    <OutputPath>bin\Subaru.Develop\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Sysexe.Develop|AnyCPU'">
+    <OutputPath>bin\Sysexe.Develop\</OutputPath>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9FC78BF5B5075EE1FF7AC73835D45C17CCA6C9C4</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup />
+  <PropertyGroup>
+    <ManifestTimestampUrl>http://timestamp.digicert.com/?alg=sha256</ManifestTimestampUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CefSharp, Version=114.2.120.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.114.2.120\lib\net452\CefSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CefSharp.Core, Version=114.2.120.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.Common.114.2.120\lib\net452\CefSharp.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="CefSharp.WinForms, Version=114.2.120.0, Culture=neutral, PublicKeyToken=40c4b6fc221f4138, processorArchitecture=MSIL">
+      <HintPath>..\packages\CefSharp.WinForms.114.2.120\lib\net452\CefSharp.WinForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EPPlus, Version=4.5.2.1, Culture=neutral, PublicKeyToken=ea159fdaa78159a1, processorArchitecture=MSIL">
+      <HintPath>..\packages\EPPlus.4.5.2.1\lib\net40\EPPlus.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="GrapeCity.Framework.CalendarGrid.v24, Version=2.4.4000.2012, Culture=neutral, PublicKeyToken=fdd90f5c44b73170, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Framework.InputMan.v24, Version=2.4.4001.2012, Culture=neutral, PublicKeyToken=fdd90f5c44b73170" />
+    <Reference Include="GrapeCity.Framework.MultiRow.v24, Version=2.4.4001.2012, Culture=neutral, PublicKeyToken=fdd90f5c44b73170" />
+    <Reference Include="GrapeCity.Framework.PlusPak.v24, Version=2.4.4001.2012, Culture=neutral, PublicKeyToken=fdd90f5c44b73170" />
+    <Reference Include="GrapeCity.Win.CalendarGrid.v20, Version=2.0.4000.2012, Culture=neutral, PublicKeyToken=f4c1eb1dac5d2351, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Win.Editors.v100, Version=10.0.4001.2012, Culture=neutral, PublicKeyToken=0ce01a33ce55ca12" />
+    <Reference Include="GrapeCity.Win.MultiRow.v100, Version=10.0.4001.2012, Culture=neutral, PublicKeyToken=0f7a722ee3c2bdd9, processorArchitecture=MSIL" />
+    <Reference Include="GrapeCity.Win.PlusPak.Calendar.v100, Version=10.0.4001.2012, Culture=neutral, PublicKeyToken=63a9ba12b6923243" />
+    <Reference Include="GrapeCity.Win.PlusPak.v100, Version=10.0.4001.2012, Culture=neutral, PublicKeyToken=63a9ba12b6923243" />
+    <Reference Include="itextsharp, Version=5.5.10.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.10\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseForm.Designer.cs">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseSubDialogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseSubDialogForm.Designer.cs">
+      <DependentUpon>BaseSubDialogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseWizardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseWizardForm.Designer.cs">
+      <DependentUpon>BaseWizardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseSubForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseSubForm.Designer.cs">
+      <DependentUpon>BaseSubForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Base\BaseTestCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Base\BaseTestCarForm.Designer.cs">
+      <DependentUpon>BaseTestCarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CalendarPrintExcelBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\CalendarPrintExcelBaseForm.Designer.cs">
+      <DependentUpon>CalendarPrintExcelBaseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\CarGroupListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\CarGroupListMultiRowTemplate.Designer.cs">
+      <DependentUpon>CarGroupListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MultiRowDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\MultiRowDisplayForm.Designer.cs">
+      <DependentUpon>MultiRowDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DataGridViewDisplayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\DataGridViewDisplayForm.Designer.cs">
+      <DependentUpon>DataGridViewDisplayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MultiRowSortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\MultiRowSortForm.Designer.cs">
+      <DependentUpon>MultiRowSortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DataGridViewSortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\DataGridViewSortForm.Designer.cs">
+      <DependentUpon>DataGridViewSortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MultiSelectGeneralCodeMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MultiSelectGeneralCodeMultiRowTemplate.Designer.cs">
+      <DependentUpon>MultiSelectGeneralCodeMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ExceptMonthlyInspectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ExceptMonthlyInspectionForm.Designer.cs">
+      <DependentUpon>ExceptMonthlyInspectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ExceptMonthlyInspectionMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ExceptMonthlyInspectionMultiRowTemplate.Designer.cs">
+      <DependentUpon>ExceptMonthlyInspectionMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ReadCsvForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ReadCsvForm.designer.cs">
+      <DependentUpon>ReadCsvForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ScheduleItemCarGroupMoveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ScheduleItemCarGroupMoveForm.Designer.cs">
+      <DependentUpon>ScheduleItemCarGroupMoveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ScheduleItemContactInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ScheduleItemContactInfoForm.Designer.cs">
+      <DependentUpon>ScheduleItemContactInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ScheduleItemGeneralCodeMoveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ScheduleItemGeneralCodeMoveForm.Designer.cs">
+      <DependentUpon>ScheduleItemGeneralCodeMoveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\WayConfirmDateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\WayConfirmDateForm.designer.cs">
+      <DependentUpon>WayConfirmDateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\MultiRow\CustomFilterComparer.cs" />
+    <Compile Include="Common\WebBrowserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\WebBrowserForm.Designer.cs">
+      <DependentUpon>WebBrowserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\MultiRow\NullableDateTimePickerCell.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\PasswordChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\PasswordChangeForm.Designer.cs">
+      <DependentUpon>PasswordChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\LegendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\LegendForm.Designer.cs">
+      <DependentUpon>LegendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\MultiRow\CheckBoxFilterItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UC\MultiRow\CustomMultiRowCellStyle.cs" />
+    <Compile Include="UC\MultiRow\CustomTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UC\MultiRow\DateTimeFilterItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UC\MultiRow\DateTimeHourFilterItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\ParkingSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ParkingSelectForm.designer.cs">
+      <DependentUpon>ParkingSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ReceiptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ReceiptForm.designer.cs">
+      <DependentUpon>ReceiptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BrowsingAuthorityLossAlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\BrowsingAuthorityLossAlertForm.Designer.cs">
+      <DependentUpon>BrowsingAuthorityLossAlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ScheduleItemDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ScheduleItemDetailForm.Designer.cs">
+      <DependentUpon>ScheduleItemDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GeneralCodeListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\GeneralCodeListMultiRowTemplate.designer.cs">
+      <DependentUpon>GeneralCodeListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SectionListMultirowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\SectionListMultirowTemplate.designer.cs">
+      <DependentUpon>SectionListMultirowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SectionGroupListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\SectionGroupListMultiRowTemplate.designer.cs">
+      <DependentUpon>SectionGroupListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UsageNotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\UsageNotesForm.Designer.cs">
+      <DependentUpon>UsageNotesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MultiSelectGeneralCodeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\MultiSelectGeneralCodeForm.Designer.cs">
+      <DependentUpon>MultiSelectGeneralCodeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\UserListMultiRowTemplate.designer.cs">
+      <DependentUpon>UserListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MultiSelectSectionMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\MultiSelectSectionMultiRowTemplate.Designer.cs">
+      <DependentUpon>MultiSelectSectionMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserListMultiSelectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\UserListMultiSelectForm.Designer.cs">
+      <DependentUpon>UserListMultiSelectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserListMultiSelectMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\UserListMultiSelectMultiRowTemplate.Designer.cs">
+      <DependentUpon>UserListMultiSelectMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\Announce\AnnounceDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\Announce\AnnounceDetailForm.Designer.cs">
+      <DependentUpon>AnnounceDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\Announce\AnnounceListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\Announce\AnnounceListForm.Designer.cs">
+      <DependentUpon>AnnounceListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\Announce\AnnounceListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\Announce\AnnounceListMultiRowTemplate.designer.cs">
+      <DependentUpon>AnnounceListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\BrowsingAuthority\GeneralCodeAuthorityTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\BrowsingAuthority\GeneralCodeAuthorityTemplate.designer.cs">
+      <DependentUpon>GeneralCodeAuthorityTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\NDriveLinkDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\NDriveLinkDetailForm.Designer.cs">
+      <DependentUpon>NDriveLinkDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\NDriveLinkListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\NDriveLinkListForm.Designer.cs">
+      <DependentUpon>NDriveLinkListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\NDriveLInkListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\NDriveLInkListMultiRowTemplate.designer.cs">
+      <DependentUpon>NDriveLInkListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductMultiRowTemplate.designer.cs">
+      <DependentUpon>CapAndProductMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductHistoryMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductHistoryMultiRowTemplate.designer.cs">
+      <DependentUpon>CapAndProductHistoryMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductImportSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductImportSettingForm.Designer.cs">
+      <DependentUpon>CapAndProductImportSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareListOuterMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareListOuterMultiRowTemplate.designer.cs">
+      <DependentUpon>CarShareListOuterMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareUseHistoryInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareUseHistoryInputForm.Designer.cs">
+      <DependentUpon>CarShareUseHistoryInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareUseHistoryInputMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareUseHistoryInputMultiRowTemplate.designer.cs">
+      <DependentUpon>CarShareUseHistoryInputMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\Components.cs" />
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckCopyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckCopyForm.Designer.cs">
+      <DependentUpon>DesignCheckCopyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckCopyMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckCopyMultiRowTemplate.Designer.cs">
+      <DependentUpon>DesignCheckCopyMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckExportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckExportForm.Designer.cs">
+      <DependentUpon>DesignCheckExportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckExportMultiRowTemplete.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckExportMultiRowTemplete.Designer.cs">
+      <DependentUpon>DesignCheckExportMultiRowTemplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckListMultiRowTemplate.designer.cs">
+      <DependentUpon>DesignCheckListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckSystemTestCarListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckSystemTestCarListForm.Designer.cs">
+      <DependentUpon>DesignCheckSystemTestCarListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckTestCarListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckTestCarListMultiRowTemplate.designer.cs">
+      <DependentUpon>DesignCheckTestCarListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPointListMultiRowTemplete.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPointListMultiRowTemplete.designer.cs">
+      <DependentUpon>DesignCheckPointListMultiRowTemplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckDetailListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckDetailListMultiRowTemplate.designer.cs">
+      <DependentUpon>DesignCheckDetailListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPointHistoryMulitiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPointHistoryMulitiRowTemplate.designer.cs">
+      <DependentUpon>DesignCheckPointHistoryMulitiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckUserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckUserListForm.Designer.cs">
+      <DependentUpon>DesignCheckUserListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\PointingTargetSituationAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\PointingTargetSituationAddForm.Designer.cs">
+      <DependentUpon>PointingTargetSituationAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPcAuthForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPcAuthForm.designer.cs">
+      <DependentUpon>DesignCheckPcAuthForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\UnregisteredUserAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\UnregisteredUserAddForm.Designer.cs">
+      <DependentUpon>UnregisteredUserAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SinkDepartmentMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SinkDepartmentMultiRowTemplate.designer.cs">
+      <DependentUpon>SinkDepartmentMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SourceOfficialPositionMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SourceOfficialPositionMultiRowTemplate.designer.cs">
+      <DependentUpon>SourceOfficialPositionMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SourceDepartmentMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SourceDepartmentMultiRowTemplate.designer.cs">
+      <DependentUpon>SourceDepartmentMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SinkPersonelMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SinkPersonelMultiRowTemplate.designer.cs">
+      <DependentUpon>SinkPersonelMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SourcePersonelMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\SourcePersonelMultiRowTemplate.designer.cs">
+      <DependentUpon>SourcePersonelMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareListInnerMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareListInnerMultiRowTemplate.designer.cs">
+      <DependentUpon>CarShareListInnerMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarUseHistoryInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarUseHistoryInputForm.Designer.cs">
+      <DependentUpon>TestCarUseHistoryInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarUseHistoryInputMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarUseHistoryInputMultiRowTemplate.designer.cs">
+      <DependentUpon>TestCarUseHistoryInputMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\HistoryErrorListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\HistoryErrorListMultiRowTemplate.Designer.cs">
+      <DependentUpon>HistoryErrorListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\HistoryMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\HistoryMultiRowTemplate.designer.cs">
+      <DependentUpon>HistoryMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\ListDataMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\ListDataMultiRowTemplate.designer.cs">
+      <DependentUpon>ListDataMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\YerarMonthDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\BrowsingAuthority\BrowsingAuthorityBulkWizradForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\BrowsingAuthority\BrowsingAuthorityBulkWizradForm.Designer.cs">
+      <DependentUpon>BrowsingAuthorityBulkWizradForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CalendarPrintExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CalendarPrintExcelForm.Designer.cs">
+      <DependentUpon>CalendarPrintExcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarChareLegendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarChareLegendForm.Designer.cs">
+      <DependentUpon>CarChareLegendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\OperatingRateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\OperatingRateForm.Designer.cs">
+      <DependentUpon>OperatingRateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollDepartmentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollDepartmentForm.Designer.cs">
+      <DependentUpon>FunctionAuthorityRollDepartmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollForm.Designer.cs">
+      <DependentUpon>FunctionAuthorityRollForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollPersonelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollPersonelForm.Designer.cs">
+      <DependentUpon>FunctionAuthorityRollPersonelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollSettingForm.Designer.cs">
+      <DependentUpon>FunctionAuthorityRollSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\BrowsingAuthority\BrowsingAuthorityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\BrowsingAuthority\BrowsingAuthorityForm.Designer.cs">
+      <DependentUpon>BrowsingAuthorityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\CalendarPrintExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\CalendarPrintExcelForm.Designer.cs">
+      <DependentUpon>CalendarPrintExcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\CautionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\CautionForm.Designer.cs">
+      <DependentUpon>CautionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\CalendarPrintExcelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\CalendarPrintExcelForm.Designer.cs">
+      <DependentUpon>CalendarPrintExcelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarHistoryCompleteInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarHistoryCompleteInputForm.Designer.cs">
+      <DependentUpon>TestCarHistoryCompleteInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarHistoryErrorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarHistoryErrorForm.Designer.cs">
+      <DependentUpon>TestCarHistoryErrorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\AdminChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\AdminChangeForm.Designer.cs">
+      <DependentUpon>AdminChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\ComboBoxSetting.cs" />
+    <Compile Include="UIDevPlan\TruckSchedule\CustomCheckedList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\FixedTimeDaySettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\FixedTimeDaySettingForm.Designer.cs">
+      <DependentUpon>FixedTimeDaySettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\FreeTimeMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\FreeTimeMultiRowTemplate.Designer.cs">
+      <DependentUpon>FreeTimeMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\FrequentlyUsedDestinationsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\FrequentlyUsedDestinationsForm.Designer.cs">
+      <DependentUpon>FrequentlyUsedDestinationsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\FrequentlyUsedDestinationsMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\FrequentlyUsedDestinationsMultiRowTemplate.designer.cs">
+      <DependentUpon>FrequentlyUsedDestinationsMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\MultiRow\CustomMoveToNextControl.cs" />
+    <Compile Include="UIDevPlan\TruckSchedule\ReceiptUserMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\ReceiptUserMultiRowTemplate.Designer.cs">
+      <DependentUpon>ReceiptUserMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\RegularMailDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\RegularMailDetailForm.Designer.cs">
+      <DependentUpon>RegularMailDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\RegularMailDetailMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\RegularMailDetailMultiRowTemplate.Designer.cs">
+      <DependentUpon>RegularMailDetailMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\RegularMailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\RegularMailForm.Designer.cs">
+      <DependentUpon>RegularMailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\RegularMailMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\RegularMailMultiRowTemplate.Designer.cs">
+      <DependentUpon>RegularMailMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\Reports\BaseReports.cs" />
+    <Compile Include="UIDevPlan\TruckSchedule\Reports\Invoice.cs" />
+    <Compile Include="UIDevPlan\TruckSchedule\Reports\TransportRequest.cs" />
+    <Compile Include="UIDevPlan\TruckSchedule\SectionMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\SectionMultiRowTemplate.Designer.cs">
+      <DependentUpon>SectionMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\ShippingMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\ShippingMultiRowTemplate.Designer.cs">
+      <DependentUpon>ShippingMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\ToolTips\DevPlanToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\ToolTips\EachTrackToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\ToolTips\RegularToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\ToolTips\TrackItemToolTip.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckLegendForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckLegendForm.Designer.cs">
+      <DependentUpon>TruckLegendForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckScheduleDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckScheduleDetailForm.Designer.cs">
+      <DependentUpon>TruckScheduleDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckScheduleForm.Designer.cs">
+      <DependentUpon>TruckScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckScheduleItemDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckScheduleItemDetailForm.Designer.cs">
+      <DependentUpon>TruckScheduleItemDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckScheduleRegularDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\TruckScheduleRegularDetailForm.Designer.cs">
+      <DependentUpon>TruckScheduleRegularDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TruckSchedule\UserInfo.cs" />
+    <Compile Include="UITestCar\ControlSheet\ControlLabelIssueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlLabelIssueForm.Designer.cs">
+      <DependentUpon>ControlLabelIssueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetIssueEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetIssueEntryForm.Designer.cs">
+      <DependentUpon>ControlSheetIssueEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetHistoryEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetHistoryEntryForm.Designer.cs">
+      <DependentUpon>ControlSheetHistoryEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetIssueForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetIssueForm.Designer.cs">
+      <DependentUpon>ControlSheetIssueForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetImportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetImportForm.Designer.cs">
+      <DependentUpon>ControlSheetImportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetListForm.Designer.cs">
+      <DependentUpon>ControlSheetListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductHistoryForm.Designer.cs">
+      <DependentUpon>CapAndProductHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CapAndProduct\CapAndProductForm.Designer.cs">
+      <DependentUpon>CapAndProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareManagementForm.Designer.cs">
+      <DependentUpon>CarShareManagementForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareForm.Designer.cs">
+      <DependentUpon>CarShareForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareScheduleDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareScheduleDetailForm.Designer.cs">
+      <DependentUpon>CarShareScheduleDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareScheduleForm.Designer.cs">
+      <DependentUpon>CarShareScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareListForm.Designer.cs">
+      <DependentUpon>CarShareListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\CarShare\CarShareHistoryForm.Designer.cs">
+      <DependentUpon>CarShareHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BookmarkListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\BookmarkListForm.Designer.cs">
+      <DependentUpon>BookmarkListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\DataGridForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\DataGridForm.Designer.cs">
+      <DependentUpon>DataGridForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FavoriteListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FavoriteListForm.designer.cs">
+      <DependentUpon>FavoriteListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ItemCopyMoveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ItemCopyMoveForm.designer.cs">
+      <DependentUpon>ItemCopyMoveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SectionListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\SectionListForm.Designer.cs">
+      <DependentUpon>SectionListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\GeneralCodeListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\GeneralCodeListForm.Designer.cs">
+      <DependentUpon>GeneralCodeListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\SectionGroupListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\SectionGroupListForm.Designer.cs">
+      <DependentUpon>SectionGroupListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\InformationListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\InformationListForm.Designer.cs">
+      <DependentUpon>InformationListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ErrorMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ErrorMessage.designer.cs">
+      <DependentUpon>ErrorMessage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\UserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\UserListForm.designer.cs">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPointHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPointHistoryForm.Designer.cs">
+      <DependentUpon>DesignCheckPointHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\PointingTargetCarAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\PointingTargetCarAddForm.Designer.cs">
+      <DependentUpon>PointingTargetCarAddForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckBasicInformationEntryForm.Designer.cs">
+      <DependentUpon>DesignCheckBasicInformationEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPointListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckPointListForm.Designer.cs">
+      <DependentUpon>DesignCheckPointListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckListForm.Designer.cs">
+      <DependentUpon>DesignCheckListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckBasicInformationEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckTestCarListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckTestCarListForm.Designer.cs">
+      <DependentUpon>DesignCheckTestCarListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckDetailListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\DesignCheck\DesignCheckDetailListForm.Designer.cs">
+      <DependentUpon>DesignCheckDetailListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\CompletionScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\CompletionScheduleForm.Designer.cs">
+      <DependentUpon>CompletionScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\MeetingDocumentDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\MeetingDocumentDetailForm.Designer.cs">
+      <DependentUpon>MeetingDocumentDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\MeetingDocumentDetailListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\MeetingDocumentDetailListForm.Designer.cs">
+      <DependentUpon>MeetingDocumentDetailListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\MeetingDocumentListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\MeetingDocumentListForm.Designer.cs">
+      <DependentUpon>MeetingDocumentListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\ReportMaterialListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\ReportMaterialListForm.Designer.cs">
+      <DependentUpon>ReportMaterialListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\InfluencePartsExitScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\InfluencePartsExitScheduleForm.Designer.cs">
+      <DependentUpon>InfluencePartsExitScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\MeetingDocumentHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MeetingDocument\MeetingDocumentHistoryForm.Designer.cs">
+      <DependentUpon>MeetingDocumentHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyPlan\MonthlyPlanFavoriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyPlan\MonthlyPlanFavoriteForm.Designer.cs">
+      <DependentUpon>MonthlyPlanFavoriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyPlan\MonthlyPlanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyPlan\MonthlyPlanForm.Designer.cs">
+      <DependentUpon>MonthlyPlanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyPlan\MonthlyPlanItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyPlan\MonthlyPlanItemForm.Designer.cs">
+      <DependentUpon>MonthlyPlanItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyPlan\MonthlyPlanScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyPlan\MonthlyPlanScheduleForm.Designer.cs">
+      <DependentUpon>MonthlyPlanScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\OuterCarHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\OuterCarHistoryForm.Designer.cs">
+      <DependentUpon>OuterCarHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\ProgressList\ProgressListMasterEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\ProgressList\ProgressListMasterEditForm.Designer.cs">
+      <DependentUpon>ProgressListMasterEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\ProgressList\ProgressListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\ProgressList\ProgressListForm.Designer.cs">
+      <DependentUpon>ProgressListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\ProgressList\ProgressListNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\ProgressList\ProgressListNameForm.Designer.cs">
+      <DependentUpon>ProgressListNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\ProgressList\ProgressListCandidateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\ProgressList\ProgressListCandidateForm.Designer.cs">
+      <DependentUpon>ProgressListCandidateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\MultiSelectSectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\MultiSelectSectionForm.Designer.cs">
+      <DependentUpon>MultiSelectSectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\ReportMaterial\ReportMaterialMonthlyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\ReportMaterial\ReportMaterialMonthlyForm.Designer.cs">
+      <DependentUpon>ReportMaterialMonthlyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\ReportMaterial\ReportMaterialWeeklyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\ReportMaterial\ReportMaterialWeeklyForm.Designer.cs">
+      <DependentUpon>ReportMaterialWeeklyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\FavoriteEntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\FavoriteEntryForm.Designer.cs">
+      <DependentUpon>FavoriteEntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarHistoryAlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarHistoryAlertForm.Designer.cs">
+      <DependentUpon>TestCarHistoryAlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarHistoryForm.Designer.cs">
+      <DependentUpon>TestCarHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarListForm.Designer.cs">
+      <DependentUpon>TestCarListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\ReservationAlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\ReservationAlertForm.Designer.cs">
+      <DependentUpon>ReservationAlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarScheduleCopyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarScheduleCopyForm.designer.cs">
+      <DependentUpon>TestCarScheduleCopyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarScheduleDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarScheduleDetailForm.Designer.cs">
+      <DependentUpon>TestCarScheduleDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarScheduleForm.Designer.cs">
+      <DependentUpon>TestCarScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuForm.Designer.cs">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyReport\ManagerNameForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyReport\ManagerNameForm.Designer.cs">
+      <DependentUpon>ManagerNameForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyReport\MonthlyReportForm.Designer.cs">
+      <DependentUpon>MonthlyReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\OuterCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\OuterCarForm.Designer.cs">
+      <DependentUpon>OuterCarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\OuterCarScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\OuterCar\OuterCarScheduleForm.Designer.cs">
+      <DependentUpon>OuterCarScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\OperationPlan\OperationPlanFavoriteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\OperationPlan\OperationPlanFavoriteForm.Designer.cs">
+      <DependentUpon>OperationPlanFavoriteForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\OperationPlan\OperationPlanScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\OperationPlan\OperationPlanScheduleForm.Designer.cs">
+      <DependentUpon>OperationPlanScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\OperationPlan\OperationPlanForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\OperationPlan\OperationPlanForm.Designer.cs">
+      <DependentUpon>OperationPlanForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\OperationPlan\OperationPlanItemForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\OperationPlan\OperationPlanItemForm.Designer.cs">
+      <DependentUpon>OperationPlanItemForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarScheduleReserveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\TestCarSchedule\TestCarScheduleReserveForm.Designer.cs">
+      <DependentUpon>TestCarScheduleReserveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\DataGridViewCalendarColumn.cs" />
+    <Compile Include="UC\NullableDateTimePicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UC\NullableDateTimePicker.Designer.cs">
+      <DependentUpon>NullableDateTimePicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\ReportMaterial\ReportMaterialForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\ReportMaterial\ReportMaterialForm.Designer.cs">
+      <DependentUpon>ReportMaterialForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\MonthlyReport\MonthlyReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\WorkProgress\WorkProgressForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\WorkProgress\WorkProgressForm.Designer.cs">
+      <DependentUpon>WorkProgressForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\WeeklyReport\WeeklyReportApprovalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\WeeklyReport\WeeklyReportApprovalForm.Designer.cs">
+      <DependentUpon>WeeklyReportApprovalForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\WeeklyReport\WeeklyReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\WeeklyReport\WeeklyReportForm.Designer.cs">
+      <DependentUpon>WeeklyReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIDevPlan\WorkProgress\WorkProgressHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIDevPlan\WorkProgress\WorkProgressHistoryForm.Designer.cs">
+      <DependentUpon>WorkProgressHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetImportMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetImportMultiRowTemplate.designer.cs">
+      <DependentUpon>ControlSheetImportMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlSheetListMultiRowTemplate.designer.cs">
+      <DependentUpon>ControlSheetListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlLabelIssueMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\ControlLabelIssueMultiRowTemplate.designer.cs">
+      <DependentUpon>ControlLabelIssueMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\ControlSheet\Label\LabelPrint.cs" />
+    <Compile Include="UITestCar\Disposal\DisposalDepartureInputMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Disposal\DisposalDepartureInputMultiRowTemplate.designer.cs">
+      <DependentUpon>DisposalDepartureInputMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Disposal\DisposalDeadlineListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Disposal\DisposalDeadlineListMultiRowTemplate.designer.cs">
+      <DependentUpon>DisposalDeadlineListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Disposal\DisposalDepartureInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Disposal\DisposalDepartureInputForm.Designer.cs">
+      <DependentUpon>DisposalDepartureInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Disposal\DisposalDeadlineListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Disposal\DisposalDeadlineListForm.Designer.cs">
+      <DependentUpon>DisposalDeadlineListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\ApplicationApprovalCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\ApplicationApprovalCarForm.Designer.cs">
+      <DependentUpon>ApplicationApprovalCarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\ParkingNumberDesignationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\ParkingNumberDesignationForm.Designer.cs">
+      <DependentUpon>ParkingNumberDesignationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\ApplicationApprovalCarTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\ApplicationApprovalCarTemplate.designer.cs">
+      <DependentUpon>ApplicationApprovalCarTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\TransferApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\TransferApplicationForm.Designer.cs">
+      <DependentUpon>TransferApplicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\DisposalApplicationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\DisposalApplicationForm.Designer.cs">
+      <DependentUpon>DisposalApplicationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\CarInspection\CarInspectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\CarInspection\CarInspectionForm.Designer.cs">
+      <DependentUpon>CarInspectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\CarInspection\CarInspectionMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\CarInspection\CarInspectionMultiRowTemplate.designer.cs">
+      <DependentUpon>CarInspectionMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ControlSheet\ControlSheetListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ControlSheet\ControlSheetListForm.Designer.cs">
+      <DependentUpon>ControlSheetListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ControlSheet\ControlSheetSearchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ControlSheet\ControlSheetSearchForm.Designer.cs">
+      <DependentUpon>ControlSheetSearchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ControlSheet\ControlSheetSaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ControlSheet\ControlSheetSaveForm.Designer.cs">
+      <DependentUpon>ControlSheetSaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ControlSheet\ControlSheetListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ControlSheet\ControlSheetListMultiRowTemplate.designer.cs">
+      <DependentUpon>ControlSheetListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberForm.Designer.cs">
+      <DependentUpon>DesignatedMonthNumberForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\CarInspection\ExtractionConditionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\CarInspection\ExtractionConditionForm.Designer.cs">
+      <DependentUpon>ExtractionConditionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\PendingCarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\PendingCarForm.Designer.cs">
+      <DependentUpon>PendingCarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\PendingCarMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\ApplicationApprovalCar\PendingCarMultiRowTemplate.designer.cs">
+      <DependentUpon>PendingCarMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab4MultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab4MultiRowTemplate.designer.cs">
+      <DependentUpon>DesignatedMonthNumberTab4MultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab2MultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab2MultiRowTemplate.designer.cs">
+      <DependentUpon>DesignatedMonthNumberTab2MultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab1MultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab1MultiRowTemplate.designer.cs">
+      <DependentUpon>DesignatedMonthNumberTab1MultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab3MultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab3MultiRowTemplate.designer.cs">
+      <DependentUpon>DesignatedMonthNumberTab3MultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab0MultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab0MultiRowTemplate.designer.cs">
+      <DependentUpon>DesignatedMonthNumberTab0MultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\TestCarHistory\TestCarHistoryListMultiRowTemplate.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\TestCarHistory\TestCarHistoryListMultiRowTemplate.designer.cs">
+      <DependentUpon>TestCarHistoryListMultiRowTemplate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\TestCarHistory\TestCarHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\TestCarHistory\TestCarHistoryForm.Designer.cs">
+      <DependentUpon>TestCarHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\TestCarHistory\TestCarHistoryListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\TestCarHistory\TestCarHistoryListForm.Designer.cs">
+      <DependentUpon>TestCarHistoryListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UITestCar\Othe\TestCarHistory\TestCarUseHistoryApprovalForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UITestCar\Othe\TestCarHistory\TestCarUseHistoryApprovalForm.Designer.cs">
+      <DependentUpon>TestCarUseHistoryApprovalForm.cs</DependentUpon>
+    </Compile>
+    <Content Include="x64\CefSharp.BrowserSubprocess.Core.dll" />
+    <Content Include="x64\CefSharp.BrowserSubprocess.Core.pdb" />
+    <Content Include="x64\CefSharp.BrowserSubprocess.exe" />
+    <Content Include="x64\CefSharp.BrowserSubprocess.pdb" />
+    <Content Include="x64\CefSharp.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\CefSharp.Core.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\CefSharp.Core.Runtime.dll" />
+    <Content Include="x64\CefSharp.Core.Runtime.pdb" />
+    <Content Include="x64\CefSharp.Core.Runtime.xml" />
+    <Content Include="x64\CefSharp.Core.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\CefSharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\CefSharp.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\CefSharp.WinForms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\CefSharp.WinForms.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\CefSharp.WinForms.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\CefSharp.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\chrome_elf.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\d3dcompiler_47.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libcef.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libEGL.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\libGLESv2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\LICENSE.txt" />
+    <Content Include="x64\README.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\vk_swiftshader.dll" />
+    <Content Include="x64\vulkan-1.dll" />
+    <Content Include="x86\CefSharp.Core.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\CefSharp.Core.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\CefSharp.Core.Runtime.dll" />
+    <Content Include="x86\CefSharp.Core.Runtime.pdb" />
+    <Content Include="x86\CefSharp.Core.Runtime.xml" />
+    <Content Include="x86\CefSharp.Core.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\CefSharp.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\CefSharp.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\CefSharp.WinForms.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\CefSharp.WinForms.pdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\CefSharp.WinForms.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\CefSharp.XML">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\chrome_elf.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\d3dcompiler_47.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libcef.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libEGL.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\libGLESv2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\LICENSE.txt" />
+    <Content Include="x86\README.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\vk_swiftshader.dll" />
+    <Content Include="x86\vulkan-1.dll" />
+    <None Include="Resources\97.UseHistorySetting.Image.png" />
+    <None Include="Resources\MenuIcons\97.UseHistorySetting.Image.png" />
+    <Content Include="Resources\MenuIcons\98.XeyeImportButton.Image.png" />
+    <None Include="Resources\_98_XeyeImportButton.Image.bmp" />
+    <None Include="Resources\5days.png" />
+    <Content Include="Resources\app.ico" />
+    <None Include="Resources\coupe.png" />
+    <None Include="Resources\ExcelTemplate\CapExport.xlsx" />
+    <None Include="Resources\ExcelTemplate\CarShareManagementHenkyakuTemplate.xlsx" />
+    <None Include="Resources\ExcelTemplate\CarShareManagementKasiTemplate.xlsx" />
+    <None Include="Resources\ExcelTemplate\CarShareManagementRateTemplate.xlsx" />
+    <None Include="Resources\ExcelTemplate\DefaultCalendarTemplate.xlsx" />
+    <None Include="Resources\ExcelTemplate\ProductionCarExportTemplate.xlsx" />
+    <None Include="Resources\kariImage.png" />
+    <None Include="Resources\honyoyakuImage.png" />
+    <None Include="Resources\kfilereplace.png" />
+    <None Include="Resources\MenuIcons\00.MainMenuBackButton.Image.png" />
+    <None Include="Resources\MenuIcons\01.CarSearchButton.Image.png" />
+    <None Include="Resources\MenuIcons\02.TestCarScheduleButton.Image.png" />
+    <None Include="Resources\MenuIcons\03.OuterCarScheduleButton.Image.png" />
+    <None Include="Resources\MenuIcons\04.CarShareScheduleButton.Image.png" />
+    <None Include="Resources\MenuIcons\05.CarShareManageButton.Image.png" />
+    <None Include="Resources\MenuIcons\06.TestCarManagerButton.Image.png" />
+    <None Include="Resources\MenuIcons\07.TestCarButton.Image.png" />
+    <None Include="Resources\MenuIcons\08.ConfigMenuButton.Image.png" />
+    <None Include="Resources\MenuIcons\11.ControlSheetListButton.Image.png" />
+    <None Include="Resources\MenuIcons\12.ControlLabelIssueButton.Image.png" />
+    <None Include="Resources\MenuIcons\13.DisposalPeriodButton.Image.png" />
+    <None Include="Resources\MenuIcons\14.DisposalCarryoutButton.Image.png" />
+    <None Include="Resources\MenuIcons\15.ApplicationApprovalCarButton.Image.png" />
+    <None Include="Resources\MenuIcons\16.TestCarHistoryButton.Image.png" />
+    <None Include="Resources\MenuIcons\17.ControlSheetSearchButton.Image.png" />
+    <None Include="Resources\MenuIcons\18.DesignatedMonthNumberButton.Image.png" />
+    <None Include="Resources\MenuIcons\19.CarInspectionButton.Image.png" />
+    <None Include="Resources\MenuIcons\21.RollButton.Image.png" />
+    <None Include="Resources\MenuIcons\22.FunctionAuthButton.Image.png" />
+    <None Include="Resources\MenuIcons\23.BrowsingAuthButton.Image.png" />
+    <None Include="Resources\MenuIcons\24.AnnounceButton.Image.png" />
+    <None Include="Resources\MenuIcons\31.TruckButton.Image.png" />
+    <None Include="Resources\MenuIcons\32.CapButton.Image.png" />
+    <None Include="Resources\MenuIcons\33.DesignCheckButton.Image.png" />
+    <None Include="Resources\MenuIcons\90.OldDevPlanButton.Image.png" />
+    <None Include="Resources\MultiRow\SortGlyphAscendingImageWhite.png" />
+    <None Include="Resources\MultiRow\SortGlyphDefaultImageWhite.png" />
+    <None Include="Resources\MultiRow\SortGlyphDescendingImageWhite.png" />
+    <None Include="Resources\MultiRow\SortGlyphFilterdAscendingImageWhite.png" />
+    <None Include="Resources\MultiRow\SortGlyphFilterdDefaultImageWhite.png" />
+    <None Include="Resources\MultiRow\SortGlyphFilterdDescendingImageWhite.png" />
+    <None Include="Resources\printer.png" />
+    <None Include="Resources\sedan.png" />
+    <None Include="Resources\service_manager.png" />
+    <None Include="Resources\testcar.png" />
+    <None Include="Resources\todo.png" />
+    <None Include="Resources\volume_manager.png" />
+    <EmbeddedResource Include="Common\CarGroupListMultiRowTemplate.resx">
+      <DependentUpon>CarGroupListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MultiRowDisplayForm.resx">
+      <DependentUpon>MultiRowDisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MultiRowSortForm.resx">
+      <DependentUpon>MultiRowSortForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MultiSelectGeneralCodeMultiRowTemplate.resx">
+      <DependentUpon>MultiSelectGeneralCodeMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ExceptMonthlyInspectionForm.resx">
+      <DependentUpon>ExceptMonthlyInspectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ExceptMonthlyInspectionMultiRowTemplate.resx">
+      <DependentUpon>ExceptMonthlyInspectionMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MultiSelectSectionMultiRowTemplate.resx">
+      <DependentUpon>MultiSelectSectionMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MultiSelectGeneralCodeForm.resx">
+      <DependentUpon>MultiSelectGeneralCodeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ReadCsvForm.resx">
+      <DependentUpon>ReadCsvForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ScheduleItemCarGroupMoveForm.resx">
+      <DependentUpon>ScheduleItemCarGroupMoveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ScheduleItemContactInfoForm.resx">
+      <DependentUpon>ScheduleItemContactInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ScheduleItemGeneralCodeMoveForm.resx">
+      <DependentUpon>ScheduleItemGeneralCodeMoveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UserListMultiSelectForm.resx">
+      <DependentUpon>UserListMultiSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UserListMultiSelectMultiRowTemplate.resx">
+      <DependentUpon>UserListMultiSelectMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\WayConfirmDateForm.resx">
+      <DependentUpon>WayConfirmDateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\WebBrowserForm.resx">
+      <DependentUpon>WebBrowserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\Announce\AnnounceDetailForm.resx">
+      <DependentUpon>AnnounceDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\Announce\AnnounceListForm.resx">
+      <DependentUpon>AnnounceListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BaseForm.resx">
+      <DependentUpon>BaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BaseSubDialogForm.resx">
+      <DependentUpon>BaseSubDialogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BaseTestCarForm.resx">
+      <DependentUpon>BaseTestCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BaseWizardForm.resx">
+      <DependentUpon>BaseWizardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Base\BaseSubForm.resx">
+      <DependentUpon>BaseSubForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\CalendarPrintExcelBaseForm.resx">
+      <DependentUpon>CalendarPrintExcelBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DataGridViewDisplayForm.resx">
+      <DependentUpon>DataGridViewDisplayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DataGridViewSortForm.resx">
+      <DependentUpon>DataGridViewSortForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\PasswordChangeForm.resx">
+      <DependentUpon>PasswordChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\LegendForm.resx">
+      <DependentUpon>LegendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ParkingSelectForm.resx">
+      <DependentUpon>ParkingSelectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ReceiptForm.resx">
+      <DependentUpon>ReceiptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BrowsingAuthorityLossAlertForm.resx">
+      <DependentUpon>BrowsingAuthorityLossAlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ScheduleItemDetailForm.resx">
+      <DependentUpon>ScheduleItemDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\GeneralCodeListMultiRowTemplate.resx">
+      <DependentUpon>GeneralCodeListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SectionListMultirowTemplate.resx">
+      <DependentUpon>SectionListMultirowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SectionGroupListMultiRowTemplate.resx">
+      <DependentUpon>SectionGroupListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UsageNotesForm.resx">
+      <DependentUpon>UsageNotesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UserListMultiRowTemplate.resx">
+      <DependentUpon>UserListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\Announce\AnnounceListMultiRowTemplate.resx">
+      <DependentUpon>AnnounceListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\BrowsingAuthority\GeneralCodeAuthorityTemplate.resx">
+      <DependentUpon>GeneralCodeAuthorityTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CapAndProduct\NDriveLinkDetailForm.resx">
+      <DependentUpon>NDriveLinkDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CapAndProduct\NDriveLinkListForm.resx">
+      <DependentUpon>NDriveLinkListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CapAndProduct\NDriveLInkListMultiRowTemplate.resx">
+      <DependentUpon>NDriveLInkListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CapAndProduct\CapAndProductMultiRowTemplate.resx">
+      <DependentUpon>CapAndProductMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CapAndProduct\CapAndProductHistoryMultiRowTemplate.resx">
+      <DependentUpon>CapAndProductHistoryMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CapAndProduct\CapAndProductImportSettingForm.resx">
+      <DependentUpon>CapAndProductImportSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareListOuterMultiRowTemplate.resx">
+      <DependentUpon>CarShareListOuterMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareUseHistoryInputForm.resx">
+      <DependentUpon>CarShareUseHistoryInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareUseHistoryInputMultiRowTemplate.resx">
+      <DependentUpon>CarShareUseHistoryInputMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckCopyForm.resx">
+      <DependentUpon>DesignCheckCopyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckCopyMultiRowTemplate.resx">
+      <DependentUpon>DesignCheckCopyMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckExportForm.resx">
+      <DependentUpon>DesignCheckExportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckExportMultiRowTemplete.resx">
+      <DependentUpon>DesignCheckExportMultiRowTemplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckListMultiRowTemplate.resx">
+      <DependentUpon>DesignCheckListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckSystemTestCarListForm.resx">
+      <DependentUpon>DesignCheckSystemTestCarListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckTestCarListMultiRowTemplate.resx">
+      <DependentUpon>DesignCheckTestCarListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckPointListMultiRowTemplete.resx">
+      <DependentUpon>DesignCheckPointListMultiRowTemplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckDetailListMultiRowTemplate.resx">
+      <DependentUpon>DesignCheckDetailListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckPointHistoryMulitiRowTemplate.resx">
+      <DependentUpon>DesignCheckPointHistoryMulitiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckUserListForm.resx">
+      <DependentUpon>DesignCheckUserListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\PointingTargetSituationAddForm.resx">
+      <DependentUpon>PointingTargetSituationAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckPcAuthForm.resx">
+      <DependentUpon>DesignCheckPcAuthForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\UnregisteredUserAddForm.resx">
+      <DependentUpon>UnregisteredUserAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\FunctionAuthority\SinkDepartmentMultiRowTemplate.resx">
+      <DependentUpon>SinkDepartmentMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\FunctionAuthority\SourceOfficialPositionMultiRowTemplate.resx">
+      <DependentUpon>SourceOfficialPositionMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\FunctionAuthority\SourceDepartmentMultiRowTemplate.resx">
+      <DependentUpon>SourceDepartmentMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\FunctionAuthority\SinkPersonelMultiRowTemplate.resx">
+      <DependentUpon>SinkPersonelMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\FunctionAuthority\SourcePersonelMultiRowTemplate.resx">
+      <DependentUpon>SourcePersonelMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareListInnerMultiRowTemplate.resx">
+      <DependentUpon>CarShareListInnerMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarUseHistoryInputForm.resx">
+      <DependentUpon>TestCarUseHistoryInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarUseHistoryInputMultiRowTemplate.resx">
+      <DependentUpon>TestCarUseHistoryInputMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\HistoryErrorListMultiRowTemplate.resx">
+      <DependentUpon>HistoryErrorListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\HistoryMultiRowTemplate.resx">
+      <DependentUpon>HistoryMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\ListDataMultiRowTemplate.resx">
+      <DependentUpon>ListDataMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\BrowsingAuthority\BrowsingAuthorityBulkWizradForm.resx">
+      <DependentUpon>BrowsingAuthorityBulkWizradForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CalendarPrintExcelForm.resx">
+      <DependentUpon>CalendarPrintExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarChareLegendForm.resx">
+      <DependentUpon>CarChareLegendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\OperatingRateForm.resx">
+      <DependentUpon>OperatingRateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollDepartmentForm.resx">
+      <DependentUpon>FunctionAuthorityRollDepartmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollForm.resx">
+      <DependentUpon>FunctionAuthorityRollForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollPersonelForm.resx">
+      <DependentUpon>FunctionAuthorityRollPersonelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\FunctionAuthority\FunctionAuthorityRollSettingForm.resx">
+      <DependentUpon>FunctionAuthorityRollSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\BrowsingAuthority\BrowsingAuthorityForm.resx">
+      <DependentUpon>BrowsingAuthorityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\OuterCar\CalendarPrintExcelForm.resx">
+      <DependentUpon>CalendarPrintExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\OuterCar\CautionForm.resx">
+      <DependentUpon>CautionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\CalendarPrintExcelForm.resx">
+      <DependentUpon>CalendarPrintExcelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarHistoryCompleteInputForm.resx">
+      <DependentUpon>TestCarHistoryCompleteInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarHistoryErrorForm.resx">
+      <DependentUpon>TestCarHistoryErrorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\AdminChangeForm.resx">
+      <DependentUpon>AdminChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\FixedTimeDaySettingForm.resx">
+      <DependentUpon>FixedTimeDaySettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\FreeTimeMultiRowTemplate.resx">
+      <DependentUpon>FreeTimeMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\FrequentlyUsedDestinationsForm.resx">
+      <DependentUpon>FrequentlyUsedDestinationsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\FrequentlyUsedDestinationsMultiRowTemplate.resx">
+      <DependentUpon>FrequentlyUsedDestinationsMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\ReceiptUserMultiRowTemplate.resx">
+      <DependentUpon>ReceiptUserMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\RegularMailDetailForm.resx">
+      <DependentUpon>RegularMailDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\RegularMailDetailMultiRowTemplate.resx">
+      <DependentUpon>RegularMailDetailMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\RegularMailForm.resx">
+      <DependentUpon>RegularMailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\RegularMailMultiRowTemplate.resx">
+      <DependentUpon>RegularMailMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\SectionMultiRowTemplate.resx">
+      <DependentUpon>SectionMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\ShippingMultiRowTemplate.resx">
+      <DependentUpon>ShippingMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\TruckLegendForm.resx">
+      <DependentUpon>TruckLegendForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\TruckScheduleDetailForm.resx">
+      <DependentUpon>TruckScheduleDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\TruckScheduleForm.resx">
+      <DependentUpon>TruckScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\TruckScheduleItemDetailForm.resx">
+      <DependentUpon>TruckScheduleItemDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TruckSchedule\TruckScheduleRegularDetailForm.resx">
+      <DependentUpon>TruckScheduleRegularDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\ControlSheet\ControlLabelIssueForm.resx">
+      <DependentUpon>ControlLabelIssueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\ControlSheet\ControlSheetIssueEntryForm.resx">
+      <DependentUpon>ControlSheetIssueEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\ControlSheet\ControlSheetHistoryEntryForm.resx">
+      <DependentUpon>ControlSheetHistoryEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\ControlSheet\ControlSheetIssueForm.resx">
+      <DependentUpon>ControlSheetIssueForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\ControlSheet\ControlSheetImportForm.resx">
+      <DependentUpon>ControlSheetImportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\ControlSheet\ControlSheetListForm.resx">
+      <DependentUpon>ControlSheetListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CapAndProduct\CapAndProductHistoryForm.resx">
+      <DependentUpon>CapAndProductHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CapAndProduct\CapAndProductForm.resx">
+      <DependentUpon>CapAndProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareManagementForm.resx">
+      <DependentUpon>CarShareManagementForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareForm.resx">
+      <DependentUpon>CarShareForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareScheduleDetailForm.resx">
+      <DependentUpon>CarShareScheduleDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareScheduleForm.resx">
+      <DependentUpon>CarShareScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareListForm.resx">
+      <DependentUpon>CarShareListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\CarShare\CarShareHistoryForm.resx">
+      <DependentUpon>CarShareHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\BookmarkListForm.resx">
+      <DependentUpon>BookmarkListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DataGridForm.resx">
+      <DependentUpon>DataGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FavoriteListForm.resx">
+      <DependentUpon>FavoriteListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ItemCopyMoveForm.resx">
+      <DependentUpon>ItemCopyMoveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SectionListForm.resx">
+      <DependentUpon>SectionListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\GeneralCodeListForm.resx">
+      <DependentUpon>GeneralCodeListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\SectionGroupListForm.resx">
+      <DependentUpon>SectionGroupListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\InformationListForm.resx">
+      <DependentUpon>InformationListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ErrorMessage.resx">
+      <DependentUpon>ErrorMessage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\UserListForm.resx">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckPointHistoryForm.resx">
+      <DependentUpon>DesignCheckPointHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\PointingTargetCarAddForm.resx">
+      <DependentUpon>PointingTargetCarAddForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckPointListForm.resx">
+      <DependentUpon>DesignCheckPointListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckListForm.resx">
+      <DependentUpon>DesignCheckListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckBasicInformationEntryForm.resx">
+      <DependentUpon>DesignCheckBasicInformationEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckTestCarListForm.resx">
+      <DependentUpon>DesignCheckTestCarListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\DesignCheck\DesignCheckDetailListForm.resx">
+      <DependentUpon>DesignCheckDetailListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MeetingDocument\CompletionScheduleForm.resx">
+      <DependentUpon>CompletionScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MeetingDocument\MeetingDocumentDetailForm.resx">
+      <DependentUpon>MeetingDocumentDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MeetingDocument\MeetingDocumentDetailListForm.resx">
+      <DependentUpon>MeetingDocumentDetailListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MeetingDocument\MeetingDocumentListForm.resx">
+      <DependentUpon>MeetingDocumentListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MeetingDocument\ReportMaterialListForm.resx">
+      <DependentUpon>ReportMaterialListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MeetingDocument\InfluencePartsExitScheduleForm.resx">
+      <DependentUpon>InfluencePartsExitScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MeetingDocument\MeetingDocumentHistoryForm.resx">
+      <DependentUpon>MeetingDocumentHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MonthlyPlan\MonthlyPlanFavoriteForm.resx">
+      <DependentUpon>MonthlyPlanFavoriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MonthlyPlan\MonthlyPlanForm.resx">
+      <DependentUpon>MonthlyPlanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MonthlyPlan\MonthlyPlanItemForm.resx">
+      <DependentUpon>MonthlyPlanItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MonthlyPlan\MonthlyPlanScheduleForm.resx">
+      <DependentUpon>MonthlyPlanScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\OuterCar\OuterCarHistoryForm.resx">
+      <DependentUpon>OuterCarHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\ProgressList\ProgressListForm.resx">
+      <DependentUpon>ProgressListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\ProgressList\ProgressListMasterEditForm.resx">
+      <DependentUpon>ProgressListMasterEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\ProgressList\ProgressListNameForm.resx">
+      <DependentUpon>ProgressListNameForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\ProgressList\ProgressListCandidateForm.resx">
+      <DependentUpon>ProgressListCandidateForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\MultiSelectSectionForm.resx">
+      <DependentUpon>MultiSelectSectionForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\ReportMaterial\ReportMaterialMonthlyForm.resx">
+      <DependentUpon>ReportMaterialMonthlyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\ReportMaterial\ReportMaterialWeeklyForm.resx">
+      <DependentUpon>ReportMaterialWeeklyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\FavoriteEntryForm.resx">
+      <DependentUpon>FavoriteEntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarHistoryAlertForm.resx">
+      <DependentUpon>TestCarHistoryAlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarHistoryForm.resx">
+      <DependentUpon>TestCarHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarListForm.resx">
+      <DependentUpon>TestCarListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\ReservationAlertForm.resx">
+      <DependentUpon>ReservationAlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarScheduleCopyForm.resx">
+      <DependentUpon>TestCarScheduleCopyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarScheduleDetailForm.resx">
+      <DependentUpon>TestCarScheduleDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarScheduleForm.resx">
+      <DependentUpon>TestCarScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuForm.resx">
+      <DependentUpon>MenuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MonthlyReport\ManagerNameForm.resx">
+      <DependentUpon>ManagerNameForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\OuterCar\OuterCarForm.resx">
+      <DependentUpon>OuterCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\OuterCar\OuterCarScheduleForm.resx">
+      <DependentUpon>OuterCarScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\OperationPlan\OperationPlanFavoriteForm.resx">
+      <DependentUpon>OperationPlanFavoriteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\OperationPlan\OperationPlanScheduleForm.resx">
+      <DependentUpon>OperationPlanScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\OperationPlan\OperationPlanForm.resx">
+      <DependentUpon>OperationPlanForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\OperationPlan\OperationPlanItemForm.resx">
+      <DependentUpon>OperationPlanItemForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\ReportMaterial\ReportMaterialForm.resx">
+      <DependentUpon>ReportMaterialForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\MonthlyReport\MonthlyReportForm.resx">
+      <DependentUpon>MonthlyReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\TestCarSchedule\TestCarScheduleReserveForm.resx">
+      <DependentUpon>TestCarScheduleReserveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\WorkProgress\WorkProgressForm.resx">
+      <DependentUpon>WorkProgressForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\WeeklyReport\WeeklyReportApprovalForm.resx">
+      <DependentUpon>WeeklyReportApprovalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\WeeklyReport\WeeklyReportForm.resx">
+      <DependentUpon>WeeklyReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIDevPlan\WorkProgress\WorkProgressHistoryForm.resx">
+      <DependentUpon>WorkProgressHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <Content Include="DevPlanHelp.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="UITestCar\ControlSheet\ControlSheetImportMultiRowTemplate.resx">
+      <DependentUpon>ControlSheetImportMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\ControlSheet\ControlSheetListMultiRowTemplate.resx">
+      <DependentUpon>ControlSheetListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\ControlSheet\ControlLabelIssueMultiRowTemplate.resx">
+      <DependentUpon>ControlLabelIssueMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Disposal\DisposalDepartureInputMultiRowTemplate.resx">
+      <DependentUpon>DisposalDepartureInputMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Disposal\DisposalDeadlineListMultiRowTemplate.resx">
+      <DependentUpon>DisposalDeadlineListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Disposal\DisposalDepartureInputForm.resx">
+      <DependentUpon>DisposalDepartureInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Disposal\DisposalDeadlineListForm.resx">
+      <DependentUpon>DisposalDeadlineListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ApplicationApprovalCar\ApplicationApprovalCarForm.resx">
+      <DependentUpon>ApplicationApprovalCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ApplicationApprovalCar\ParkingNumberDesignationForm.resx">
+      <DependentUpon>ParkingNumberDesignationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ApplicationApprovalCar\ApplicationApprovalCarTemplate.resx">
+      <DependentUpon>ApplicationApprovalCarTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ApplicationApprovalCar\TransferApplicationForm.resx">
+      <DependentUpon>TransferApplicationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ApplicationApprovalCar\DisposalApplicationForm.resx">
+      <DependentUpon>DisposalApplicationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\CarInspection\CarInspectionForm.resx">
+      <DependentUpon>CarInspectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\CarInspection\CarInspectionMultiRowTemplate.resx">
+      <DependentUpon>CarInspectionMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ControlSheet\ControlSheetListForm.resx">
+      <DependentUpon>ControlSheetListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ControlSheet\ControlSheetSearchForm.resx">
+      <DependentUpon>ControlSheetSearchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ControlSheet\ControlSheetSaveForm.resx">
+      <DependentUpon>ControlSheetSaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ControlSheet\ControlSheetListMultiRowTemplate.resx">
+      <DependentUpon>ControlSheetListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberForm.resx">
+      <DependentUpon>DesignatedMonthNumberForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\CarInspection\ExtractionConditionForm.resx">
+      <DependentUpon>ExtractionConditionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ApplicationApprovalCar\PendingCarForm.resx">
+      <DependentUpon>PendingCarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\ApplicationApprovalCar\PendingCarMultiRowTemplate.resx">
+      <DependentUpon>PendingCarMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab4MultiRowTemplate.resx">
+      <DependentUpon>DesignatedMonthNumberTab4MultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab2MultiRowTemplate.resx">
+      <DependentUpon>DesignatedMonthNumberTab2MultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab1MultiRowTemplate.resx">
+      <DependentUpon>DesignatedMonthNumberTab1MultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab3MultiRowTemplate.resx">
+      <DependentUpon>DesignatedMonthNumberTab3MultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\DesignatedMonthNumber\DesignatedMonthNumberTab0MultiRowTemplate.resx">
+      <DependentUpon>DesignatedMonthNumberTab0MultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\TestCarHistory\TestCarHistoryListMultiRowTemplate.resx">
+      <DependentUpon>TestCarHistoryListMultiRowTemplate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\TestCarHistory\TestCarHistoryForm.resx">
+      <DependentUpon>TestCarHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\TestCarHistory\TestCarHistoryListForm.resx">
+      <DependentUpon>TestCarHistoryListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UITestCar\Othe\TestCarHistory\TestCarUseHistoryApprovalForm.resx">
+      <DependentUpon>TestCarUseHistoryApprovalForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.Sysexe.Develop.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Presentation_ClassDiagram1.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\ExcelTemplate\Expansion1CalendarTemplate.xlsx" />
+    <None Include="Resources\ExcelTemplate\Expansion2CalendarTemplate.xlsx" />
+    <None Include="Resources\DchkMsg.PNG" />
+    <Content Include="Resources\MenuIcons\99.XeyeButton.Image.png" />
+    <Content Include="Resources\MultiRow\CommonConfigButton.png" />
+    <Content Include="Resources\MultiRow\CommonSortButton.png" />
+    <Content Include="UITestCar\ControlSheet\Label\Template\g\リース_直接印刷.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\g\固定資産_直接印刷.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\g\資産外_直接印刷.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\t\リース_直接印刷.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\t\固定資産_直接印刷.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\t\資産外_直接印刷.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\g\リース_直接印刷_フロンあり.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\g\固定資産_直接印刷_フロンあり.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\g\資産外_直接印刷_フロンあり.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\t\リース_直接印刷_フロンあり.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\t\固定資産_直接印刷_フロンあり.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="UITestCar\ControlSheet\Label\Template\t\資産外_直接印刷_フロンあり.lbl">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\icudtl.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\am.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\ar.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\bg.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\bn.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\ca.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\cs.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\da.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\de.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\el.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\en-GB.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\en-US.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\es-419.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\es.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\et.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\fa.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\fi.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\fil.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\fr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\gu.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\he.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\hi.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\hr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\hu.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\id.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\it.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\ja.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\kn.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\ko.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\lt.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\lv.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\ml.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\mr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\ms.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\nb.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\nl.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\pl.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\pt-BR.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\pt-PT.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\ro.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\ru.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\sk.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\sl.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\sr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\sv.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\sw.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\ta.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\te.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\th.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\tr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\uk.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\vi.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\zh-CN.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\locales\zh-TW.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\snapshot_blob.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x64\v8_context_snapshot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\icudtl.dat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\am.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\ar.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\bg.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\bn.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\ca.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\cs.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\da.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\de.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\el.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\en-GB.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\en-US.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\es-419.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\es.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\et.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\fa.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\fi.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\fil.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\fr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\gu.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\he.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\hi.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\hr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\hu.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\id.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\it.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\ja.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\kn.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\ko.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\lt.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\lv.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\ml.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\mr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\ms.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\nb.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\nl.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\pl.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\pt-BR.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\pt-PT.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\ro.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\ru.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\sk.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\sl.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\sr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\sv.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\sw.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\ta.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\te.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\th.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\tr.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\uk.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\vi.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\zh-CN.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\locales\zh-TW.pak">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\snapshot_blob.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\v8_context_snapshot.bin">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="x64\chrome_100_percent.pak" />
+    <None Include="x64\chrome_200_percent.pak" />
+    <None Include="x64\locales\af.pak" />
+    <None Include="x64\locales\ur.pak" />
+    <None Include="x64\resources.pak" />
+    <None Include="x64\vk_swiftshader_icd.json" />
+    <None Include="x86\chrome_100_percent.pak" />
+    <None Include="x86\chrome_200_percent.pak" />
+    <None Include="x86\locales\af.pak" />
+    <None Include="x86\locales\ur.pak" />
+    <None Include="x86\resources.pak" />
+    <None Include="x86\vk_swiftshader_icd.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.Subaru.Develop.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.Subaru.Staging.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.Subaru.Release.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.Sysexe.Release.config">
+      <DependentUpon>App.config</DependentUpon>
+    </None>
+    <None Include="App.Sysexe.Staging.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="App.Sysexe.Debug.config">
+      <DependentUpon>App.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\UICommon.csproj">
+      <Project>{bdf4ac93-ee07-4a73-be4f-39a6f8a59703}</Project>
+      <Name>UICommon</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blockdevice.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\irc_protocol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\katomic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kchart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ksmiletris.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ktip.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kword.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lassists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\List manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package_graphics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\package_system.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vcalendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lists.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jabber_protocol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_forward.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agt_action_success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_text.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\opening.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 および x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="CalendarGridWin2_2.0.4000.2012">
+      <Visible>False</Visible>
+      <ProductName>CalendarGrid for Windows Forms 2.0J Runtime 2.0.4000.2012</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="MultiRowWin10_10.0.4001.2012">
+      <Visible>False</Visible>
+      <ProductName>MultiRow for Windows Forms 10.0J Runtime 10.0.4001.2012 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIDevPlan\ProgressList\cursol\arrow_m.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIDevPlan\ProgressList\cursol\arrow_o.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIDevPlan\ProgressList\cursol\arrow_x.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIDevPlan\ProgressList\cursol\arrow_-.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIDevPlan\ProgressList\cursol\arrow_me.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <PublishFile Include="CefSharp">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CefSharp.Core">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="CefSharp.WinForms">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GrapeCity.Framework.CalendarGrid.v23">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GrapeCity.Framework.CalendarGrid.v24">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GrapeCity.Framework.InputMan.v24">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GrapeCity.Framework.PlusPak.v24">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GrapeCity.Win.CalendarGrid.v10">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GrapeCity.Win.CalendarGrid.v20">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GrapeCity.Win.Editors.v100">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GrapeCity.Win.PlusPak.Calendar.v100">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="GrapeCity.Win.PlusPak.v100">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Assembly</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\GrapeCity.Framework.CalendarGrid.v23.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="ja\GrapeCity.Win.CalendarGrid.v10.resources">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Exclude</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>Satellite</FileType>
+    </PublishFile>
+    <PublishFile Include="UITestCar\LabelTemplate\リース_直接印刷.lbl">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="UITestCar\LabelTemplate\固定資産_直接印刷.lbl">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+    <PublishFile Include="UITestCar\LabelTemplate\資産外_直接印刷.lbl">
+      <Visible>False</Visible>
+      <Group>
+      </Group>
+      <TargetPath>
+      </TargetPath>
+      <PublishState>Include</PublishState>
+      <IncludeHash>True</IncludeHash>
+      <FileType>File</FileType>
+    </PublishFile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIDevPlan\ProgressList\cursol\arrow_square.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIDevPlan\ProgressList\cursol\arrow_square_fill.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIDevPlan\ProgressList\cursol\arrow_triangle.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="UIDevPlan\ProgressList\cursol\arrow_triangle_fill.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="bpac">
+      <Guid>{90359D74-B7D9-467F-B938-3883F4CAB582}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="BrssCom">
+      <Guid>{0DB48589-3557-4664-B5E4-F6C9D5376079}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <UsingTask TaskName="TransformXml" AssemblyFile="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(MSBuildToolsVersion)\Web\Microsoft.Web.Publishing.Tasks.dll" />
+  <Target Name="AfterCompile" Condition="exists('app.$(Configuration).config')">
+    <TransformXml Source="app.config" Destination="$(IntermediateOutputPath)$(TargetFileName).config" Transform="app.$(Configuration).config" />
+    <ItemGroup>
+      <AppConfigWithTargetPath Remove="app.config" />
+      <AppConfigWithTargetPath Include="$(IntermediateOutputPath)$(TargetFileName).config">
+        <TargetPath>$(TargetFileName).config</TargetPath>
+      </AppConfigWithTargetPath>
+    </ItemGroup>
+  </Target>
+  <Target Name="AfterCompile" Condition="Exists('App.$(Configuration).config')">
+    <!--Generate transformed app config in the intermediate directory-->
+    <TransformXml Source="App.config" Destination="$(IntermediateOutputPath)$(TargetFileName).config" Transform="App.$(Configuration).config" />
+    <!--Force build process to use the transformed configuration file from now on.-->
+    <ItemGroup>
+      <AppConfigWithTargetPath Remove="App.config" />
+      <AppConfigWithTargetPath Include="$(IntermediateOutputPath)$(TargetFileName).config">
+        <TargetPath>$(TargetFileName).config</TargetPath>
+      </AppConfigWithTargetPath>
+    </ItemGroup>
+  </Target>
+  <!--Override After Publish to support ClickOnce AfterPublish. Target replaces the untransformed config file copied to the deployment directory with the transformed one.-->
+  <Target Name="AfterPublish">
+    <PropertyGroup>
+      <DeployedConfig>$(_DeploymentApplicationDir)$(TargetName)$(TargetExt).config$(_DeploymentFileMappingExtension)</DeployedConfig>
+    </PropertyGroup>
+    <!--Publish copies the untransformed App.config to deployment directory so overwrite it-->
+    <Copy Condition="Exists('$(DeployedConfig)')" SourceFiles="$(IntermediateOutputPath)$(TargetFileName).config" DestinationFiles="$(DeployedConfig)" />
+  </Target>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\cef.redist.x64.114.2.12\build\cef.redist.x64.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.114.2.12\build\cef.redist.x64.props'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.114.2.12\build\cef.redist.x86.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.114.2.12\build\cef.redist.x86.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.114.2.120\build\CefSharp.Common.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.114.2.120\build\CefSharp.Common.props'))" />
+    <Error Condition="!Exists('..\packages\CefSharp.Common.114.2.120\build\CefSharp.Common.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\CefSharp.Common.114.2.120\build\CefSharp.Common.targets'))" />
+  </Target>
+  <Import Project="..\packages\CefSharp.Common.114.2.120\build\CefSharp.Common.targets" Condition="Exists('..\packages\CefSharp.Common.114.2.120\build\CefSharp.Common.targets')" />
+</Project>
