@@ -1,0 +1,1 @@
+ALTER TABLE ŽŽŒ±ŽÔŠî–{î•ñ ADD ( "Õ“ËŽŽŒ±Ï" NUMBER(8, 0) ) ;

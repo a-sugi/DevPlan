@@ -1,0 +1,1 @@
+ALTER TABLE トラック_発着地 MODIFY (予約_ID NUMBER(10, 0) )

@@ -1,0 +1,4 @@
+ALTER TABLE 試験計画_DCHK_指摘リスト MODIFY (担当者_ID VARCHAR2(40));
+ALTER TABLE 試験計画_DCHK_指摘リスト MODIFY (担当者_TEL VARCHAR2(40));
+
+commit;

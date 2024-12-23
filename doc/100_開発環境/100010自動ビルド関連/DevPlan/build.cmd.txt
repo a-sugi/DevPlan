@@ -1,0 +1,47 @@
+@ECHO OFF
+rem ---前提条件--
+rem ・VS2015がInstallされていること
+rem ・CalendarGrid v1.0がActivationされていること
+rem ・TFSサーバ（192.168.140.13）へAccessできること
+rem ・本バッチがSourceフォルダ（DevPlan）のParentFolderへ配置されていること
+rem   [src]
+rem     ｜-[DevPlan]
+rem     ｜-[build.cmd]
+rem ---制限事項--
+rem ・publish.htmは生成されない。
+rem ---ここまで--
+
+
+SET MSBUILD_PATH="%ProgramFiles(x86)%\MSBuild\14.0\Bin"
+
+SET TARGET_PATH=.
+
+SET ASSEMBLY_NAME="開発計画表システム"
+SET PRODUCT_NAME="開発計画表"
+SET SUITE_NAME=""
+SET CONFIGURATION=Sysexe.Release
+SET OUTPUT_PATH=bin\Sysexe.Release\
+SET PUBLISH_PATH=..\..\tmp\
+SET TMP_PATH=.\tmp
+SET SERVER_PATH="\\192.168.140.13\gj1tds\DevPlan"
+SET INSTALL_URL=http://gj1tds.gkh.auto3.subaru.net/devplan/
+SET SUPPORT_URL=http://gj1tds.gkh.auto3.subaru.net/devplan/
+SET ERROR_URL=http://gj1tds.gkh.auto3.subaru.net/devplan/
+SET BOOTSTRAPPER_URL=http://gj1tds.gkh.auto3.subaru.net/Components
+
+
+ECHO 発行先を削除
+rd /s /q %TMP_PATH%\
+
+ECHO ビルド及び発行
+%MSBUILD_PATH%\msbuild.exe %TARGET_PATH%\DevPlan\Presentation\Presentation.csproj /t:Clean;Publish /p:Configuration=%CONFIGURATION% /p:OutputPath=%OUTPUT_PATH% /t:publish /p:PublishDir=%PUBLISH_PATH% /p:InstallUrl=%INSTALL_URL% /p:SupportUrl=%SUPPORT_URL% /p:ErrorReportUrl=%ERROR_URL% /p:BootstrapperEnabled=true /p:BootstrapperComponentsUrl=%BOOTSTRAPPER_URL% /p:ProductName=%PRODUCT_NAME% /p:PublisherName="SUBARU Corporation" /p:SuiteName=%SUITE_NAME% > %TARGET_PATH%\build.log
+
+
+ECHO 発行先を削除(.Net,CalendarGrid)
+rd /s /q %TMP_PATH%\DotNetFX452\
+rd /s /q %TMP_PATH%\CalendarGridWin1_1.0.2015.1106\
+
+ECHO 発行資源をサーバへコピー
+rem xcopy /E /Y %TMP_PATH% %SERVER_PATH%
+
+pause

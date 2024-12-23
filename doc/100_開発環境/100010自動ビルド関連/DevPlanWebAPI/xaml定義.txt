@@ -1,0 +1,21 @@
+※【注意】以下の設定内容は、弊社（システムエグゼ）環境の値となっています。
+
+■「xaml定義」
+「プロセス」-「2.ビルド」-「5.詳細設定」-「MSBuild 引数」
+/p:Configuration=Sysexe.Debug /p:CreatePackageOnPublish=true /p:SkipExtraFilesOnServer=True /p:DeployOnBuild=True /p:DeployTarget=MsDeployPublish /p:MSDeployPublishMethod=InProc /p:DeleteExistingFiles=False /p:MSDeployServiceUrl=http://192.168.140.13:8083 /p:DeployIISAppPath="DevPlanApi/v1"
+
+
+■「xaml定義」情報の格納場所
+TFSがインストールされているSQLServer
+データベース名：「Tfs_DevPlanCollection」
+テーブル名：「tbl_BuildDefinition」
+カラム名：「ProcessParameters」
+
+※ProcessParameters内容
+<Dictionary x:TypeArguments="x:String, x:Object" xmlns="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:mtbc="clr-namespace:Microsoft.TeamFoundation.Build.Common;assembly=Microsoft.TeamFoundation.Build.Common" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Array x:Key="ProjectsToBuild" Type="x:String">
+    <x:String>$/4e4bde28-9751-42c1-9e69-6aafc907b510/TestCar/DevPlanWebAPI/WebAPI/WebAPI.csproj</x:String>
+  </x:Array>
+  <mtbc:BuildParameter x:Key="AdvancedBuildSettings">{"MSBuildArguments":"/p:Configuration=Sysexe.Debug /p:CreatePackageOnPublish=true /p:SkipExtraFilesOnServer=True /p:DeployOnBuild=True /p:DeployTarget=MsDeployPublish /p:MSDeployPublishMethod=InProc /p:DeleteExistingFiles=False /p:MSDeployServiceUrl=http://192.168.140.13:8083 /p:DeployIISAppPath=\"DevPlanApi/v1\"","MSBuildPlatform":"Auto","PreActionScriptPath":"","PreActionScriptArguments":"","PostActionScriptPath":"","PostActionScriptArguments":"","RunCodeAnalysis":"AsConfigured"}</mtbc:BuildParameter>
+  <x:Boolean x:Key="CleanBuild">False</x:Boolean>
+</Dictionary>

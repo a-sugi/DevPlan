@@ -1,0 +1,1 @@
+ALTER TABLE "ŽŽŒ±Œv‰æ_CAP_‘Î‰ž" ADD "•ûŒü•t‚¯Šm’èŠúŒÀ" DATE

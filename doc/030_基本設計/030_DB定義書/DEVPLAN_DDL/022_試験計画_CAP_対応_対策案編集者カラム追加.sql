@@ -1,0 +1,2 @@
+ALTER TABLE ŽŽŒ±Œv‰æ_CAP_‘Î‰ž ADD (‘ÎôˆÄ•ÒWŽÒ_ID VARCHAR2(10));
+commit;

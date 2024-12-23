@@ -1,0 +1,7 @@
+CREATE TABLE 日程項目表示設定情報 (
+	"開発符号" VARCHAR2(20) NOT NULL,  
+	"表示列名" VARCHAR2(1000), 
+	"非表示列名" VARCHAR2(1000), 
+	"固定列数" NUMBER(3,0),
+	CONSTRAINT "HYOUJI_GENERAL_CODE_PKEY" PRIMARY KEY ("開発符号")
+);

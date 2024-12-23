@@ -1,0 +1,80 @@
+--全体連絡先設定
+INSERT
+INTO CONTACT_INFO(ID, GENERAL_CODE, PERSONEL_ID, TEL, STATUS, CATEGORY_ID, REMARKS, FUNCTION_ID)
+VALUES(1,NULL,NULL,NULL,'全',NULL, 'GJ1 車両情報２担当(8-22-2509)', NULL);
+
+--試験車投入
+INSERT 
+INTO CONTACT_INFO(ID, GENERAL_CODE, PERSONEL_ID, TEL, STATUS, CATEGORY_ID, REMARKS, FUNCTION_ID) 
+SELECT
+  (SELECT MAX(ID) FROM CONTACT_INFO) + ROW_NUMBER() OVER (ORDER BY ID)
+  , 試験計画_外製車日程_管理者.GENERAL_CODE
+  , 試験計画_外製車日程_管理者.PERSONEL_ID
+  , 試験計画_外製車日程_管理者.TEL
+  , 試験計画_外製車日程_管理者.正副
+  , NULL
+  , NULL
+  , '11' AS A
+FROM
+  試験計画_外製車日程_管理者
+WHERE
+  正副 IN ('正', '副') 
+  AND GENERAL_CODE IS NOT NULL;
+
+--カーシェア投入
+INSERT 
+INTO CONTACT_INFO(ID, GENERAL_CODE, PERSONEL_ID, TEL, STATUS, CATEGORY_ID, REMARKS, FUNCTION_ID) 
+SELECT
+  (SELECT MAX(ID) FROM CONTACT_INFO) + ROW_NUMBER() OVER (ORDER BY ID)
+  , 試験計画_外製車日程_管理者.GENERAL_CODE
+  , 試験計画_外製車日程_管理者.PERSONEL_ID
+  , 試験計画_外製車日程_管理者.TEL
+  , 試験計画_外製車日程_管理者.正副
+  , NULL
+  , NULL
+  , '12'  AS A
+FROM
+  試験計画_外製車日程_管理者 
+  LEFT JOIN ( 
+    SELECT
+      CAR_GROUP 
+    FROM
+      GENERAL_CODE 
+    GROUP BY
+      CAR_GROUP
+  ) CAR 
+    ON 試験計画_外製車日程_管理者.GENERAL_CODE = CAR.CAR_GROUP 
+WHERE
+  CAR.CAR_GROUP IS NOT NULL 
+  AND 正副 IN ('正', '副') 
+  AND GENERAL_CODE IS NOT NULL;
+
+--外製車投入
+INSERT 
+INTO CONTACT_INFO(ID, GENERAL_CODE, PERSONEL_ID, TEL, STATUS, CATEGORY_ID, REMARKS, FUNCTION_ID) 
+SELECT
+  (SELECT MAX(ID) FROM CONTACT_INFO) + ROW_NUMBER() OVER (ORDER BY ID)
+  , 試験計画_外製車日程_管理者.GENERAL_CODE
+  , 試験計画_外製車日程_管理者.PERSONEL_ID
+  , 試験計画_外製車日程_管理者.TEL
+  , 試験計画_外製車日程_管理者.正副
+  , NULL
+  , NULL
+  , '13'  AS A
+FROM
+  試験計画_外製車日程_管理者 
+  LEFT JOIN ( 
+    SELECT
+      CAR_GROUP 
+    FROM
+      GENERAL_CODE 
+    GROUP BY
+      CAR_GROUP
+  ) CAR 
+    ON 試験計画_外製車日程_管理者.GENERAL_CODE = CAR.CAR_GROUP 
+WHERE
+  CAR.CAR_GROUP IS NOT NULL 
+  AND 正副 IN ('正', '副') 
+  AND GENERAL_CODE IS NOT NULL;
+
+COMMIT;

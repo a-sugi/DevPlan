@@ -1,0 +1,15 @@
+
+SELECT COUNT(*) FROM EXCEL_INPUT;
+
+INSERT 
+INTO EXCEL_INPUT(ID, 開催日_ID, 登録日, 登録者_ID) 
+SELECT
+      ROW_NUMBER() OVER (ORDER BY ID) AS ID
+    , ID AS 開催日_ID
+    , SYSDATE
+    , '00001' 
+FROM
+    試験計画_DCHK_開催日; 
+
+SELECT COUNT(*) FROM EXCEL_INPUT;
+
