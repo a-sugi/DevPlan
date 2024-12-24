@@ -1,0 +1,4 @@
+oracleƒ†[ƒU‚É‚Äcron“o˜^
+
+00 2 1 * * /ope/tool/Update_Calendar.sh > /ope/log/Update_Calendar.log
+
