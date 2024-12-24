@@ -33,6 +33,8 @@
             this.label46 = new System.Windows.Forms.Label();
             this.HistoryNoLabel = new System.Windows.Forms.Label();
             this.HistoryTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.RefrigerantTypeComboBox = new System.Windows.Forms.ComboBox();
+            this.CarRecycleComboBox = new System.Windows.Forms.ComboBox();
             this.FirstEntryDateDateTimePicker = new DevPlan.Presentation.UC.NullableDateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
             this.HistoryLicenseDayDateTimePicker = new DevPlan.Presentation.UC.NullableDateTimePicker();
@@ -112,8 +114,6 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.CarRecycleComboBox = new System.Windows.Forms.ComboBox();
-            this.RefrigerantTypeComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.ListFormPictureBox)).BeginInit();
             this.ListFormMainPanel.SuspendLayout();
             this.HistoryTableLayoutPanel.SuspendLayout();
@@ -133,12 +133,14 @@
             // 
             // CloseButton
             // 
-            this.CloseButton.Location = new System.Drawing.Point(883, 343);
+            this.CloseButton.Location = new System.Drawing.Point(1104, 429);
+            this.CloseButton.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.CloseButton.TabIndex = 1005;
             // 
             // ListFormTitleLabel
             // 
-            this.ListFormTitleLabel.Size = new System.Drawing.Size(240, 19);
+            this.ListFormTitleLabel.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.ListFormTitleLabel.Size = new System.Drawing.Size(298, 24);
             this.ListFormTitleLabel.Text = "タイトルが設定されていません";
             this.ListFormTitleLabel.UseMnemonic = false;
             // 
@@ -148,7 +150,8 @@
             this.ListFormMainPanel.Controls.Add(this.HistoryTableLayoutPanel);
             this.ListFormMainPanel.Controls.Add(this.HistoryNoLabel);
             this.ListFormMainPanel.Controls.Add(this.label46);
-            this.ListFormMainPanel.Size = new System.Drawing.Size(998, 332);
+            this.ListFormMainPanel.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.ListFormMainPanel.Size = new System.Drawing.Size(1247, 414);
             this.ListFormMainPanel.TabIndex = 100;
             this.ListFormMainPanel.TabStop = true;
             this.ListFormMainPanel.Controls.SetChildIndex(this.label46, 0);
@@ -172,9 +175,10 @@
             // 
             this.EntryButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.EntryButton.BackColor = System.Drawing.SystemColors.Control;
-            this.EntryButton.Location = new System.Drawing.Point(5, 343);
+            this.EntryButton.Location = new System.Drawing.Point(6, 429);
+            this.EntryButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.EntryButton.Name = "EntryButton";
-            this.EntryButton.Size = new System.Drawing.Size(120, 30);
+            this.EntryButton.Size = new System.Drawing.Size(150, 38);
             this.EntryButton.TabIndex = 1000;
             this.EntryButton.Text = "登録";
             this.EntryButton.UseVisualStyleBackColor = false;
@@ -183,10 +187,10 @@
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(3, 43);
+            this.label46.Location = new System.Drawing.Point(4, 54);
             this.label46.Margin = new System.Windows.Forms.Padding(0);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(75, 15);
+            this.label46.Size = new System.Drawing.Size(95, 19);
             this.label46.TabIndex = 1015;
             this.label46.Text = "履歴番号：";
             // 
@@ -194,10 +198,10 @@
             // 
             this.HistoryNoLabel.AutoSize = true;
             this.HistoryNoLabel.Font = new System.Drawing.Font("MS UI Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.HistoryNoLabel.Location = new System.Drawing.Point(78, 43);
+            this.HistoryNoLabel.Location = new System.Drawing.Point(98, 54);
             this.HistoryNoLabel.Margin = new System.Windows.Forms.Padding(0);
             this.HistoryNoLabel.Name = "HistoryNoLabel";
-            this.HistoryNoLabel.Size = new System.Drawing.Size(16, 15);
+            this.HistoryNoLabel.Size = new System.Drawing.Size(20, 19);
             this.HistoryNoLabel.TabIndex = 1018;
             this.HistoryNoLabel.Text = "1";
             // 
@@ -207,13 +211,13 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.HistoryTableLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.HistoryTableLayoutPanel.ColumnCount = 8;
-            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 150F));
-            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 105F));
+            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
+            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
+            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
+            this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 131F));
             this.HistoryTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.HistoryTableLayoutPanel.Controls.Add(this.RefrigerantTypeComboBox, 3, 9);
             this.HistoryTableLayoutPanel.Controls.Add(this.CarRecycleComboBox, 3, 8);
@@ -292,23 +296,54 @@
             this.HistoryTableLayoutPanel.Controls.Add(this.panel14, 0, 0);
             this.HistoryTableLayoutPanel.Controls.Add(this.label3, 2, 8);
             this.HistoryTableLayoutPanel.Controls.Add(this.label4, 2, 9);
-            this.HistoryTableLayoutPanel.Location = new System.Drawing.Point(2, 66);
+            this.HistoryTableLayoutPanel.Location = new System.Drawing.Point(2, 82);
+            this.HistoryTableLayoutPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryTableLayoutPanel.Name = "HistoryTableLayoutPanel";
             this.HistoryTableLayoutPanel.RowCount = 10;
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.HistoryTableLayoutPanel.Size = new System.Drawing.Size(992, 261);
+            this.HistoryTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.HistoryTableLayoutPanel.Size = new System.Drawing.Size(1240, 326);
             this.HistoryTableLayoutPanel.TabIndex = 1019;
             this.HistoryTableLayoutPanel.TabStop = true;
+            // 
+            // RefrigerantTypeComboBox
+            // 
+            this.RefrigerantTypeComboBox.DisplayMember = "NAME";
+            this.RefrigerantTypeComboBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.RefrigerantTypeComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
+            this.RefrigerantTypeComboBox.FormattingEnabled = true;
+            this.RefrigerantTypeComboBox.Location = new System.Drawing.Point(446, 293);
+            this.RefrigerantTypeComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.RefrigerantTypeComboBox.MaxLength = 50;
+            this.RefrigerantTypeComboBox.Name = "RefrigerantTypeComboBox";
+            this.RefrigerantTypeComboBox.Size = new System.Drawing.Size(179, 23);
+            this.RefrigerantTypeComboBox.TabIndex = 1144;
+            this.RefrigerantTypeComboBox.Tag = "ItemName(A_C冷媒種類);Byte(50)";
+            this.RefrigerantTypeComboBox.ValueMember = "NAME";
+            // 
+            // CarRecycleComboBox
+            // 
+            this.CarRecycleComboBox.DisplayMember = "NAME";
+            this.CarRecycleComboBox.Dock = System.Windows.Forms.DockStyle.Left;
+            this.CarRecycleComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
+            this.CarRecycleComboBox.FormattingEnabled = true;
+            this.CarRecycleComboBox.Location = new System.Drawing.Point(446, 261);
+            this.CarRecycleComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CarRecycleComboBox.MaxLength = 50;
+            this.CarRecycleComboBox.Name = "CarRecycleComboBox";
+            this.CarRecycleComboBox.Size = new System.Drawing.Size(179, 23);
+            this.CarRecycleComboBox.TabIndex = 1143;
+            this.CarRecycleComboBox.Tag = "ItemName(自動車ﾘｻｲｸﾙ法);Byte(50)";
+            this.CarRecycleComboBox.ValueMember = "NAME";
             // 
             // FirstEntryDateDateTimePicker
             // 
@@ -316,12 +351,13 @@
             this.FirstEntryDateDateTimePicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.FirstEntryDateDateTimePicker.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.FirstEntryDateDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FirstEntryDateDateTimePicker.Location = new System.Drawing.Point(609, 160);
+            this.FirstEntryDateDateTimePicker.Location = new System.Drawing.Point(761, 197);
+            this.FirstEntryDateDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FirstEntryDateDateTimePicker.Name = "FirstEntryDateDateTimePicker";
-            this.FirstEntryDateDateTimePicker.Size = new System.Drawing.Size(144, 19);
+            this.FirstEntryDateDateTimePicker.Size = new System.Drawing.Size(180, 22);
             this.FirstEntryDateDateTimePicker.TabIndex = 127;
             this.FirstEntryDateDateTimePicker.Tag = "ItemName(初年度登録年月)";
-            this.FirstEntryDateDateTimePicker.Value = new System.DateTime(2024, 3, 1, 0, 0, 0, 0);
+            this.FirstEntryDateDateTimePicker.Value = new System.DateTime(2024, 4, 1, 0, 0, 0, 0);
             // 
             // label10
             // 
@@ -329,10 +365,10 @@
             this.label10.BackColor = System.Drawing.Color.Aquamarine;
             this.label10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label10.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label10.Location = new System.Drawing.Point(505, 157);
+            this.label10.Location = new System.Drawing.Point(631, 193);
             this.label10.Margin = new System.Windows.Forms.Padding(0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 25);
+            this.label10.Size = new System.Drawing.Size(125, 31);
             this.label10.TabIndex = 1140;
             this.label10.Text = "初年度登録年月";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -342,12 +378,13 @@
             this.HistoryLicenseDayDateTimePicker.CustomFormat = "yyyy/MM/dd";
             this.HistoryLicenseDayDateTimePicker.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryLicenseDayDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HistoryLicenseDayDateTimePicker.Location = new System.Drawing.Point(609, 186);
+            this.HistoryLicenseDayDateTimePicker.Location = new System.Drawing.Point(761, 229);
+            this.HistoryLicenseDayDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryLicenseDayDateTimePicker.Name = "HistoryLicenseDayDateTimePicker";
-            this.HistoryLicenseDayDateTimePicker.Size = new System.Drawing.Size(144, 19);
+            this.HistoryLicenseDayDateTimePicker.Size = new System.Drawing.Size(179, 22);
             this.HistoryLicenseDayDateTimePicker.TabIndex = 128;
             this.HistoryLicenseDayDateTimePicker.Tag = "ItemName(車検登録日)";
-            this.HistoryLicenseDayDateTimePicker.Value = new System.DateTime(2024, 3, 12, 0, 0, 0, 0);
+            this.HistoryLicenseDayDateTimePicker.Value = new System.DateTime(2024, 4, 22, 0, 0, 0, 0);
             // 
             // HistoryEVDeviceComboBox
             // 
@@ -355,10 +392,11 @@
             this.HistoryEVDeviceComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryEVDeviceComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryEVDeviceComboBox.FormattingEnabled = true;
-            this.HistoryEVDeviceComboBox.Location = new System.Drawing.Point(357, 108);
+            this.HistoryEVDeviceComboBox.Location = new System.Drawing.Point(446, 133);
+            this.HistoryEVDeviceComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryEVDeviceComboBox.MaxLength = 50;
             this.HistoryEVDeviceComboBox.Name = "HistoryEVDeviceComboBox";
-            this.HistoryEVDeviceComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryEVDeviceComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryEVDeviceComboBox.TabIndex = 114;
             this.HistoryEVDeviceComboBox.Tag = "ItemName(EVデバイス);Byte(50)";
             this.HistoryEVDeviceComboBox.ValueMember = "NAME";
@@ -369,10 +407,10 @@
             this.label2.BackColor = System.Drawing.Color.Aquamarine;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label2.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label2.Location = new System.Drawing.Point(253, 105);
+            this.label2.Location = new System.Drawing.Point(316, 129);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 25);
+            this.label2.Size = new System.Drawing.Size(125, 31);
             this.label2.TabIndex = 1137;
             this.label2.Text = "電動デバイス";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -380,10 +418,11 @@
             // HistoryOuterCarNameTextBox
             // 
             this.HistoryOuterCarNameTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryOuterCarNameTextBox.Location = new System.Drawing.Point(105, 186);
+            this.HistoryOuterCarNameTextBox.Location = new System.Drawing.Point(131, 229);
+            this.HistoryOuterCarNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryOuterCarNameTextBox.MaxLength = 50;
             this.HistoryOuterCarNameTextBox.Name = "HistoryOuterCarNameTextBox";
-            this.HistoryOuterCarNameTextBox.Size = new System.Drawing.Size(144, 19);
+            this.HistoryOuterCarNameTextBox.Size = new System.Drawing.Size(179, 22);
             this.HistoryOuterCarNameTextBox.TabIndex = 107;
             this.HistoryOuterCarNameTextBox.Tag = "ItemName(外製車名);Byte(50)";
             // 
@@ -392,10 +431,10 @@
             this.HistoryRemarksPanel.BackColor = System.Drawing.Color.White;
             this.HistoryTableLayoutPanel.SetColumnSpan(this.HistoryRemarksPanel, 2);
             this.HistoryRemarksPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.HistoryRemarksPanel.Location = new System.Drawing.Point(757, 209);
+            this.HistoryRemarksPanel.Location = new System.Drawing.Point(946, 257);
             this.HistoryRemarksPanel.Margin = new System.Windows.Forms.Padding(0);
             this.HistoryRemarksPanel.Name = "HistoryRemarksPanel";
-            this.HistoryRemarksPanel.Size = new System.Drawing.Size(234, 25);
+            this.HistoryRemarksPanel.Size = new System.Drawing.Size(292, 31);
             this.HistoryRemarksPanel.TabIndex = 1135;
             this.HistoryRemarksPanel.TabStop = true;
             // 
@@ -405,12 +444,13 @@
             this.HistoryAbolitionShipsDayDateTimePicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HistoryAbolitionShipsDayDateTimePicker.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryAbolitionShipsDayDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HistoryAbolitionShipsDayDateTimePicker.Location = new System.Drawing.Point(866, 4);
+            this.HistoryAbolitionShipsDayDateTimePicker.Location = new System.Drawing.Point(1082, 5);
+            this.HistoryAbolitionShipsDayDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryAbolitionShipsDayDateTimePicker.Name = "HistoryAbolitionShipsDayDateTimePicker";
-            this.HistoryAbolitionShipsDayDateTimePicker.Size = new System.Drawing.Size(124, 19);
+            this.HistoryAbolitionShipsDayDateTimePicker.Size = new System.Drawing.Size(154, 22);
             this.HistoryAbolitionShipsDayDateTimePicker.TabIndex = 131;
             this.HistoryAbolitionShipsDayDateTimePicker.Tag = "ItemName(廃艦日)";
-            this.HistoryAbolitionShipsDayDateTimePicker.Value = new System.DateTime(2024, 3, 12, 0, 0, 0, 0);
+            this.HistoryAbolitionShipsDayDateTimePicker.Value = new System.DateTime(2024, 4, 22, 0, 0, 0, 0);
             // 
             // HistoryInspectionDayDateTimePicker
             // 
@@ -418,12 +458,13 @@
             this.HistoryInspectionDayDateTimePicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HistoryInspectionDayDateTimePicker.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryInspectionDayDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HistoryInspectionDayDateTimePicker.Location = new System.Drawing.Point(609, 212);
+            this.HistoryInspectionDayDateTimePicker.Location = new System.Drawing.Point(761, 261);
+            this.HistoryInspectionDayDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryInspectionDayDateTimePicker.Name = "HistoryInspectionDayDateTimePicker";
-            this.HistoryInspectionDayDateTimePicker.Size = new System.Drawing.Size(144, 19);
+            this.HistoryInspectionDayDateTimePicker.Size = new System.Drawing.Size(180, 22);
             this.HistoryInspectionDayDateTimePicker.TabIndex = 129;
             this.HistoryInspectionDayDateTimePicker.Tag = "ItemName(車検期限)";
-            this.HistoryInspectionDayDateTimePicker.Value = new System.DateTime(2024, 3, 12, 0, 0, 0, 0);
+            this.HistoryInspectionDayDateTimePicker.Value = new System.DateTime(2024, 4, 22, 0, 0, 0, 0);
             // 
             // HistoryReceiptUserComboBox
             // 
@@ -431,10 +472,11 @@
             this.HistoryReceiptUserComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryReceiptUserComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryReceiptUserComboBox.FormattingEnabled = true;
-            this.HistoryReceiptUserComboBox.Location = new System.Drawing.Point(866, 186);
+            this.HistoryReceiptUserComboBox.Location = new System.Drawing.Point(1082, 229);
+            this.HistoryReceiptUserComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryReceiptUserComboBox.MaxLength = 50;
             this.HistoryReceiptUserComboBox.Name = "HistoryReceiptUserComboBox";
-            this.HistoryReceiptUserComboBox.Size = new System.Drawing.Size(124, 20);
+            this.HistoryReceiptUserComboBox.Size = new System.Drawing.Size(154, 23);
             this.HistoryReceiptUserComboBox.TabIndex = 141;
             this.HistoryReceiptUserComboBox.Tag = "ItemName(受領者);Byte(50)";
             this.HistoryReceiptUserComboBox.ValueMember = "CODE";
@@ -447,10 +489,11 @@
             this.HistoryReceiptDestinationComboBox.Enabled = false;
             this.HistoryReceiptDestinationComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryReceiptDestinationComboBox.FormattingEnabled = true;
-            this.HistoryReceiptDestinationComboBox.Location = new System.Drawing.Point(866, 108);
+            this.HistoryReceiptDestinationComboBox.Location = new System.Drawing.Point(1082, 133);
+            this.HistoryReceiptDestinationComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryReceiptDestinationComboBox.MaxLength = 20;
             this.HistoryReceiptDestinationComboBox.Name = "HistoryReceiptDestinationComboBox";
-            this.HistoryReceiptDestinationComboBox.Size = new System.Drawing.Size(124, 20);
+            this.HistoryReceiptDestinationComboBox.Size = new System.Drawing.Size(154, 23);
             this.HistoryReceiptDestinationComboBox.TabIndex = 138;
             this.HistoryReceiptDestinationComboBox.Tag = "ItemName(受領先);Byte(20)";
             this.HistoryReceiptDestinationComboBox.ValueMember = "受領先";
@@ -461,10 +504,10 @@
             this.label37.BackColor = System.Drawing.Color.Aquamarine;
             this.label37.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label37.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label37.Location = new System.Drawing.Point(757, 105);
+            this.label37.Location = new System.Drawing.Point(946, 129);
             this.label37.Margin = new System.Windows.Forms.Padding(0);
             this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(105, 25);
+            this.label37.Size = new System.Drawing.Size(131, 31);
             this.label37.TabIndex = 1134;
             this.label37.Text = "受領先";
             this.label37.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -473,10 +516,11 @@
             // 
             this.HistoryKenmeiPlateNumberTextBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryKenmeiPlateNumberTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryKenmeiPlateNumberTextBox.Location = new System.Drawing.Point(609, 82);
+            this.HistoryKenmeiPlateNumberTextBox.Location = new System.Drawing.Point(761, 101);
+            this.HistoryKenmeiPlateNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryKenmeiPlateNumberTextBox.MaxLength = 50;
             this.HistoryKenmeiPlateNumberTextBox.Name = "HistoryKenmeiPlateNumberTextBox";
-            this.HistoryKenmeiPlateNumberTextBox.Size = new System.Drawing.Size(144, 19);
+            this.HistoryKenmeiPlateNumberTextBox.Size = new System.Drawing.Size(179, 22);
             this.HistoryKenmeiPlateNumberTextBox.TabIndex = 123;
             this.HistoryKenmeiPlateNumberTextBox.Tag = "ItemName(研命ナンバー);Byte(50)";
             // 
@@ -487,10 +531,11 @@
             this.HistoryReceiptSectionGroupComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.HistoryReceiptSectionGroupComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryReceiptSectionGroupComboBox.FormattingEnabled = true;
-            this.HistoryReceiptSectionGroupComboBox.Location = new System.Drawing.Point(866, 160);
+            this.HistoryReceiptSectionGroupComboBox.Location = new System.Drawing.Point(1082, 197);
+            this.HistoryReceiptSectionGroupComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryReceiptSectionGroupComboBox.MaxLength = 20;
             this.HistoryReceiptSectionGroupComboBox.Name = "HistoryReceiptSectionGroupComboBox";
-            this.HistoryReceiptSectionGroupComboBox.Size = new System.Drawing.Size(124, 20);
+            this.HistoryReceiptSectionGroupComboBox.Size = new System.Drawing.Size(154, 23);
             this.HistoryReceiptSectionGroupComboBox.TabIndex = 140;
             this.HistoryReceiptSectionGroupComboBox.Tag = "ItemName(受領部署)";
             this.HistoryReceiptSectionGroupComboBox.ValueMember = "CODE";
@@ -503,10 +548,11 @@
             this.HistoryControlSectionGroupComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.HistoryControlSectionGroupComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryControlSectionGroupComboBox.FormattingEnabled = true;
-            this.HistoryControlSectionGroupComboBox.Location = new System.Drawing.Point(609, 56);
+            this.HistoryControlSectionGroupComboBox.Location = new System.Drawing.Point(761, 69);
+            this.HistoryControlSectionGroupComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryControlSectionGroupComboBox.MaxLength = 20;
             this.HistoryControlSectionGroupComboBox.Name = "HistoryControlSectionGroupComboBox";
-            this.HistoryControlSectionGroupComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryControlSectionGroupComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryControlSectionGroupComboBox.TabIndex = 122;
             this.HistoryControlSectionGroupComboBox.Tag = "ItemName(管理責任部署)";
             this.HistoryControlSectionGroupComboBox.ValueMember = "CODE";
@@ -516,10 +562,11 @@
             // 
             this.HistoryLicensePlateNumberTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HistoryLicensePlateNumberTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryLicensePlateNumberTextBox.Location = new System.Drawing.Point(609, 134);
+            this.HistoryLicensePlateNumberTextBox.Location = new System.Drawing.Point(761, 165);
+            this.HistoryLicensePlateNumberTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryLicensePlateNumberTextBox.MaxLength = 50;
             this.HistoryLicensePlateNumberTextBox.Name = "HistoryLicensePlateNumberTextBox";
-            this.HistoryLicensePlateNumberTextBox.Size = new System.Drawing.Size(144, 19);
+            this.HistoryLicensePlateNumberTextBox.Size = new System.Drawing.Size(180, 22);
             this.HistoryLicensePlateNumberTextBox.TabIndex = 126;
             this.HistoryLicensePlateNumberTextBox.Tag = "ItemName(登録ナンバー);Byte(50)";
             // 
@@ -527,10 +574,11 @@
             // 
             this.HistoryFixedAssetNoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HistoryFixedAssetNoTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryFixedAssetNoTextBox.Location = new System.Drawing.Point(609, 108);
+            this.HistoryFixedAssetNoTextBox.Location = new System.Drawing.Point(761, 133);
+            this.HistoryFixedAssetNoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryFixedAssetNoTextBox.MaxLength = 10;
             this.HistoryFixedAssetNoTextBox.Name = "HistoryFixedAssetNoTextBox";
-            this.HistoryFixedAssetNoTextBox.Size = new System.Drawing.Size(144, 19);
+            this.HistoryFixedAssetNoTextBox.Size = new System.Drawing.Size(180, 22);
             this.HistoryFixedAssetNoTextBox.TabIndex = 125;
             this.HistoryFixedAssetNoTextBox.Tag = "ItemName(固定資産NO);Byte(10)";
             // 
@@ -540,10 +588,11 @@
             this.HistoryGeneralCodeComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryGeneralCodeComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryGeneralCodeComboBox.FormattingEnabled = true;
-            this.HistoryGeneralCodeComboBox.Location = new System.Drawing.Point(105, 56);
+            this.HistoryGeneralCodeComboBox.Location = new System.Drawing.Point(131, 69);
+            this.HistoryGeneralCodeComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryGeneralCodeComboBox.MaxLength = 20;
             this.HistoryGeneralCodeComboBox.Name = "HistoryGeneralCodeComboBox";
-            this.HistoryGeneralCodeComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryGeneralCodeComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryGeneralCodeComboBox.TabIndex = 102;
             this.HistoryGeneralCodeComboBox.Tag = "ItemName(開発符号);Byte(20)";
             this.HistoryGeneralCodeComboBox.ValueMember = "NAME";
@@ -552,10 +601,11 @@
             // 
             this.HistoryTestStartCertificateTextBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryTestStartCertificateTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryTestStartCertificateTextBox.Location = new System.Drawing.Point(866, 56);
+            this.HistoryTestStartCertificateTextBox.Location = new System.Drawing.Point(1082, 69);
+            this.HistoryTestStartCertificateTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryTestStartCertificateTextBox.MaxLength = 50;
             this.HistoryTestStartCertificateTextBox.Name = "HistoryTestStartCertificateTextBox";
-            this.HistoryTestStartCertificateTextBox.Size = new System.Drawing.Size(124, 19);
+            this.HistoryTestStartCertificateTextBox.Size = new System.Drawing.Size(154, 22);
             this.HistoryTestStartCertificateTextBox.TabIndex = 136;
             this.HistoryTestStartCertificateTextBox.Tag = "ItemName(試験着手証明文書);Byte(50)";
             // 
@@ -565,12 +615,13 @@
             this.HistoryReceiptDayDateTimePicker.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryReceiptDayDateTimePicker.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryReceiptDayDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HistoryReceiptDayDateTimePicker.Location = new System.Drawing.Point(866, 134);
+            this.HistoryReceiptDayDateTimePicker.Location = new System.Drawing.Point(1082, 165);
+            this.HistoryReceiptDayDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryReceiptDayDateTimePicker.Name = "HistoryReceiptDayDateTimePicker";
-            this.HistoryReceiptDayDateTimePicker.Size = new System.Drawing.Size(124, 19);
+            this.HistoryReceiptDayDateTimePicker.Size = new System.Drawing.Size(154, 22);
             this.HistoryReceiptDayDateTimePicker.TabIndex = 139;
             this.HistoryReceiptDayDateTimePicker.Tag = "ItemName(受領日)";
-            this.HistoryReceiptDayDateTimePicker.Value = new System.DateTime(2024, 3, 12, 0, 0, 0, 0);
+            this.HistoryReceiptDayDateTimePicker.Value = new System.DateTime(2024, 4, 22, 0, 0, 0, 0);
             // 
             // HistoryTestStartDayDateTimePicker
             // 
@@ -578,12 +629,13 @@
             this.HistoryTestStartDayDateTimePicker.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryTestStartDayDateTimePicker.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryTestStartDayDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HistoryTestStartDayDateTimePicker.Location = new System.Drawing.Point(866, 30);
+            this.HistoryTestStartDayDateTimePicker.Location = new System.Drawing.Point(1082, 37);
+            this.HistoryTestStartDayDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryTestStartDayDateTimePicker.Name = "HistoryTestStartDayDateTimePicker";
-            this.HistoryTestStartDayDateTimePicker.Size = new System.Drawing.Size(124, 19);
+            this.HistoryTestStartDayDateTimePicker.Size = new System.Drawing.Size(154, 22);
             this.HistoryTestStartDayDateTimePicker.TabIndex = 135;
             this.HistoryTestStartDayDateTimePicker.Tag = "ItemName(試験着手日)";
-            this.HistoryTestStartDayDateTimePicker.Value = new System.DateTime(2024, 3, 12, 0, 0, 0, 0);
+            this.HistoryTestStartDayDateTimePicker.Value = new System.DateTime(2024, 4, 22, 0, 0, 0, 0);
             // 
             // HistoryCompletionDayDateTimePicker
             // 
@@ -591,21 +643,23 @@
             this.HistoryCompletionDayDateTimePicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HistoryCompletionDayDateTimePicker.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryCompletionDayDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HistoryCompletionDayDateTimePicker.Location = new System.Drawing.Point(609, 30);
+            this.HistoryCompletionDayDateTimePicker.Location = new System.Drawing.Point(761, 37);
+            this.HistoryCompletionDayDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryCompletionDayDateTimePicker.Name = "HistoryCompletionDayDateTimePicker";
-            this.HistoryCompletionDayDateTimePicker.Size = new System.Drawing.Size(144, 19);
+            this.HistoryCompletionDayDateTimePicker.Size = new System.Drawing.Size(180, 22);
             this.HistoryCompletionDayDateTimePicker.TabIndex = 121;
             this.HistoryCompletionDayDateTimePicker.Tag = "ItemName(完成日)";
-            this.HistoryCompletionDayDateTimePicker.Value = new System.DateTime(2024, 3, 12, 0, 0, 0, 0);
+            this.HistoryCompletionDayDateTimePicker.Value = new System.DateTime(2024, 4, 22, 0, 0, 0, 0);
             // 
             // HistoryMileageTextBox
             // 
             this.HistoryMileageTextBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryMileageTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryMileageTextBox.Location = new System.Drawing.Point(609, 4);
+            this.HistoryMileageTextBox.Location = new System.Drawing.Point(761, 5);
+            this.HistoryMileageTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryMileageTextBox.MaxLength = 50;
             this.HistoryMileageTextBox.Name = "HistoryMileageTextBox";
-            this.HistoryMileageTextBox.Size = new System.Drawing.Size(144, 19);
+            this.HistoryMileageTextBox.Size = new System.Drawing.Size(179, 22);
             this.HistoryMileageTextBox.TabIndex = 120;
             this.HistoryMileageTextBox.Tag = "Regex(^[0-9 ]+$);ItemName(受領時走行距離);Byte(50)";
             // 
@@ -613,10 +667,11 @@
             // 
             this.HistoryEGNotextBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryEGNotextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryEGNotextBox.Location = new System.Drawing.Point(357, 4);
+            this.HistoryEGNotextBox.Location = new System.Drawing.Point(446, 5);
+            this.HistoryEGNotextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryEGNotextBox.MaxLength = 50;
             this.HistoryEGNotextBox.Name = "HistoryEGNotextBox";
-            this.HistoryEGNotextBox.Size = new System.Drawing.Size(144, 19);
+            this.HistoryEGNotextBox.Size = new System.Drawing.Size(179, 22);
             this.HistoryEGNotextBox.TabIndex = 110;
             this.HistoryEGNotextBox.Tag = "ItemName(E_G番号);Byte(50)";
             // 
@@ -626,10 +681,11 @@
             this.HistoryConstructionNoComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryConstructionNoComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryConstructionNoComboBox.FormattingEnabled = true;
-            this.HistoryConstructionNoComboBox.Location = new System.Drawing.Point(866, 82);
+            this.HistoryConstructionNoComboBox.Location = new System.Drawing.Point(1082, 101);
+            this.HistoryConstructionNoComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryConstructionNoComboBox.MaxLength = 10;
             this.HistoryConstructionNoComboBox.Name = "HistoryConstructionNoComboBox";
-            this.HistoryConstructionNoComboBox.Size = new System.Drawing.Size(124, 20);
+            this.HistoryConstructionNoComboBox.Size = new System.Drawing.Size(154, 23);
             this.HistoryConstructionNoComboBox.TabIndex = 137;
             this.HistoryConstructionNoComboBox.Tag = "ItemName(工事区分NO);";
             this.HistoryConstructionNoComboBox.ValueMember = "CODE";
@@ -640,10 +696,11 @@
             this.HistoryCarColorComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryCarColorComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryCarColorComboBox.FormattingEnabled = true;
-            this.HistoryCarColorComboBox.Location = new System.Drawing.Point(357, 186);
+            this.HistoryCarColorComboBox.Location = new System.Drawing.Point(446, 229);
+            this.HistoryCarColorComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryCarColorComboBox.MaxLength = 50;
             this.HistoryCarColorComboBox.Name = "HistoryCarColorComboBox";
-            this.HistoryCarColorComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryCarColorComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryCarColorComboBox.TabIndex = 117;
             this.HistoryCarColorComboBox.Tag = "ItemName(車体色);Byte(50)";
             this.HistoryCarColorComboBox.ValueMember = "NAME";
@@ -654,10 +711,11 @@
             this.HistoryMakerNameComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryMakerNameComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryMakerNameComboBox.FormattingEnabled = true;
-            this.HistoryMakerNameComboBox.Location = new System.Drawing.Point(105, 160);
+            this.HistoryMakerNameComboBox.Location = new System.Drawing.Point(131, 197);
+            this.HistoryMakerNameComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryMakerNameComboBox.MaxLength = 50;
             this.HistoryMakerNameComboBox.Name = "HistoryMakerNameComboBox";
-            this.HistoryMakerNameComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryMakerNameComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryMakerNameComboBox.TabIndex = 106;
             this.HistoryMakerNameComboBox.Tag = "ItemName(メーカー名);Byte(50)";
             this.HistoryMakerNameComboBox.ValueMember = "NAME";
@@ -668,10 +726,11 @@
             this.HistoryGradeComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryGradeComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryGradeComboBox.FormattingEnabled = true;
-            this.HistoryGradeComboBox.Location = new System.Drawing.Point(357, 160);
+            this.HistoryGradeComboBox.Location = new System.Drawing.Point(446, 197);
+            this.HistoryGradeComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryGradeComboBox.MaxLength = 50;
             this.HistoryGradeComboBox.Name = "HistoryGradeComboBox";
-            this.HistoryGradeComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryGradeComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryGradeComboBox.TabIndex = 116;
             this.HistoryGradeComboBox.Tag = "ItemName(グレード);Byte(50)";
             this.HistoryGradeComboBox.ValueMember = "NAME";
@@ -682,10 +741,11 @@
             this.HistoryShimukechiComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryShimukechiComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryShimukechiComboBox.FormattingEnabled = true;
-            this.HistoryShimukechiComboBox.Location = new System.Drawing.Point(105, 134);
+            this.HistoryShimukechiComboBox.Location = new System.Drawing.Point(131, 165);
+            this.HistoryShimukechiComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryShimukechiComboBox.MaxLength = 50;
             this.HistoryShimukechiComboBox.Name = "HistoryShimukechiComboBox";
-            this.HistoryShimukechiComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryShimukechiComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryShimukechiComboBox.TabIndex = 105;
             this.HistoryShimukechiComboBox.Tag = "ItemName(仕向地);Byte(50)";
             this.HistoryShimukechiComboBox.ValueMember = "NAME";
@@ -696,10 +756,11 @@
             this.HistoryDriveSystemComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryDriveSystemComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryDriveSystemComboBox.FormattingEnabled = true;
-            this.HistoryDriveSystemComboBox.Location = new System.Drawing.Point(357, 134);
+            this.HistoryDriveSystemComboBox.Location = new System.Drawing.Point(446, 165);
+            this.HistoryDriveSystemComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryDriveSystemComboBox.MaxLength = 50;
             this.HistoryDriveSystemComboBox.Name = "HistoryDriveSystemComboBox";
-            this.HistoryDriveSystemComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryDriveSystemComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryDriveSystemComboBox.TabIndex = 115;
             this.HistoryDriveSystemComboBox.Tag = "ItemName(駆動方式);Byte(50)";
             this.HistoryDriveSystemComboBox.ValueMember = "NAME";
@@ -710,10 +771,11 @@
             this.HistoryTMComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryTMComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryTMComboBox.FormattingEnabled = true;
-            this.HistoryTMComboBox.Location = new System.Drawing.Point(357, 82);
+            this.HistoryTMComboBox.Location = new System.Drawing.Point(446, 101);
+            this.HistoryTMComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryTMComboBox.MaxLength = 50;
             this.HistoryTMComboBox.Name = "HistoryTMComboBox";
-            this.HistoryTMComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryTMComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryTMComboBox.TabIndex = 113;
             this.HistoryTMComboBox.Tag = "ItemName(トランスミッション);Byte(50)";
             this.HistoryTMComboBox.ValueMember = "NAME";
@@ -724,10 +786,11 @@
             this.HistoryPrototypeTimingComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryPrototypeTimingComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryPrototypeTimingComboBox.FormattingEnabled = true;
-            this.HistoryPrototypeTimingComboBox.Location = new System.Drawing.Point(105, 82);
+            this.HistoryPrototypeTimingComboBox.Location = new System.Drawing.Point(131, 101);
+            this.HistoryPrototypeTimingComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryPrototypeTimingComboBox.MaxLength = 20;
             this.HistoryPrototypeTimingComboBox.Name = "HistoryPrototypeTimingComboBox";
-            this.HistoryPrototypeTimingComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryPrototypeTimingComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryPrototypeTimingComboBox.TabIndex = 103;
             this.HistoryPrototypeTimingComboBox.Tag = "ItemName(試作時期);Byte(20)";
             this.HistoryPrototypeTimingComboBox.ValueMember = "NAME";
@@ -738,10 +801,11 @@
             this.HistoryDisplacementComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryDisplacementComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryDisplacementComboBox.FormattingEnabled = true;
-            this.HistoryDisplacementComboBox.Location = new System.Drawing.Point(357, 56);
+            this.HistoryDisplacementComboBox.Location = new System.Drawing.Point(446, 69);
+            this.HistoryDisplacementComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryDisplacementComboBox.MaxLength = 50;
             this.HistoryDisplacementComboBox.Name = "HistoryDisplacementComboBox";
-            this.HistoryDisplacementComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryDisplacementComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryDisplacementComboBox.TabIndex = 112;
             this.HistoryDisplacementComboBox.Tag = "ItemName(排気量);Byte(50)";
             this.HistoryDisplacementComboBox.ValueMember = "NAME";
@@ -752,10 +816,11 @@
             this.HistoryEGTypeComboBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryEGTypeComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryEGTypeComboBox.FormattingEnabled = true;
-            this.HistoryEGTypeComboBox.Location = new System.Drawing.Point(357, 30);
+            this.HistoryEGTypeComboBox.Location = new System.Drawing.Point(446, 37);
+            this.HistoryEGTypeComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryEGTypeComboBox.MaxLength = 50;
             this.HistoryEGTypeComboBox.Name = "HistoryEGTypeComboBox";
-            this.HistoryEGTypeComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryEGTypeComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryEGTypeComboBox.TabIndex = 111;
             this.HistoryEGTypeComboBox.Tag = "ItemName(E_G型式);Byte(50)";
             this.HistoryEGTypeComboBox.ValueMember = "NAME";
@@ -766,20 +831,21 @@
             this.HistoryTableLayoutPanel.SetColumnSpan(this.panel3, 3);
             this.panel3.Controls.Add(this.HistoryTestPurposeTextBox);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(606, 235);
+            this.panel3.Location = new System.Drawing.Point(757, 289);
             this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(385, 26);
+            this.panel3.Size = new System.Drawing.Size(481, 36);
             this.panel3.TabIndex = 130;
             this.panel3.TabStop = true;
             // 
             // HistoryTestPurposeTextBox
             // 
             this.HistoryTestPurposeTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryTestPurposeTextBox.Location = new System.Drawing.Point(3, 3);
+            this.HistoryTestPurposeTextBox.Location = new System.Drawing.Point(4, 4);
+            this.HistoryTestPurposeTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryTestPurposeTextBox.MaxLength = 255;
             this.HistoryTestPurposeTextBox.Name = "HistoryTestPurposeTextBox";
-            this.HistoryTestPurposeTextBox.Size = new System.Drawing.Size(381, 19);
+            this.HistoryTestPurposeTextBox.Size = new System.Drawing.Size(475, 22);
             this.HistoryTestPurposeTextBox.TabIndex = 130;
             this.HistoryTestPurposeTextBox.Tag = "ItemName(試験目的);Byte(255)";
             // 
@@ -788,20 +854,21 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.HistoryVehicleNoTextBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(102, 235);
+            this.panel1.Location = new System.Drawing.Point(127, 289);
             this.panel1.Margin = new System.Windows.Forms.Padding(0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(150, 26);
+            this.panel1.Size = new System.Drawing.Size(188, 36);
             this.panel1.TabIndex = 109;
             this.panel1.TabStop = true;
             // 
             // HistoryVehicleNoTextBox
             // 
             this.HistoryVehicleNoTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryVehicleNoTextBox.Location = new System.Drawing.Point(3, 3);
+            this.HistoryVehicleNoTextBox.Location = new System.Drawing.Point(4, 4);
+            this.HistoryVehicleNoTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryVehicleNoTextBox.MaxLength = 30;
             this.HistoryVehicleNoTextBox.Name = "HistoryVehicleNoTextBox";
-            this.HistoryVehicleNoTextBox.Size = new System.Drawing.Size(144, 19);
+            this.HistoryVehicleNoTextBox.Size = new System.Drawing.Size(179, 22);
             this.HistoryVehicleNoTextBox.TabIndex = 109;
             this.HistoryVehicleNoTextBox.Tag = "ItemName(車体番号);Byte(30)";
             // 
@@ -810,10 +877,10 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.HistoryNameRemarksTextBox);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(102, 209);
+            this.panel2.Location = new System.Drawing.Point(127, 257);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(150, 25);
+            this.panel2.Size = new System.Drawing.Size(188, 31);
             this.panel2.TabIndex = 108;
             this.panel2.TabStop = true;
             this.panel2.Tag = "ItemName(名称備考)";
@@ -821,10 +888,11 @@
             // HistoryNameRemarksTextBox
             // 
             this.HistoryNameRemarksTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryNameRemarksTextBox.Location = new System.Drawing.Point(3, 4);
+            this.HistoryNameRemarksTextBox.Location = new System.Drawing.Point(4, 5);
+            this.HistoryNameRemarksTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryNameRemarksTextBox.MaxLength = 255;
             this.HistoryNameRemarksTextBox.Name = "HistoryNameRemarksTextBox";
-            this.HistoryNameRemarksTextBox.Size = new System.Drawing.Size(144, 19);
+            this.HistoryNameRemarksTextBox.Size = new System.Drawing.Size(179, 22);
             this.HistoryNameRemarksTextBox.TabIndex = 108;
             this.HistoryNameRemarksTextBox.Tag = "ItemName(名称備考);Byte(255)";
             // 
@@ -834,12 +902,13 @@
             this.HistoryControlSheetIssueDayDateTimePicker.Dock = System.Windows.Forms.DockStyle.Fill;
             this.HistoryControlSheetIssueDayDateTimePicker.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryControlSheetIssueDayDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.HistoryControlSheetIssueDayDateTimePicker.Location = new System.Drawing.Point(105, 30);
+            this.HistoryControlSheetIssueDayDateTimePicker.Location = new System.Drawing.Point(131, 37);
+            this.HistoryControlSheetIssueDayDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryControlSheetIssueDayDateTimePicker.Name = "HistoryControlSheetIssueDayDateTimePicker";
-            this.HistoryControlSheetIssueDayDateTimePicker.Size = new System.Drawing.Size(144, 19);
+            this.HistoryControlSheetIssueDayDateTimePicker.Size = new System.Drawing.Size(180, 22);
             this.HistoryControlSheetIssueDayDateTimePicker.TabIndex = 101;
             this.HistoryControlSheetIssueDayDateTimePicker.Tag = "ItemName(発行年月日)";
-            this.HistoryControlSheetIssueDayDateTimePicker.Value = new System.DateTime(2024, 3, 12, 0, 0, 0, 0);
+            this.HistoryControlSheetIssueDayDateTimePicker.Value = new System.DateTime(2024, 4, 22, 0, 0, 0, 0);
             // 
             // label66
             // 
@@ -847,10 +916,10 @@
             this.label66.BackColor = System.Drawing.Color.Aquamarine;
             this.label66.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label66.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label66.Location = new System.Drawing.Point(757, 53);
+            this.label66.Location = new System.Drawing.Point(946, 65);
             this.label66.Margin = new System.Windows.Forms.Padding(0);
             this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(105, 25);
+            this.label66.Size = new System.Drawing.Size(131, 31);
             this.label66.TabIndex = 1069;
             this.label66.Text = "試験着手証明文書";
             this.label66.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -861,10 +930,10 @@
             this.label65.BackColor = System.Drawing.Color.Aquamarine;
             this.label65.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label65.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label65.Location = new System.Drawing.Point(757, 1);
+            this.label65.Location = new System.Drawing.Point(946, 1);
             this.label65.Margin = new System.Windows.Forms.Padding(0);
             this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(105, 25);
+            this.label65.Size = new System.Drawing.Size(131, 31);
             this.label65.TabIndex = 1068;
             this.label65.Text = "廃艦年月日";
             this.label65.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -875,10 +944,10 @@
             this.label61.BackColor = System.Drawing.Color.Aquamarine;
             this.label61.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label61.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label61.Location = new System.Drawing.Point(757, 27);
+            this.label61.Location = new System.Drawing.Point(946, 33);
             this.label61.Margin = new System.Windows.Forms.Padding(0);
             this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(105, 25);
+            this.label61.Size = new System.Drawing.Size(131, 31);
             this.label61.TabIndex = 1064;
             this.label61.Text = "試験着手日";
             this.label61.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -889,10 +958,10 @@
             this.label57.BackColor = System.Drawing.Color.Aquamarine;
             this.label57.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label57.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label57.Location = new System.Drawing.Point(505, 209);
+            this.label57.Location = new System.Drawing.Point(631, 257);
             this.label57.Margin = new System.Windows.Forms.Padding(0);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(100, 25);
+            this.label57.Size = new System.Drawing.Size(125, 31);
             this.label57.TabIndex = 1060;
             this.label57.Text = "車検期限";
             this.label57.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -903,10 +972,10 @@
             this.label54.BackColor = System.Drawing.Color.Aquamarine;
             this.label54.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label54.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label54.Location = new System.Drawing.Point(757, 131);
+            this.label54.Location = new System.Drawing.Point(946, 161);
             this.label54.Margin = new System.Windows.Forms.Padding(0);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(105, 25);
+            this.label54.Size = new System.Drawing.Size(131, 31);
             this.label54.TabIndex = 1057;
             this.label54.Text = "受領日";
             this.label54.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -917,10 +986,10 @@
             this.label52.BackColor = System.Drawing.Color.Aquamarine;
             this.label52.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label52.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label52.Location = new System.Drawing.Point(757, 183);
+            this.label52.Location = new System.Drawing.Point(946, 225);
             this.label52.Margin = new System.Windows.Forms.Padding(0);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(105, 25);
+            this.label52.Size = new System.Drawing.Size(131, 31);
             this.label52.TabIndex = 1055;
             this.label52.Text = "受領者";
             this.label52.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -931,10 +1000,10 @@
             this.label51.BackColor = System.Drawing.Color.Aquamarine;
             this.label51.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label51.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label51.Location = new System.Drawing.Point(757, 157);
+            this.label51.Location = new System.Drawing.Point(946, 193);
             this.label51.Margin = new System.Windows.Forms.Padding(0);
             this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(105, 25);
+            this.label51.Size = new System.Drawing.Size(131, 31);
             this.label51.TabIndex = 1054;
             this.label51.Text = "受領部署";
             this.label51.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -945,10 +1014,10 @@
             this.label45.BackColor = System.Drawing.Color.Aquamarine;
             this.label45.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label45.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label45.Location = new System.Drawing.Point(757, 79);
+            this.label45.Location = new System.Drawing.Point(946, 97);
             this.label45.Margin = new System.Windows.Forms.Padding(0);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(105, 25);
+            this.label45.Size = new System.Drawing.Size(131, 31);
             this.label45.TabIndex = 1050;
             this.label45.Text = "工事区分NO";
             this.label45.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -959,10 +1028,10 @@
             this.label43.BackColor = System.Drawing.Color.Aquamarine;
             this.label43.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label43.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label43.Location = new System.Drawing.Point(253, 131);
+            this.label43.Location = new System.Drawing.Point(316, 161);
             this.label43.Margin = new System.Windows.Forms.Padding(0);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(100, 25);
+            this.label43.Size = new System.Drawing.Size(125, 31);
             this.label43.TabIndex = 1046;
             this.label43.Text = "駆動方式";
             this.label43.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -973,10 +1042,10 @@
             this.label41.BackColor = System.Drawing.Color.Aquamarine;
             this.label41.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label41.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label41.Location = new System.Drawing.Point(505, 131);
+            this.label41.Location = new System.Drawing.Point(631, 161);
             this.label41.Margin = new System.Windows.Forms.Padding(0);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(100, 25);
+            this.label41.Size = new System.Drawing.Size(125, 31);
             this.label41.TabIndex = 1045;
             this.label41.Text = "登録ナンバー";
             this.label41.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -987,10 +1056,10 @@
             this.label40.BackColor = System.Drawing.Color.Aquamarine;
             this.label40.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label40.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label40.Location = new System.Drawing.Point(253, 157);
+            this.label40.Location = new System.Drawing.Point(316, 193);
             this.label40.Margin = new System.Windows.Forms.Padding(0);
             this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(100, 25);
+            this.label40.Size = new System.Drawing.Size(125, 31);
             this.label40.TabIndex = 1044;
             this.label40.Text = "グレード";
             this.label40.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1001,10 +1070,10 @@
             this.label30.BackColor = System.Drawing.Color.Aquamarine;
             this.label30.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label30.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label30.Location = new System.Drawing.Point(505, 183);
+            this.label30.Location = new System.Drawing.Point(631, 225);
             this.label30.Margin = new System.Windows.Forms.Padding(0);
             this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(100, 25);
+            this.label30.Size = new System.Drawing.Size(125, 31);
             this.label30.TabIndex = 1043;
             this.label30.Text = "登録年月日";
             this.label30.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1015,10 +1084,10 @@
             this.label29.BackColor = System.Drawing.Color.Aquamarine;
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label29.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label29.Location = new System.Drawing.Point(253, 183);
+            this.label29.Location = new System.Drawing.Point(316, 225);
             this.label29.Margin = new System.Windows.Forms.Padding(0);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(100, 25);
+            this.label29.Size = new System.Drawing.Size(125, 31);
             this.label29.TabIndex = 1042;
             this.label29.Text = "車体色";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1029,10 +1098,10 @@
             this.label28.BackColor = System.Drawing.Color.Aquamarine;
             this.label28.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label28.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label28.Location = new System.Drawing.Point(505, 79);
+            this.label28.Location = new System.Drawing.Point(631, 97);
             this.label28.Margin = new System.Windows.Forms.Padding(0);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(100, 25);
+            this.label28.Size = new System.Drawing.Size(125, 31);
             this.label28.TabIndex = 1041;
             this.label28.Text = "研命ナンバー";
             this.label28.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1043,10 +1112,10 @@
             this.label27.BackColor = System.Drawing.Color.Aquamarine;
             this.label27.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label27.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label27.Location = new System.Drawing.Point(253, 1);
+            this.label27.Location = new System.Drawing.Point(316, 1);
             this.label27.Margin = new System.Windows.Forms.Padding(0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(100, 25);
+            this.label27.Size = new System.Drawing.Size(125, 31);
             this.label27.TabIndex = 1040;
             this.label27.Text = "E/G番号";
             this.label27.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1057,10 +1126,10 @@
             this.label26.BackColor = System.Drawing.Color.Aquamarine;
             this.label26.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label26.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label26.Location = new System.Drawing.Point(253, 53);
+            this.label26.Location = new System.Drawing.Point(316, 65);
             this.label26.Margin = new System.Windows.Forms.Padding(0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(100, 25);
+            this.label26.Size = new System.Drawing.Size(125, 31);
             this.label26.TabIndex = 1039;
             this.label26.Text = "排気量";
             this.label26.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1071,10 +1140,10 @@
             this.label25.BackColor = System.Drawing.Color.Aquamarine;
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label25.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label25.Location = new System.Drawing.Point(253, 79);
+            this.label25.Location = new System.Drawing.Point(316, 97);
             this.label25.Margin = new System.Windows.Forms.Padding(0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(100, 25);
+            this.label25.Size = new System.Drawing.Size(125, 31);
             this.label25.TabIndex = 1038;
             this.label25.Text = "T/M";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1085,10 +1154,10 @@
             this.label24.BackColor = System.Drawing.Color.Aquamarine;
             this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label24.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label24.Location = new System.Drawing.Point(505, 1);
+            this.label24.Location = new System.Drawing.Point(631, 1);
             this.label24.Margin = new System.Windows.Forms.Padding(0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(100, 25);
+            this.label24.Size = new System.Drawing.Size(125, 31);
             this.label24.TabIndex = 1037;
             this.label24.Text = "受領時走行距離";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1099,10 +1168,10 @@
             this.label23.BackColor = System.Drawing.Color.Aquamarine;
             this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label23.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label23.Location = new System.Drawing.Point(253, 27);
+            this.label23.Location = new System.Drawing.Point(316, 33);
             this.label23.Margin = new System.Windows.Forms.Padding(0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(100, 25);
+            this.label23.Size = new System.Drawing.Size(125, 31);
             this.label23.TabIndex = 1036;
             this.label23.Text = "E/G形式";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1113,10 +1182,10 @@
             this.label20.BackColor = System.Drawing.Color.Aquamarine;
             this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label20.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label20.Location = new System.Drawing.Point(1, 235);
+            this.label20.Location = new System.Drawing.Point(1, 289);
             this.label20.Margin = new System.Windows.Forms.Padding(0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(100, 26);
+            this.label20.Size = new System.Drawing.Size(125, 36);
             this.label20.TabIndex = 1035;
             this.label20.Text = "車体番号";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1127,10 +1196,10 @@
             this.label19.BackColor = System.Drawing.Color.Aquamarine;
             this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label19.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label19.Location = new System.Drawing.Point(505, 235);
+            this.label19.Location = new System.Drawing.Point(631, 289);
             this.label19.Margin = new System.Windows.Forms.Padding(0);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(100, 26);
+            this.label19.Size = new System.Drawing.Size(125, 36);
             this.label19.TabIndex = 1034;
             this.label19.Text = "試験目的";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1141,10 +1210,10 @@
             this.label17.BackColor = System.Drawing.Color.Aquamarine;
             this.label17.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label17.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label17.Location = new System.Drawing.Point(505, 27);
+            this.label17.Location = new System.Drawing.Point(631, 33);
             this.label17.Margin = new System.Windows.Forms.Padding(0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(100, 25);
+            this.label17.Size = new System.Drawing.Size(125, 31);
             this.label17.TabIndex = 1033;
             this.label17.Text = "完成日";
             this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1155,10 +1224,10 @@
             this.label16.BackColor = System.Drawing.Color.Aquamarine;
             this.label16.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label16.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label16.Location = new System.Drawing.Point(505, 53);
+            this.label16.Location = new System.Drawing.Point(631, 65);
             this.label16.Margin = new System.Windows.Forms.Padding(0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(100, 25);
+            this.label16.Size = new System.Drawing.Size(125, 31);
             this.label16.TabIndex = 1032;
             this.label16.Text = "管理責任部署";
             this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1169,10 +1238,10 @@
             this.label15.BackColor = System.Drawing.Color.Aquamarine;
             this.label15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label15.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label15.Location = new System.Drawing.Point(1, 53);
+            this.label15.Location = new System.Drawing.Point(1, 65);
             this.label15.Margin = new System.Windows.Forms.Padding(0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(100, 25);
+            this.label15.Size = new System.Drawing.Size(125, 31);
             this.label15.TabIndex = 1031;
             this.label15.Text = "開発符号";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1183,10 +1252,10 @@
             this.label14.BackColor = System.Drawing.Color.Aquamarine;
             this.label14.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label14.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label14.Location = new System.Drawing.Point(1, 79);
+            this.label14.Location = new System.Drawing.Point(1, 97);
             this.label14.Margin = new System.Windows.Forms.Padding(0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 25);
+            this.label14.Size = new System.Drawing.Size(125, 31);
             this.label14.TabIndex = 1030;
             this.label14.Text = "試作時期";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1197,10 +1266,10 @@
             this.label13.BackColor = System.Drawing.Color.Aquamarine;
             this.label13.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label13.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label13.Location = new System.Drawing.Point(1, 105);
+            this.label13.Location = new System.Drawing.Point(1, 129);
             this.label13.Margin = new System.Windows.Forms.Padding(0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(100, 25);
+            this.label13.Size = new System.Drawing.Size(125, 31);
             this.label13.TabIndex = 1029;
             this.label13.Text = "号車";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1211,10 +1280,10 @@
             this.label36.BackColor = System.Drawing.Color.Aquamarine;
             this.label36.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label36.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label36.Location = new System.Drawing.Point(505, 105);
+            this.label36.Location = new System.Drawing.Point(631, 129);
             this.label36.Margin = new System.Windows.Forms.Padding(0);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(100, 25);
+            this.label36.Size = new System.Drawing.Size(125, 31);
             this.label36.TabIndex = 1028;
             this.label36.Text = "固定資産NO";
             this.label36.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1226,10 +1295,11 @@
             this.HistoryControlSheetIssueOrComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.HistoryControlSheetIssueOrComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
             this.HistoryControlSheetIssueOrComboBox.FormattingEnabled = true;
-            this.HistoryControlSheetIssueOrComboBox.Location = new System.Drawing.Point(105, 4);
+            this.HistoryControlSheetIssueOrComboBox.Location = new System.Drawing.Point(131, 5);
+            this.HistoryControlSheetIssueOrComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryControlSheetIssueOrComboBox.MaxLength = 10;
             this.HistoryControlSheetIssueOrComboBox.Name = "HistoryControlSheetIssueOrComboBox";
-            this.HistoryControlSheetIssueOrComboBox.Size = new System.Drawing.Size(144, 20);
+            this.HistoryControlSheetIssueOrComboBox.Size = new System.Drawing.Size(179, 23);
             this.HistoryControlSheetIssueOrComboBox.TabIndex = 100;
             this.HistoryControlSheetIssueOrComboBox.Tag = "Required;Wide(20);ItemName(管理票発行有無)";
             this.HistoryControlSheetIssueOrComboBox.ValueMember = "CODE";
@@ -1240,10 +1310,10 @@
             this.label22.BackColor = System.Drawing.Color.Aquamarine;
             this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label22.Location = new System.Drawing.Point(1, 131);
+            this.label22.Location = new System.Drawing.Point(1, 161);
             this.label22.Margin = new System.Windows.Forms.Padding(0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(100, 25);
+            this.label22.Size = new System.Drawing.Size(125, 31);
             this.label22.TabIndex = 1020;
             this.label22.Text = "仕向地";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1252,10 +1322,11 @@
             // 
             this.HistoryVehicleTextBox.Dock = System.Windows.Forms.DockStyle.Left;
             this.HistoryVehicleTextBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.HistoryVehicleTextBox.Location = new System.Drawing.Point(105, 108);
+            this.HistoryVehicleTextBox.Location = new System.Drawing.Point(131, 133);
+            this.HistoryVehicleTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.HistoryVehicleTextBox.MaxLength = 50;
             this.HistoryVehicleTextBox.Name = "HistoryVehicleTextBox";
-            this.HistoryVehicleTextBox.Size = new System.Drawing.Size(144, 19);
+            this.HistoryVehicleTextBox.Size = new System.Drawing.Size(179, 22);
             this.HistoryVehicleTextBox.TabIndex = 104;
             this.HistoryVehicleTextBox.Tag = "ItemName(号車);Byte(50)";
             // 
@@ -1265,10 +1336,10 @@
             this.label32.BackColor = System.Drawing.Color.Aquamarine;
             this.label32.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label32.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label32.Location = new System.Drawing.Point(1, 209);
+            this.label32.Location = new System.Drawing.Point(1, 257);
             this.label32.Margin = new System.Windows.Forms.Padding(0);
             this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(100, 25);
+            this.label32.Size = new System.Drawing.Size(125, 31);
             this.label32.TabIndex = 24;
             this.label32.Text = "名称備考";
             this.label32.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1279,10 +1350,10 @@
             this.label33.BackColor = System.Drawing.Color.Aquamarine;
             this.label33.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label33.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label33.Location = new System.Drawing.Point(1, 157);
+            this.label33.Location = new System.Drawing.Point(1, 193);
             this.label33.Margin = new System.Windows.Forms.Padding(0);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(100, 25);
+            this.label33.Size = new System.Drawing.Size(125, 31);
             this.label33.TabIndex = 22;
             this.label33.Text = "メーカー名";
             this.label33.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1293,10 +1364,10 @@
             this.label34.BackColor = System.Drawing.Color.Aquamarine;
             this.label34.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label34.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label34.Location = new System.Drawing.Point(1, 183);
+            this.label34.Location = new System.Drawing.Point(1, 225);
             this.label34.Margin = new System.Windows.Forms.Padding(0);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(100, 25);
+            this.label34.Size = new System.Drawing.Size(125, 31);
             this.label34.TabIndex = 18;
             this.label34.Text = "外製車名";
             this.label34.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1307,10 +1378,10 @@
             this.label35.BackColor = System.Drawing.Color.Aquamarine;
             this.label35.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label35.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label35.Location = new System.Drawing.Point(1, 27);
+            this.label35.Location = new System.Drawing.Point(1, 33);
             this.label35.Margin = new System.Windows.Forms.Padding(0);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(100, 25);
+            this.label35.Size = new System.Drawing.Size(125, 31);
             this.label35.TabIndex = 2;
             this.label35.Text = "発行年月日";
             this.label35.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1323,16 +1394,16 @@
             this.panel14.Location = new System.Drawing.Point(1, 1);
             this.panel14.Margin = new System.Windows.Forms.Padding(0);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(100, 25);
+            this.panel14.Size = new System.Drawing.Size(125, 31);
             this.panel14.TabIndex = 30;
             // 
             // label39
             // 
             this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(0, 7);
+            this.label39.Location = new System.Drawing.Point(0, 9);
             this.label39.Margin = new System.Windows.Forms.Padding(0);
             this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(53, 12);
+            this.label39.Size = new System.Drawing.Size(67, 15);
             this.label39.TabIndex = 1013;
             this.label39.Text = "発行有無";
             // 
@@ -1342,10 +1413,10 @@
             this.label3.BackColor = System.Drawing.Color.Aquamarine;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label3.Location = new System.Drawing.Point(253, 209);
+            this.label3.Location = new System.Drawing.Point(316, 257);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 25);
+            this.label3.Size = new System.Drawing.Size(125, 31);
             this.label3.TabIndex = 1141;
             this.label3.Text = "自動車ﾘｻｲｸﾙ法";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -1356,48 +1427,21 @@
             this.label4.BackColor = System.Drawing.Color.Aquamarine;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.label4.Location = new System.Drawing.Point(253, 235);
+            this.label4.Location = new System.Drawing.Point(316, 289);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 26);
+            this.label4.Size = new System.Drawing.Size(125, 36);
             this.label4.TabIndex = 1142;
             this.label4.Text = "A/C冷媒種類";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // CarRecycleComboBox
-            // 
-            this.CarRecycleComboBox.DisplayMember = "NAME";
-            this.CarRecycleComboBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.CarRecycleComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.CarRecycleComboBox.FormattingEnabled = true;
-            this.CarRecycleComboBox.Location = new System.Drawing.Point(357, 212);
-            this.CarRecycleComboBox.MaxLength = 50;
-            this.CarRecycleComboBox.Name = "CarRecycleComboBox";
-            this.CarRecycleComboBox.Size = new System.Drawing.Size(144, 20);
-            this.CarRecycleComboBox.TabIndex = 1143;
-            this.CarRecycleComboBox.Tag = "ItemName(自動車ﾘｻｲｸﾙ法);Byte(50)";
-            this.CarRecycleComboBox.ValueMember = "NAME";
-            // 
-            // RefrigerantTypeComboBox
-            // 
-            this.RefrigerantTypeComboBox.DisplayMember = "NAME";
-            this.RefrigerantTypeComboBox.Dock = System.Windows.Forms.DockStyle.Left;
-            this.RefrigerantTypeComboBox.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.RefrigerantTypeComboBox.FormattingEnabled = true;
-            this.RefrigerantTypeComboBox.Location = new System.Drawing.Point(357, 238);
-            this.RefrigerantTypeComboBox.MaxLength = 50;
-            this.RefrigerantTypeComboBox.Name = "RefrigerantTypeComboBox";
-            this.RefrigerantTypeComboBox.Size = new System.Drawing.Size(144, 20);
-            this.RefrigerantTypeComboBox.TabIndex = 1144;
-            this.RefrigerantTypeComboBox.Tag = "ItemName(A_C冷媒種類);Byte(50)";
-            this.RefrigerantTypeComboBox.ValueMember = "NAME";
-            // 
             // ControlSheetHistoryEntryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1009, 377);
+            this.ClientSize = new System.Drawing.Size(1261, 471);
             this.Controls.Add(this.EntryButton);
+            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.Name = "ControlSheetHistoryEntryForm";
             this.Text = "ControlSheetHistoryEntryForm";
             this.Load += new System.EventHandler(this.ControlSheetHistoryEntryForm_Load);

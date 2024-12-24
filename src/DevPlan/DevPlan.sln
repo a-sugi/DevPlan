@@ -66,4 +66,19 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.140.13:8080/tfs/devplancollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Common\\UICommon.csproj
+		SccProjectName1 = Common
+		SccLocalPath1 = Common
+		SccProjectUniqueName2 = Presentation\\Presentation.csproj
+		SccProjectName2 = Presentation
+		SccLocalPath2 = Presentation
+		SccProjectUniqueName3 = UICommonTests\\UICommonTests.csproj
+		SccProjectName3 = UICommonTests
+		SccLocalPath3 = UICommonTests
+	EndGlobalSection
 EndGlobal

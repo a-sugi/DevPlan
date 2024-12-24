@@ -94,7 +94,6 @@
             // ContentsPanel
             // 
             this.ContentsPanel.AllowDrop = true;
-            this.ContentsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.ContentsPanel.Controls.Add(this.InformationPanel);
             this.ContentsPanel.Controls.Add(this.flowLayoutPanel1);
             this.ContentsPanel.Margin = new System.Windows.Forms.Padding(2);

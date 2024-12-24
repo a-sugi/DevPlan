@@ -168,7 +168,7 @@ namespace DevPlan.Presentation.Common
                 var item = this.Item.ScheduleItem as TestCarScheduleItemModel;
                 this.Item.GeneralCode = string.IsNullOrEmpty(this.Item.GeneralCode) ? item.GENERAL_CODE : this.Item.GeneralCode;
                 //Append End 2022/02/08 杉浦 項目を変動できるようにする
-                
+
                 // 画面初期化(車輛情報)
                 this.ScheduleCarInitForm();
 
@@ -320,7 +320,7 @@ namespace DevPlan.Presentation.Common
             // 車両種別
             this.SinkCarClassLabel.Text = getCarClassString(this.SinkCarClass);
             var list = setList();
-            if(list != null)
+            if (list != null)
             {
                 this.ScheduleItemDataGridView.DataSource = list;
                 //Append Start 2023/10/15 杉浦 スケジュール詳細表示変更
@@ -523,7 +523,7 @@ namespace DevPlan.Presentation.Common
 
             // FLAG_要予約許可（外製車日程のみ基本的に予約許可必須のため、nullの時もデフォルトでチェックを付ける）
             this.SjsbReservationCheckBox.Checked = item.FLAG_要予約許可 == 1;
-            if(item.FLAG_要予約許可 == null) { this.SjsbReservationCheckBox.Checked = true; }
+            if (item.FLAG_要予約許可 == null) { this.SjsbReservationCheckBox.Checked = true; }
 
             // 最終予約可能日
             this.LastReservationDateTimePicker.Value = item.最終予約可能日;
@@ -843,10 +843,10 @@ namespace DevPlan.Presentation.Common
                     //Update End 2022/01/31 杉浦 項目が入力されていたらメッセージが出るようにする
                     //Update End 2022/01/31 杉浦 項目を変動できるようにする
                     {
-                            // 反映確認
-                            isCopy = Messenger.Confirm(Resources.KKM03034) == DialogResult.Yes;
+                        // 反映確認
+                        isCopy = Messenger.Confirm(Resources.KKM03034) == DialogResult.Yes;
                     }
-                    
+
                     // カーシェア車
                     this.CarShare = form.SelectedCarShare;
 
@@ -876,7 +876,7 @@ namespace DevPlan.Presentation.Common
                         // データのコピー
                         this.CopySourceCar2SinkCar();
                     }
-                    
+
                     if (this.FunctionId == FunctionID.OuterCar)
                     {
                         this.SjsbReservationCheckBox.Checked = true;
@@ -886,7 +886,7 @@ namespace DevPlan.Presentation.Common
                     //Update Start 2022/01/31 杉浦 試験車日程では最終予約可能日の設定はしない
                     //if (this.LastReservationDateTimePicker.SelectedDate == null)
                     if (this.FunctionId != FunctionID.TestCar && this.LastReservationDateTimePicker.SelectedDate == null)
-                    //Update End 2022/01/31 杉浦 項目が入力されていたらメッセージが出るようにする
+                        //Update End 2022/01/31 杉浦 項目が入力されていたらメッセージが出るようにする
                         Messenger.Info(Resources.KKM01006);
                 }
             }
@@ -971,7 +971,7 @@ namespace DevPlan.Presentation.Common
         private void TransferButton_Click(object sender, EventArgs e)
         {
             // SJSB(管理者)→SKCKA(自部管理者)
-            var str = new string[] { "総括部署", "SKC管理課" }; 
+            var str = new string[] { "総括部署", "SKC管理課" };
 
             // 自部署作成スケジュール
             if (!string.IsNullOrWhiteSpace((this.Item.ScheduleItem as CarShareScheduleItemModel).INPUT_SECTION_ID))
@@ -1077,7 +1077,7 @@ namespace DevPlan.Presentation.Common
         {
             var flg = true;
             var map = new Dictionary<Control, Func<Control, string, string>>();
-            
+
             switch (type)
             {
                 case ScheduleItemEditType.Update:
@@ -1200,9 +1200,9 @@ namespace DevPlan.Presentation.Common
                     var msg = Validator.GetFormInputErrorMessage(this, map, false, false);
 
                     //Append Start 2022/01/31 杉浦 項目を変動できるようにする
-                    for(int i = 0; i < this.ScheduleItemDataGridView.RowCount; i++)
+                    for (int i = 0; i < this.ScheduleItemDataGridView.RowCount; i++)
                     {
-                        if(this.ScheduleItemDataGridView.Rows[i].Cells[0].Value.ToString() != "備考")
+                        if (this.ScheduleItemDataGridView.Rows[i].Cells[0].Value.ToString() != "備考")
                         {
                             int byteCount = (int)this.ScheduleItemDataGridView.Rows[i].Cells[2].Value;
                             string content = this.ScheduleItemDataGridView.Rows[i].Cells[1].Value?.ToString();
@@ -1230,7 +1230,8 @@ namespace DevPlan.Presentation.Common
                             {
                                 this.CarDataGridView.Rows[i].Cells[1].Style.BackColor = Const.ErrorBackColor;
                                 msg += string.Format(Resources.KKM00027, this.CarDataGridView.Rows[i].Cells[0].Value.ToString());
-                            }else
+                            }
+                            else
                             {
                                 this.CarDataGridView.Rows[i].Cells[1].Style.BackColor = System.Drawing.Color.LightGray;
                             }
@@ -1295,12 +1296,13 @@ namespace DevPlan.Presentation.Common
                             msg += (code + "に既に同車両(管理票No" + controlNo + ")の登録がある為、変更出来ません。");
                             if (num >= 0) this.ScheduleItemDataGridView.Rows[num].Cells[1].Style.BackColor = Const.ErrorBackColor;
                         }
-                    }else
+                    }
+                    else
                     {
                         this.ScheduleItemDataGridView.Rows[num].Cells[1].Style.BackColor = Const.DefaultBackColor;
                     }
                     //Update Start 2022/02/03 杉浦 試験車日程の車も登録する
-                    
+
                     // 備考(代表)
                     //車輛情報チェック（複合必須チェック）
                     //Update Start 2022/03/07 杉浦 スケジュール詳細不具合修正
@@ -1311,7 +1313,8 @@ namespace DevPlan.Presentation.Common
                         this.ScheduleItemDataGridView.Columns[1].DefaultCellStyle.BackColor = Const.ErrorBackColor;
 
                         msg += string.Format(Resources.KKM00001, "車輛情報のいずれか");
-                    }else
+                    }
+                    else
                     {
                         this.ScheduleItemDataGridView.Columns[1].DefaultCellStyle.BackColor = Const.DefaultBackColor;
 
@@ -1628,7 +1631,7 @@ namespace DevPlan.Presentation.Common
                         return;
                     }
                 }
-               
+
                 //リロードフラグON
                 this.IsReload = true;
 
@@ -1676,10 +1679,11 @@ namespace DevPlan.Presentation.Common
                 //Append Start 2022/03/07 杉浦 スケジュール詳細不具合修正
                 if (str == "管理票番号")
                 {
-                    if(!list.Any(x => x.category == str))
+                    if (!list.Any(x => x.category == str))
                     {
                         return this.管理票No;
-                    }else
+                    }
+                    else
                     {
                         return list.Find(x => x.category == str).item;
                     }
@@ -1687,10 +1691,11 @@ namespace DevPlan.Presentation.Common
                 else
                 {
                     //Append End 2022/03/07 杉浦 スケジュール詳細不具合修正
-                    if(list.Any(x => x.category == str))
+                    if (list.Any(x => x.category == str))
                     {
                         return list.Find(x => x.category == str).item;
-                    }else
+                    }
+                    else
                     {
                         if (str == "ナビ付" || str == "ETC付" || str == "T/M")
                         {
@@ -1719,7 +1724,7 @@ namespace DevPlan.Presentation.Common
                 //Append End 2022/03/07 杉浦 スケジュール詳細不具合修正
             };
             //Append End 2022/01/31 杉浦 項目を変動できるようにする
-            
+
             return new ScheduleCarDetailModel()
             {
                 CATEGORY_ID = id,
@@ -1848,7 +1853,8 @@ namespace DevPlan.Presentation.Common
             {
                 //Append End 2022/03/07 杉浦 スケジュール詳細不具合修正
                 item.管理票番号 = this.管理票No;
-            }else
+            }
+            else
             {
                 //Update Start 2022/03/07 杉浦 スケジュール詳細不具合修正
                 item.管理票番号 = this.ScheduleItemDataGridView.Rows[num].Cells[1].Value?.ToString();
@@ -2025,7 +2031,7 @@ namespace DevPlan.Presentation.Common
             //Update End 2022/03/07 杉浦 スケジュール詳細不具合修正
             //Update End 2022/01/31 杉浦 項目を変動できるようにする
 
-            if (val == null || string.IsNullOrWhiteSpace(val.管理票NO ))
+            if (val == null || string.IsNullOrWhiteSpace(val.管理票NO))
             {
                 return default(TestCarSearchOutModel);
             }
@@ -2451,6 +2457,19 @@ namespace DevPlan.Presentation.Common
             int num;
             //Append End 2022/01/17 杉浦 入れ替え中車両の処理
 
+            //Append Start 2024/04/18 杉浦 管理票番号の位置は固定
+            // 管理票番号
+            num = sinkCarControllers.FindIndex(x => x.category == "管理票番号");
+            if (num >= 0)
+            {
+                cntrolNo = this.ScheduleItemDataGridView.Rows[num].Cells[1].Value?.ToString();
+                if (!string.IsNullOrWhiteSpace(cntrolNo))
+                {
+                    list.Add(string.Format("({0})", cntrolNo));
+                }
+            }
+            //Append End 2024/04/18 杉浦 管理票番号の位置は固定
+
             foreach (var ctl in sinkCarControllers)
             {
                 //Update Start 2022/01/31 杉浦 項目を変動できるようにする
@@ -2463,27 +2482,35 @@ namespace DevPlan.Presentation.Common
                     //Update End 2022/01/31 杉浦 項目を変動できるようにする
 
                     // 管理票番号
-                    //Update Start 2022/01/31 杉浦 項目を変動できるようにする
-                    //if (ctl == this.SinkControlNoTextBox)
+                    ////Update Start 2024/04/18 杉浦 管理票番号の位置は固定
+                    ////Update Start 2022/01/31 杉浦 項目を変動できるようにする
+                    ////if (ctl == this.SinkControlNoTextBox)
+                    //num = sinkCarControllers.FindIndex(x => x.category == "管理票番号");
+                    ////Update Start 2022/03/07 杉浦 スケジュール詳細不具合修正
+                    ////if (ctl.category == this.ScheduleItemDataGridView.Rows[num].Cells[0].Value?.ToString())
+                    //if (num >= 0 && ctl.category == this.ScheduleItemDataGridView.Rows[num].Cells[0].Value?.ToString())
+                    ////Update End 2022/03/07 杉浦 スケジュール詳細不具合修正
+                    ////Update End 2022/01/31 杉浦 項目を変動できるようにする
+                    //{
+                    //    cntrolNo = text;
+                    //    //Delete Start 2022/01/31 杉浦 項目を変動できるようにする
+                    //    //continue;
+                    //    //Delete End 2022/01/31 杉浦 項目を変動できるようにする
+                    //    //Append Start 2022/01/31 杉浦 項目を変動できるようにする
+                    //    if (!string.IsNullOrWhiteSpace(cntrolNo))
+                    //    {
+                    //        text = string.Format("({0})", cntrolNo);
+                    //        cntrolNo = string.Empty;
+                    //    }
+                    //    //Append End 2022/01/31 杉浦 項目を変動できるようにする
+                    //}
                     num = sinkCarControllers.FindIndex(x => x.category == "管理票番号");
-                    //Update Start 2022/03/07 杉浦 スケジュール詳細不具合修正
-                    //if (ctl.category == this.ScheduleItemDataGridView.Rows[num].Cells[0].Value?.ToString())
+
                     if (num >= 0 && ctl.category == this.ScheduleItemDataGridView.Rows[num].Cells[0].Value?.ToString())
-                    //Update End 2022/03/07 杉浦 スケジュール詳細不具合修正
-                    //Update End 2022/01/31 杉浦 項目を変動できるようにする
                     {
-                        cntrolNo = text;
-                        //Delete Start 2022/01/31 杉浦 項目を変動できるようにする
-                        //continue;
-                        //Delete End 2022/01/31 杉浦 項目を変動できるようにする
-                        //Append Start 2022/01/31 杉浦 項目を変動できるようにする
-                        if (!string.IsNullOrWhiteSpace(cntrolNo))
-                        {
-                            text = string.Format("({0})", cntrolNo);
-                            cntrolNo = string.Empty;
-                        }
-                        //Append End 2022/01/31 杉浦 項目を変動できるようにする
+                        continue;
                     }
+                    //Update End 2024/04/18 杉浦 管理票番号の位置は固定
 
                     // 駐車場番号
                     //Update Start 2022/01/31 杉浦 項目を変動できるようにする
@@ -2665,15 +2692,15 @@ namespace DevPlan.Presentation.Common
             var nowList = (List<GridViewDisplayItemModel>)this.ScheduleItemDataGridView.DataSource;
             bool checkBefore = false;
             string manageNo = null;
-            if(nowList.Any(x => x.modified == true))
+            if (nowList.Any(x => x.modified == true))
             {
-                if(Messenger.Confirm("編集が途中です。一時保存しますか？") == DialogResult.Yes)
+                if (Messenger.Confirm("編集が途中です。一時保存しますか？") == DialogResult.Yes)
                 {
                     var changeList = nowList.Where(x => x.modified == true).ToList();
                     checkBefore = true;
-                    foreach(var display in changeList)
+                    foreach (var display in changeList)
                     {
-                        if(display.category == "ナビ付" || display.category == "ETC付" || display.category == "T/M")
+                        if (display.category == "ナビ付" || display.category == "ETC付" || display.category == "T/M")
                         {
 
                             if (display.category == "ナビ付")
@@ -2693,13 +2720,15 @@ namespace DevPlan.Presentation.Common
                                 var property = typeof(ScheduleCarDetailModel).GetProperty("トランスミッション");
                                 property.SetValue(this.ScheduleCar, display.item);
                             }
-                        }else
+                        }
+                        else
                         {
                             var property = typeof(ScheduleCarDetailModel).GetProperty(display.category);
                             property.SetValue(this.ScheduleCar, display.item);
                         }
                     }
-                }else
+                }
+                else
                 {
                     manageNo = this.ScheduleCar.管理票番号;
                 }
@@ -2722,9 +2751,10 @@ namespace DevPlan.Presentation.Common
                     // 表示反映
                     if (this.FunctionId == FunctionID.TestCar)
                     {
-                        if(!checkBefore) this.TestCar = this.GetCommonCar4TestCar(manageNo);
+                        if (!checkBefore) this.TestCar = this.GetCommonCar4TestCar(manageNo);
                         this.CarDataGridView.DataSource = this.setTestCarList();
-                    }else
+                    }
+                    else
                     {
                         if (!checkBefore) this.CarShare = this.GetCommonCar4CarShare(manageNo);
                         this.CarDataGridView.DataSource = this.setCarShareList();
@@ -2738,7 +2768,7 @@ namespace DevPlan.Presentation.Common
                     this.ScheduleItemDataGridView.DataSource = setList;
 
                     this.ChangeView = true;
-                    
+
                     this.InitGridView();
 
                     //Append Start 2023/10/15 杉浦 スケジュール詳細表示変更
@@ -2922,7 +2952,8 @@ namespace DevPlan.Presentation.Common
                         item.item = property.GetValue(scheduleItemCar) == null ? null : property.GetValue(scheduleItemCar).ToString();
                     }
 
-                }else
+                }
+                else
                 {
                     if (displayName == "開発符号" || displayName == "メーカー名" || displayName == "試作時期" || displayName == "外製車名")
                     {
@@ -3061,7 +3092,7 @@ namespace DevPlan.Presentation.Common
             //Append End 2022/03/07 杉浦 スケジュール詳細不具合修正
             foreach (var displayName in (data.表示列名 ?? "").Split(',').Select(x => x.Trim()))
             {
-                if(displayName != "備考")
+                if (displayName != "備考")
                 {
                     var item = new GridViewDisplayItemModel { category = displayName, modified = false };
                     if (scheduleItemCar != null)
@@ -3328,7 +3359,7 @@ namespace DevPlan.Presentation.Common
             //Append End 2022/03/07 杉浦 スケジュール詳細不具合修正
             foreach (var displayName in (data.表示列名 ?? "").Split(',').Select(x => x.Trim()))
             {
-                if(displayName != "備考")
+                if (displayName != "備考")
                 {
                     var item = new GridViewDisplayItemModel { category = displayName, modified = false };
                     if (scheduleItemCar != null)
@@ -3556,7 +3587,7 @@ namespace DevPlan.Presentation.Common
         #region クリア
         private void ClearScheduleItemDataGridView()
         {
-            if(this.ScheduleItemDataGridView.DataSource != null)
+            if (this.ScheduleItemDataGridView.DataSource != null)
             {
                 var list = (List<GridViewDisplayItemModel>)this.ScheduleItemDataGridView.DataSource;
                 var list2 = list.Select(x => new GridViewDisplayItemModel { category = x.category, item = null, checkByte = x.checkByte }).ToList();
@@ -3667,7 +3698,7 @@ namespace DevPlan.Presentation.Common
 
             return list;
         }
-        
+
 
         private void ScheduleItemDetailForm_FormClosing(object sender, FormClosingEventArgs e)
         {

@@ -40,8 +40,13 @@ namespace DevPlan.Presentation.UITestCar.ControlSheet
 
         private readonly List<ComboBoxDto> TokyoKoujiNoList = new List<ComboBoxDto>()
         {
+        //Update Start 2024/01/21 杉浦 プルダウン変更
+            //new ComboBoxDto { ID = "62", CODE = "62", NAME = "62：改良研究" },
+            //new ComboBoxDto { ID = "41", CODE = "41", NAME = "41：試験研究" }
             new ComboBoxDto { ID = "62", CODE = "62", NAME = "62：改良研究" },
-            new ComboBoxDto { ID = "41", CODE = "41", NAME = "41：試験研究" }
+            new ComboBoxDto { ID = "41", CODE = "41", NAME = "41：試験研究" },
+            new ComboBoxDto { ID = "35G", CODE = "35G", NAME = "35G：設備" }
+        //Update End 2024/01/21 杉浦 プルダウン変更
         };
 
         private readonly List<ComboBoxDto> OtherKoujiNoList = new List<ComboBoxDto>()
@@ -73,7 +78,10 @@ namespace DevPlan.Presentation.UITestCar.ControlSheet
             new ComboBoxDto { ID = "BEV", CODE = "BEV", NAME = "BEV" },
             new ComboBoxDto { ID = "MHEV", CODE = "MHEV", NAME = "MHEV" },
             new ComboBoxDto { ID = "PHEV", CODE = "PHEV", NAME = "PHEV" },
-            new ComboBoxDto { ID = "SHEV", CODE = "SHEV", NAME = "SHEV" }
+            new ComboBoxDto { ID = "SHEV", CODE = "SHEV", NAME = "SHEV" },
+        //Append Start 2024/01/21 杉浦 プルダウン変更
+            new ComboBoxDto { ID = "REV", CODE = "REV", NAME = "REV" },
+        //Append End 2024/01/21 杉浦 プルダウン変更
         };
         //Update End 2023/01/25 杉浦 試験車情報画面と受領表の書式変更
 

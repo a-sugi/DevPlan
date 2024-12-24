@@ -304,7 +304,10 @@ namespace DevPlan.Presentation.UITestCar.ControlSheet
             FormControlUtil.SetComboBoxItem(this.HistoryGeneralCodeComboBox, GetGeneralCodeList());
 
             // 試作時期
-            FormControlUtil.SetComboBoxItem(this.HistoryPrototypeTimingComboBox, GetPrototypeSeasonList());
+            //Update Start 2024/04/18 杉浦 プルダウンの中身を削除
+            //FormControlUtil.SetComboBoxItem(this.HistoryPrototypeTimingComboBox, GetPrototypeSeasonList());
+            FormControlUtil.SetComboBoxItem(this.HistoryPrototypeTimingComboBox, new List<CommonMasterModel>());
+            //Update End 2024/04/18 杉浦 プルダウンの中身を削除
 
             // 仕向地
             FormControlUtil.SetComboBoxItem(this.HistoryShimukechiComboBox, GetSimuketiList());

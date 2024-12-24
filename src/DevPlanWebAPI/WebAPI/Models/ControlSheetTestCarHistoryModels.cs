@@ -252,6 +252,15 @@ namespace DevPlanWebAPI.Models
         /// 初年度登録年月
         /// </summary>
         public DateTime? 初年度登録年月 { get; set; }
+        /// <summary>
+        /// 自動車ﾘｻｲｸﾙ法
+        /// </summary>
+        public string 自動車ﾘｻｲｸﾙ法 { get; set; }
+
+        /// <summary>
+        /// A_C冷媒種類
+        /// </summary>
+        public string A_C冷媒種類 { get; set; }
     }
     /// <summary>
     /// 試験車履歴情報(管理票)登録入力モデルクラス
@@ -523,6 +532,17 @@ namespace DevPlanWebAPI.Models
         [DataType(DataType.Date)]
         [Display(Name = "初年度登録年月")]
         public DateTime? 初年度登録年月 { get; set; }
+        /// <summary>
+        /// 自動車ﾘｻｲｸﾙ法
+        /// </summary>
+        [Display(Name = "自動車ﾘｻｲｸﾙ法")]
+        public string 自動車ﾘｻｲｸﾙ法 { get; set; }
+
+        /// <summary>
+        /// A_C冷媒種類
+        /// </summary>
+        [Display(Name = "A_C冷媒種類")]
+        public string A_C冷媒種類 { get; set; }
     }
     /// <summary>
     /// 試験車履歴情報(管理票)更新入力モデルクラス
@@ -801,6 +821,17 @@ namespace DevPlanWebAPI.Models
         [DataType(DataType.Date)]
         [Display(Name = "初年度登録年月")]
         public DateTime? 初年度登録年月 { get; set; }
+        /// <summary>
+        /// 自動車ﾘｻｲｸﾙ法
+        /// </summary>
+        [Display(Name = "自動車ﾘｻｲｸﾙ法")]
+        public string 自動車ﾘｻｲｸﾙ法 { get; set; }
+
+        /// <summary>
+        /// A_C冷媒種類
+        /// </summary>
+        [Display(Name = "A_C冷媒種類")]
+        public string A_C冷媒種類 { get; set; }
     }
     /// <summary>
     /// 試験車履歴情報(管理票)削除入力モデルクラス

@@ -85,6 +85,8 @@ namespace DevPlanWebAPI.Logic
             sql.AppendLine("    ,KR.FLAG_ETC付");
             sql.AppendLine("    ,KR.EVデバイス");
             sql.AppendLine("    ,KR.初年度登録年月");
+            sql.AppendLine("    ,KR.\"自動車ﾘｻｲｸﾙ法\"");
+            sql.AppendLine("    ,KR.\"A_C冷媒種類\"");
             sql.AppendLine("FROM");
             sql.AppendLine("    試験車履歴情報 KR");
             sql.AppendLine("    LEFT JOIN SECTION_GROUP_DATA SG");
@@ -183,6 +185,8 @@ namespace DevPlanWebAPI.Logic
             sql.AppendLine("    ,FLAG_ETC付");
             sql.AppendLine("    ,EVデバイス");
             sql.AppendLine("    ,初年度登録年月");
+            sql.AppendLine("    ,自動車ﾘｻｲｸﾙ法");
+            sql.AppendLine("    ,A_C冷媒種類");
             sql.AppendLine(") VALUES (");
             sql.AppendLine("     :データID");
             sql.AppendLine("    ,(SELECT NVL(MAX(履歴NO), 0) + 1 FROM 試験車履歴情報 WHERE データID = :データID)");
@@ -229,6 +233,8 @@ namespace DevPlanWebAPI.Logic
             sql.AppendLine("    ,:FLAG_ETC付");
             sql.AppendLine("    ,:EVデバイス");
             sql.AppendLine("    ,:初年度登録年月");
+            sql.AppendLine("    ,:自動車ﾘｻｲｸﾙ法");
+            sql.AppendLine("    ,:A_C冷媒種類");
             sql.AppendLine(") RETURNING");
             sql.AppendLine("    履歴NO INTO :newno");
 
@@ -277,7 +283,9 @@ namespace DevPlanWebAPI.Logic
                 new BindModel { Name = ":FLAG_ナビ付", Type = OracleDbType.Int16, Object = val.FLAG_ナビ付, Direct = ParameterDirection.Input },
                 new BindModel { Name = ":FLAG_ETC付", Type = OracleDbType.Int16, Object = val.FLAG_ETC付, Direct = ParameterDirection.Input },
                 new BindModel { Name = ":EVデバイス", Type = OracleDbType.Varchar2, Object = val.EVデバイス, Direct = ParameterDirection.Input },
-                new BindModel { Name = ":初年度登録年月", Type = OracleDbType.Date, Object = DateTimeUtil.GetLastDate(val.初年度登録年月), Direct = ParameterDirection.Input }
+                new BindModel { Name = ":初年度登録年月", Type = OracleDbType.Date, Object = DateTimeUtil.GetLastDate(val.初年度登録年月), Direct = ParameterDirection.Input },
+                new BindModel { Name = ":自動車ﾘｻｲｸﾙ法", Type = OracleDbType.Varchar2, Object = val.自動車ﾘｻｲｸﾙ法, Direct = ParameterDirection.Input },
+                new BindModel { Name = ":A_C冷媒種類", Type = OracleDbType.Varchar2, Object = val.A_C冷媒種類, Direct = ParameterDirection.Input }
             };
 
             // 戻り値設定
@@ -354,6 +362,8 @@ namespace DevPlanWebAPI.Logic
             sql.AppendLine("    ,FLAG_ETC付 = :FLAG_ETC付");
             sql.AppendLine("    ,EVデバイス = :EVデバイス");
             sql.AppendLine("    ,初年度登録年月 = :初年度登録年月");
+            sql.AppendLine("    ,自動車ﾘｻｲｸﾙ法 = :自動車ﾘｻｲｸﾙ法");
+            sql.AppendLine("    ,A_C冷媒種類 = :A_C冷媒種類");
             sql.AppendLine("WHERE");
             sql.AppendLine("    データID = :データID");
             sql.AppendLine("    AND 履歴NO = :履歴NO");
@@ -406,7 +416,9 @@ namespace DevPlanWebAPI.Logic
                     new BindModel { Name = ":FLAG_ナビ付", Type = OracleDbType.Int16, Object = val.FLAG_ナビ付, Direct = ParameterDirection.Input },
                     new BindModel { Name = ":FLAG_ETC付", Type = OracleDbType.Int16, Object = val.FLAG_ETC付, Direct = ParameterDirection.Input },
                     new BindModel { Name = ":EVデバイス", Type = OracleDbType.Varchar2, Object = val.EVデバイス, Direct = ParameterDirection.Input },
-                    new BindModel { Name = ":初年度登録年月", Type = OracleDbType.Date, Object = DateTimeUtil.GetLastDate(val.初年度登録年月), Direct = ParameterDirection.Input }
+                    new BindModel { Name = ":初年度登録年月", Type = OracleDbType.Date, Object = DateTimeUtil.GetLastDate(val.初年度登録年月), Direct = ParameterDirection.Input },
+                new BindModel { Name = ":自動車ﾘｻｲｸﾙ法", Type = OracleDbType.Varchar2, Object = val.自動車ﾘｻｲｸﾙ法, Direct = ParameterDirection.Input },
+                new BindModel { Name = ":A_C冷媒種類", Type = OracleDbType.Varchar2, Object = val.A_C冷媒種類, Direct = ParameterDirection.Input }
                 };
 
                 if (!db.UpdateData(sql.ToString(), prms))
