@@ -250,3 +250,5 @@ paket-files/
 # JetBrains Rider
 .idea/
 *.sln.iml
+./src/DevPlan/Presentation/x64/libcef.dll
+./src/DevPlan/Presentation/x86/libcef.dll
