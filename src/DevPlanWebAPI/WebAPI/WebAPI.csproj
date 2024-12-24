@@ -1,0 +1,822 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD9A38AE-52F7-4F61-A034-94F8D5AD09F4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevPlanWebAPI</RootNamespace>
+    <AssemblyName>DevPlanWebAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD9A38AE-52F7-4F61-A034-94F8D5AD09F4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DevPlanWebAPI</RootNamespace>
+    <AssemblyName>DevPlanWebAPI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <OutputPath>bin\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Sysexe.Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\DevPlanWebAPI.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Subaru.Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\DevPlanWebAPI.XML</DocumentationFile>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NPOI, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OOXML.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.3.0.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.3.0\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Oracle.ManagedDataAccess, Version=4.121.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=MSIL">
+      <HintPath>..\packages\Oracle.ManagedDataAccess.12.1.24160719\lib\net40\Oracle.ManagedDataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="slf4net, Version=0.1.14.1, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\slf4net.0.1.14.1\lib\net35\slf4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="slf4net.log4net, Version=0.1.32.1, Culture=neutral, PublicKeyToken=592edb3b6b36b5ba, processorArchitecture=MSIL">
+      <HintPath>..\packages\slf4net.log4net.0.1.32.1\lib\net35\slf4net.log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.5.3\lib\net40\Swashbuckle.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\SwaggerConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Base\BaseAPIController.cs" />
+    <Compile Include="Base\BaseLogic.cs" />
+    <Compile Include="Base\TestCarBaseLogic.cs" />
+    <Compile Include="Common\Const.cs" />
+    <Compile Include="Common\DateTimeUtil.cs" />
+    <Compile Include="Common\DBConnection.cs" />
+    <Compile Include="Common\Logging.cs" />
+    <Compile Include="Common\MessageEnum.cs" />
+    <Compile Include="Common\ResponseUtil.cs" />
+    <Compile Include="Common\StringUtil.cs" />
+    <Compile Include="Common\DBAccess.cs" />
+    <Compile Include="Common\XlsUtil.cs" />
+    <Compile Include="Controllers\ApprovalStatusController.cs" />
+    <Compile Include="Controllers\CalendarKadouController.cs" />
+    <Compile Include="Controllers\BrowsingAuthorityStatusController.cs" />
+    <Compile Include="Controllers\CapSectionUseGeneralCodeController.cs" />
+    <Compile Include="Controllers\CarShareManagementRatePrintController.cs" />
+    <Compile Include="Controllers\CarShareScheduleFromListController.cs" />
+    <Compile Include="Controllers\CarSharingWorkHistoryController.cs" />
+    <Compile Include="Controllers\AllScheduleController.cs" />
+    <Compile Include="Controllers\ExceptMonthlyInspectionController.cs" />
+    <Compile Include="Controllers\TruckReserveController.cs" />
+    <Compile Include="Controllers\DesignCheckDetailController.cs" />
+    <Compile Include="Controllers\DesignCheckExcelInputController.cs" />
+    <Compile Include="Controllers\DesignCheckImportGetPathController.cs" />
+    <Compile Include="Controllers\DesignCheckImportController.cs" />
+    <Compile Include="Controllers\DesignCheckPointProgController.cs" />
+    <Compile Include="Controllers\FixedTimeDaySettingController.cs" />
+    <Compile Include="Controllers\FrequentlyUsedDestinationsController.cs" />
+    <Compile Include="Controllers\NDriveLinkController.cs" />
+    <Compile Include="Controllers\OperationLogController.cs" />
+    <Compile Include="Controllers\ParkingCountController.cs" />
+    <Compile Include="Controllers\RegularMailDetailController.cs" />
+    <Compile Include="Controllers\PendingCarController.cs" />
+    <Compile Include="Controllers\ScheduleCarDetailController.cs" />
+    <Compile Include="Controllers\ScheduleCarController.cs" />
+    <Compile Include="Controllers\FileController.cs" />
+    <Compile Include="Controllers\RollAuthorityController.cs" />
+    <Compile Include="Controllers\RollController.cs" />
+    <Compile Include="Controllers\RollNameController.cs" />
+    <Compile Include="Controllers\ParkingUseController.cs" />
+    <Compile Include="Controllers\ParkingSectionController.cs" />
+    <Compile Include="Controllers\ParkingAreaController.cs" />
+    <Compile Include="Controllers\ParkingLocationController.cs" />
+    <Compile Include="Controllers\ProductionCarGeneralCodeInfoController.cs" />
+    <Compile Include="Controllers\OfficialPositionController.cs" />
+    <Compile Include="Controllers\DesignCheckSystemTestCarController.cs" />
+    <Compile Include="Controllers\TestCarHistoryCompleteController.cs" />
+    <Compile Include="Controllers\TestCarScheduleKetteiCopyController.cs" />
+    <Compile Include="Controllers\TestCarUseHistoryExistCheckController.cs" />
+    <Compile Include="Controllers\TestCarUseHistoryInputCheckController.cs" />
+    <Compile Include="Controllers\TestCarCollisionCarManagementDepartmentController.cs" />
+    <Compile Include="Controllers\TestCarUseHistoryChangeCheckController.cs" />
+    <Compile Include="Controllers\TestCarUseHistoryAuthorityCheckController.cs" />
+    <Compile Include="Controllers\ControlSheetLabelPrintController.cs" />
+    <Compile Include="Controllers\ControlSheetSearchConditionController.cs" />
+    <Compile Include="Controllers\CarManagementController.cs" />
+    <Compile Include="Controllers\ApplicationApprovalCarController.cs" />
+    <Compile Include="Controllers\ProductionCarController.cs" />
+    <Compile Include="Controllers\TruckCommentController.cs" />
+    <Compile Include="Controllers\TruckManagementUserController.cs" />
+    <Compile Include="Controllers\TruckRegularTimeController.cs" />
+    <Compile Include="Controllers\TruckScheduleController.cs" />
+    <Compile Include="Controllers\TruckScheduleCountController.cs" />
+    <Compile Include="Controllers\TruckScheduleItemController.cs" />
+    <Compile Include="Controllers\TruckSectionController.cs" />
+    <Compile Include="Controllers\ScheduleItemDisplayConfigurationController.cs" />
+    <Compile Include="Controllers\UserDisplayConfigurationController.cs" />
+    <Compile Include="Controllers\CarInspectionController.cs" />
+    <Compile Include="Controllers\DriveMethodInfoController.cs" />
+    <Compile Include="Controllers\TestCarHistoryController.cs" />
+    <Compile Include="Controllers\TestCarUseHistoryController.cs" />
+    <Compile Include="Controllers\TestCarUseHistoryApprovalController.cs" />
+    <Compile Include="Controllers\DisposalCarryoutController.cs" />
+    <Compile Include="Controllers\DisposalPeriodController.cs" />
+    <Compile Include="Controllers\NumberAggregateController.cs" />
+    <Compile Include="Controllers\DesignatedMonthNumberController.cs" />
+    <Compile Include="Controllers\ControlSheetSearchMasterController.cs" />
+    <Compile Include="Controllers\ControlSheetSearchItemController.cs" />
+    <Compile Include="Controllers\CapController.cs" />
+    <Compile Include="Controllers\CapDetailController.cs" />
+    <Compile Include="Controllers\CarBodyColorInfoController.cs" />
+    <Compile Include="Controllers\ControlSheetController.cs" />
+    <Compile Include="Controllers\CarGroupInfoController.cs" />
+    <Compile Include="Controllers\ControlSheetTestCarController.cs" />
+    <Compile Include="Controllers\ControlSheetTestCarHistoryController.cs" />
+    <Compile Include="Controllers\ControlSheetTestCarBasicController.cs" />
+    <Compile Include="Controllers\TransmissionInfoController.cs" />
+    <Compile Include="Controllers\DisplacementInfoController.cs" />
+    <Compile Include="Controllers\DestinationInfoController.cs" />
+    <Compile Include="Controllers\MakerNameInfoController.cs" />
+    <Compile Include="Controllers\GeneralCodeInfoController.cs" />
+    <Compile Include="Controllers\PrototypeSeasonInfoController.cs" />
+    <Compile Include="Controllers\ParkingNumberInfoController.cs" />
+    <Compile Include="Controllers\CarModelInfoController.cs" />
+    <Compile Include="Controllers\EngineModelInfoController.cs" />
+    <Compile Include="Controllers\GradeInfoController.cs" />
+    <Compile Include="Controllers\AffiliationController.cs" />
+    <Compile Include="Controllers\MeetingDocumentDeptController.cs" />
+    <Compile Include="Controllers\RecipientController.cs" />
+    <Compile Include="Controllers\SqbSectionController.cs" />
+    <Compile Include="Controllers\CapSectionController.cs" />
+    <Compile Include="Controllers\CapScheduleController.cs" />
+    <Compile Include="Controllers\CapLocationController.cs" />
+    <Compile Include="Controllers\DesignCheckCarController.cs" />
+    <Compile Include="Controllers\DesignCheckPointController.cs" />
+    <Compile Include="Controllers\PCAuthorityController.cs" />
+    <Compile Include="Controllers\DesignCheckProgressSymbolController.cs" />
+    <Compile Include="Controllers\DesignCheckTestCarController.cs" />
+    <Compile Include="Controllers\DesignCheckProgressController.cs" />
+    <Compile Include="Controllers\DesignCheckUserController.cs" />
+    <Compile Include="Controllers\DocumentLevelController.cs" />
+    <Compile Include="Controllers\DocumentCodeController.cs" />
+    <Compile Include="Controllers\CapFollowController.cs" />
+    <Compile Include="Controllers\CapIdentificationController.cs" />
+    <Compile Include="Controllers\CapStageController.cs" />
+    <Compile Include="Controllers\CapSampleController.cs" />
+    <Compile Include="Controllers\CapKindController.cs" />
+    <Compile Include="Controllers\MeetingDocumentNameController.cs" />
+    <Compile Include="Controllers\MeetingDocumentDetailController.cs" />
+    <Compile Include="Controllers\MeetingDocumentController.cs" />
+    <Compile Include="Controllers\GeneralCodeAuthorityController.cs" />
+    <Compile Include="Controllers\MonthlyWorkSynchronizeController.cs" />
+    <Compile Include="Controllers\MonthlyWorkApprovalController.cs" />
+    <Compile Include="Controllers\OuterCarWorkHistoryController.cs" />
+    <Compile Include="Controllers\CarShareWorkHistoryController.cs" />
+    <Compile Include="Controllers\CapImportanceController.cs" />
+    <Compile Include="Controllers\TargetProgressListMasterController.cs" />
+    <Compile Include="Controllers\TargetProgressListNameController.cs" />
+    <Compile Include="Controllers\CarShareManagementController.cs" />
+    <Compile Include="Controllers\WorkProgressController.cs" />
+    <Compile Include="Controllers\WorkProgressHistoryController.cs" />
+    <Compile Include="Controllers\TargetProgressListController.cs" />
+    <Compile Include="Controllers\WorkHistoryController.cs" />
+    <Compile Include="Controllers\TestCarWorkHistoryController.cs" />
+    <Compile Include="Controllers\FunctionAuthorityNameController.cs" />
+    <Compile Include="Controllers\FunctionController.cs" />
+    <Compile Include="Controllers\HistoryFavoriteController.cs" />
+    <Compile Include="Controllers\InformationController.cs" />
+    <Compile Include="Controllers\PerformanceNameController.cs" />
+    <Compile Include="Controllers\TestCarReminderController.cs" />
+    <Compile Include="Controllers\CarGroupController.cs" />
+    <Compile Include="Controllers\CarShareInnerController.cs" />
+    <Compile Include="Controllers\CarShareOuterController.cs" />
+    <Compile Include="Controllers\CarModelController.cs" />
+    <Compile Include="Controllers\CarController.cs" />
+    <Compile Include="Controllers\DepartmentController.cs" />
+    <Compile Include="Controllers\CarShareFavoriteController.cs" />
+    <Compile Include="Controllers\FavoriteController.cs" />
+    <Compile Include="Controllers\OuterCarFavoriteController.cs" />
+    <Compile Include="Controllers\MonthlyWorkFavoriteController.cs" />
+    <Compile Include="Controllers\TestCarScheduleCopyController.cs" />
+    <Compile Include="Controllers\TestCarScheduleReserveController.cs" />
+    <Compile Include="Controllers\WorkFavoriteController.cs" />
+    <Compile Include="Controllers\TestCarFavoriteController.cs" />
+    <Compile Include="Controllers\UserAuthorityController.cs" />
+    <Compile Include="Controllers\FunctionAuthorityController.cs" />
+    <Compile Include="Controllers\GeneralCodeController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\GoalController.cs" />
+    <Compile Include="Controllers\ScheduleItemCopyController.cs" />
+    <Compile Include="Controllers\ScheduleItemMoveController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\MakerNameController.cs" />
+    <Compile Include="Controllers\ManagerNameController.cs" />
+    <Compile Include="Controllers\PurposeController.cs" />
+    <Compile Include="Controllers\OuterCarScheduleController.cs" />
+    <Compile Include="Controllers\OuterCarScheduleItemController.cs" />
+    <Compile Include="Controllers\SectionController.cs" />
+    <Compile Include="Controllers\DestinationController.cs" />
+    <Compile Include="Controllers\LocationController.cs" />
+    <Compile Include="Controllers\ClassController.cs" />
+    <Compile Include="Controllers\SectionGroupController.cs" />
+    <Compile Include="Controllers\TestCarController.cs" />
+    <Compile Include="Controllers\CarManagerController.cs" />
+    <Compile Include="Controllers\CarShareReserveController.cs" />
+    <Compile Include="Controllers\CarShareScheduleController.cs" />
+    <Compile Include="Controllers\CarShareScheduleItemController.cs" />
+    <Compile Include="Controllers\TransmissionController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
+    <Compile Include="Controllers\ReportMaterialController.cs" />
+    <Compile Include="Controllers\MonthlyReportController.cs" />
+    <Compile Include="Controllers\MonthlyWorkScheduleController.cs" />
+    <Compile Include="Controllers\WorkScheduleController.cs" />
+    <Compile Include="Controllers\MonthlyWorkScheduleItemController.cs" />
+    <Compile Include="Controllers\DesignCheckController.cs" />
+    <Compile Include="Controllers\XeyeDataController.cs" />
+    <Compile Include="Controllers\XeyeController.cs" />
+    <Compile Include="Logic\CalendarKadouLogic.cs" />
+    <Compile Include="Logic\BrowsingAuthorityStatusLogic.cs" />
+    <Compile Include="Logic\CapSectionUseGeneralCodeLogic.cs" />
+    <Compile Include="Logic\CarSharingWorkHistoryLogic.cs" />
+    <Compile Include="Logic\AllScheduleLogic.cs" />
+    <Compile Include="Logic\ExceptMonthlyInspectionLogic.cs" />
+    <Compile Include="Logic\TruckReserveLogic.cs" />
+    <Compile Include="Logic\DesignCheckDetailLogic.cs" />
+    <Compile Include="Logic\DesignCheckExcelInputLogic.cs" />
+    <Compile Include="Logic\DesignCheckImportLogic.cs" />
+    <Compile Include="Logic\DesignCheckPointProgLogic.cs" />
+    <Compile Include="Logic\DesignCheckSystemTestCarLogic.cs" />
+    <Compile Include="Logic\NDriveLinkLogic.cs" />
+    <Compile Include="Logic\ParkingCountLogic.cs" />
+    <Compile Include="Logic\RegularMailDetailLogic.cs" />
+    <Compile Include="Logic\PendingCarLogic.cs" />
+    <Compile Include="Logic\ScheduleCarDetailLogic.cs" />
+    <Compile Include="Logic\ScheduleCarLogic.cs" />
+    <Compile Include="Logic\FileLogic.cs" />
+    <Compile Include="Logic\RollAuthorityLogic.cs" />
+    <Compile Include="Logic\RollLogic.cs" />
+    <Compile Include="Logic\RollNameLogic.cs" />
+    <Compile Include="Logic\ParkingUseLogic.cs" />
+    <Compile Include="Logic\ParkingSectionLogic.cs" />
+    <Compile Include="Logic\ParkingAreaLogic.cs" />
+    <Compile Include="Logic\ParkingLocationLogic.cs" />
+    <Compile Include="Logic\ProductionCarGeneralCodeInfoLogic.cs" />
+    <Compile Include="Logic\OfficialPositionLogic.cs" />
+    <Compile Include="Logic\TestCarCollisionCarManagementDepartmentLogic.cs" />
+    <Compile Include="Logic\ControlSheetLabelPrintLogic.cs" />
+    <Compile Include="Logic\ApplicationApprovalCarLogic.cs" />
+    <Compile Include="Logic\CarManagementLogic.cs" />
+    <Compile Include="Logic\ProductionCarLogic.cs" />
+    <Compile Include="Logic\TruckMasterLogic.cs" />
+    <Compile Include="Logic\TruckScheduleLogic.cs" />
+    <Compile Include="Logic\TruckUserLogic.cs" />
+    <Compile Include="Logic\ScheduleItemDisplayConfigurationLogic.cs" />
+    <Compile Include="Logic\UserDisplayConfigurationLogic.cs" />
+    <Compile Include="Logic\CapDetailLogic.cs" />
+    <Compile Include="Logic\CarBodyColorInfoLogic.cs" />
+    <Compile Include="Logic\CarGroupInfoLogic.cs" />
+    <Compile Include="Logic\CarInspectionLogic.cs" />
+    <Compile Include="Logic\AffiliationLogic.cs" />
+    <Compile Include="Logic\CarModelInfoLogic.cs" />
+    <Compile Include="Logic\ControlSheetLogic.cs" />
+    <Compile Include="Logic\ControlSheetTestCarLogic.cs" />
+    <Compile Include="Logic\ControlSheetTestCarHistoryLogic.cs" />
+    <Compile Include="Logic\DesignatedMonthNumberLogic.cs" />
+    <Compile Include="Logic\DestinationInfoLogic.cs" />
+    <Compile Include="Logic\DisplacementInfoLogic.cs" />
+    <Compile Include="Logic\DisposalCarryoutLogic.cs" />
+    <Compile Include="Logic\DisposalPeriodLogic.cs" />
+    <Compile Include="Logic\DriveMethodInfoLogic.cs" />
+    <Compile Include="Logic\EngineModelInfoLogic.cs" />
+    <Compile Include="Logic\ControlSheetTestCarBasicLogic.cs" />
+    <Compile Include="Logic\GeneralCodeInfoLogic.cs" />
+    <Compile Include="Logic\GradeInfoLogic.cs" />
+    <Compile Include="Logic\TestCarHistoryLogic.cs" />
+    <Compile Include="Logic\MakerNameInfoLogic.cs" />
+    <Compile Include="Logic\MeetingDocumentNameLogic .cs" />
+    <Compile Include="Logic\ParkingNumberInfoLogic.cs" />
+    <Compile Include="Logic\PrototypeSeasonInfoLogic.cs" />
+    <Compile Include="Logic\RecipientLogic.cs" />
+    <Compile Include="Logic\SqbSectionLogic.cs" />
+    <Compile Include="Logic\CapSectionLogic.cs" />
+    <Compile Include="Logic\CapScheduleLogic.cs" />
+    <Compile Include="Logic\CapLocationLogic.cs" />
+    <Compile Include="Logic\DesignCheckPointLogic.cs" />
+    <Compile Include="Logic\PCAuthorityLogic.cs" />
+    <Compile Include="Logic\DesignCheckTestCarLogic.cs" />
+    <Compile Include="Logic\DesignCheckProgressLogic.cs" />
+    <Compile Include="Logic\DesignCheckCarLogic.cs" />
+    <Compile Include="Logic\DesignCheckProgressSymbolLogic.cs" />
+    <Compile Include="Logic\DesignCheckUserLogic.cs" />
+    <Compile Include="Logic\DocumentLevelLogic.cs" />
+    <Compile Include="Logic\DocumentCodeLogic.cs" />
+    <Compile Include="Logic\CapIdentificationLogic.cs" />
+    <Compile Include="Logic\CapFollowLogic.cs" />
+    <Compile Include="Logic\CapStageLogic.cs" />
+    <Compile Include="Logic\CapSampleLogic.cs" />
+    <Compile Include="Logic\CapKindLogic.cs" />
+    <Compile Include="Logic\CapImportanceLogic.cs" />
+    <Compile Include="Logic\GeneralCodeAuthorityLogic.cs" />
+    <Compile Include="Logic\MeetingDocumentLogic.cs" />
+    <Compile Include="Logic\MonthlyWorkSynchronizeLogic.cs" />
+    <Compile Include="Logic\MonthlyWorkApprovalLogic.cs" />
+    <Compile Include="Logic\OuterCarWorkHistoryLogic.cs" />
+    <Compile Include="Logic\FunctionAuthorityNameLogic.cs" />
+    <Compile Include="Logic\FunctionLogic.cs" />
+    <Compile Include="Logic\HistoryFavoriteLogic.cs" />
+    <Compile Include="Logic\InformationLogic.cs" />
+    <Compile Include="Logic\FunctionAuthorityLogic.cs" />
+    <Compile Include="Logic\PerformanceNameLogic.cs" />
+    <Compile Include="Logic\CarShareWorkHistoryLogic.cs" />
+    <Compile Include="Logic\CapLogic.cs" />
+    <Compile Include="Logic\TargetProgressListLogic.cs" />
+    <Compile Include="Logic\TargetProgressListMasterLogic.cs" />
+    <Compile Include="Logic\TargetProgressListNameLogic.cs" />
+    <Compile Include="Logic\CarShareManagementLogic.cs" />
+    <Compile Include="Logic\MeetingDocumentDeptLogic.cs" />
+    <Compile Include="Logic\TransmissionInfoLogic.cs" />
+    <Compile Include="Logic\WorkProgressLogic.cs" />
+    <Compile Include="Logic\WorkProgressHistoryLogic.cs" />
+    <Compile Include="Logic\TestCarWorkHistoryLogic.cs" />
+    <Compile Include="Logic\WorkHistoryLogic.cs" />
+    <Compile Include="Logic\TestCarReminderLogic.cs" />
+    <Compile Include="Logic\CarGroupLogic.cs" />
+    <Compile Include="Logic\CarShareInnerLogic.cs" />
+    <Compile Include="Logic\CarShareOuterLogic.cs" />
+    <Compile Include="Logic\CarModelLogic.cs" />
+    <Compile Include="Logic\CarLogic.cs" />
+    <Compile Include="Logic\DepartmentLogic.cs" />
+    <Compile Include="Controllers\TestCarScheduleItemController.cs" />
+    <Compile Include="Logic\CarShareFavoriteLogic.cs" />
+    <Compile Include="Logic\FavoriteLogic.cs" />
+    <Compile Include="Logic\OuterCarFavoriteLogic.cs" />
+    <Compile Include="Logic\MonthlyWorkFavoriteLogic.cs" />
+    <Compile Include="Logic\TestCarScheduleReserveLogic.cs" />
+    <Compile Include="Logic\WorkFavoriteLogic.cs" />
+    <Compile Include="Logic\TestCarFavoriteLogic.cs" />
+    <Compile Include="Logic\UserAuthorityLogic.cs" />
+    <Compile Include="Logic\CarManagerLogic.cs" />
+    <Compile Include="Logic\GeneralCodeLogic.cs" />
+    <Compile Include="Logic\GoalLogic.cs" />
+    <Compile Include="Logic\ScheduleItemCopyLogic.cs" />
+    <Compile Include="Logic\ScheduleItemMoveLogic.cs" />
+    <Compile Include="Logic\LoginLogic.cs" />
+    <Compile Include="Logic\MakerNameLogic.cs" />
+    <Compile Include="Controllers\WorkScheduleItemController.cs" />
+    <Compile Include="Controllers\TestCarScheduleController.cs" />
+    <Compile Include="Filters\CommonMethodFilterAttribute.cs" />
+    <Compile Include="Filters\CommonClassFilterAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Logic\ManagerNameLogic.cs" />
+    <Compile Include="Logic\PurposeLogic.cs" />
+    <Compile Include="Logic\OuterCarScheduleItemLogic.cs" />
+    <Compile Include="Logic\OuterCarScheduleLogic.cs" />
+    <Compile Include="Logic\SectionLogic.cs" />
+    <Compile Include="Logic\DestinationLogic.cs" />
+    <Compile Include="Logic\LocationLogic.cs" />
+    <Compile Include="Logic\ClassLogic.cs" />
+    <Compile Include="Logic\SectionGroupLogic.cs" />
+    <Compile Include="Logic\CarShareLogic.cs" />
+    <Compile Include="Logic\TestCarLogic.cs" />
+    <Compile Include="Logic\TransmissionLogic.cs" />
+    <Compile Include="Logic\UserLogic.cs" />
+    <Compile Include="Logic\WeeklyReportApprovalLogic.cs" />
+    <Compile Include="Logic\ReportMaterialLogic.cs" />
+    <Compile Include="Logic\MonthlyReportLogic.cs" />
+    <Compile Include="Logic\CarShareReserveLogic.cs" />
+    <Compile Include="Logic\WeeklyReportLogic.cs" />
+    <Compile Include="Logic\CommonLogic.cs" />
+    <Compile Include="Logic\MonthlyWorkScheduleLogic.cs" />
+    <Compile Include="Logic\MonthlyWorkScheduleItemLogic.cs" />
+    <Compile Include="Logic\DesignCheckLogic.cs" />
+    <Compile Include="Logic\WorkScheduleLogic.cs" />
+    <Compile Include="Logic\WorkScheduleItemLogic.cs" />
+    <Compile Include="Logic\XeyeLogic.cs" />
+    <Compile Include="Models\ApplicationApprovalCarModels.cs" />
+    <Compile Include="Models\CapSectionUseGeneralCodeModels.cs" />
+    <Compile Include="Models\DesignCheckDetailModels.cs" />
+    <Compile Include="Models\ExceptMonthlyInspectionModels.cs" />
+    <Compile Include="Models\NDriveLinkModels.cs" />
+    <Compile Include="Models\DesignCheckExcelInputModels.cs" />
+    <Compile Include="Models\DesignCheckImportModels.cs" />
+    <Compile Include="Models\OperationLogModels.cs" />
+    <Compile Include="Models\CalendarKadouModel.cs" />
+    <Compile Include="Models\BrowsingAuthorityStatusModels.cs" />
+    <Compile Include="Models\PendingCarModels.cs" />
+    <Compile Include="Models\ScheduleCarDetailModels.cs" />
+    <Compile Include="Models\AllScheduleModels.cs" />
+    <Compile Include="Models\ScheduleCarModels.cs" />
+    <Compile Include="Models\RollAuthorityModels.cs" />
+    <Compile Include="Models\OfficialPositionModels.cs" />
+    <Compile Include="Models\RollModels.cs" />
+    <Compile Include="Models\FileModels.cs" />
+    <Compile Include="Models\ParkingModels.cs" />
+    <Compile Include="Models\CapModels.cs" />
+    <Compile Include="Models\CarInspectionModels.cs" />
+    <Compile Include="Models\ControlSheetModels.cs" />
+    <Compile Include="Models\ControlSheetTestCarBasicModels.cs" />
+    <Compile Include="Models\ProductionCarModels.cs" />
+    <Compile Include="Models\ControlSheetTestCarHistoryModels.cs" />
+    <Compile Include="Models\DesignatedMonthNumberModels.cs" />
+    <Compile Include="Models\MeetingDocumentNameModels.cs" />
+    <Compile Include="Models\PCAuthorityModels.cs" />
+    <Compile Include="Models\DesignCheckTestCarModels.cs" />
+    <Compile Include="Models\DesignCheckProgressModels.cs" />
+    <Compile Include="Models\DesignCheckCarModels.cs" />
+    <Compile Include="Models\DesignCheckProgressSymbolModels.cs" />
+    <Compile Include="Models\DesignCheckUserModels.cs" />
+    <Compile Include="Models\DesignCheckPointModels.cs" />
+    <Compile Include="Models\DesignCheckModels.cs" />
+    <Compile Include="Models\GeneralCodeAuthorityModels.cs" />
+    <Compile Include="Models\MeetingDocumentDeptModels.cs" />
+    <Compile Include="Models\MeetingDocumentModels.cs" />
+    <Compile Include="Models\MonthlyWorkSynchronizeModels.cs" />
+    <Compile Include="Models\RecipientModels.cs" />
+    <Compile Include="Models\TargetProgressListMasterModels.cs" />
+    <Compile Include="Models\TargetProgressListModels.cs" />
+    <Compile Include="Models\CarModels.cs" />
+    <Compile Include="Models\FunctionAuthorityNameModels.cs" />
+    <Compile Include="Models\FunctionModels.cs" />
+    <Compile Include="Models\HistoryFavoriteModels.cs" />
+    <Compile Include="Models\InformationModels.cs" />
+    <Compile Include="Models\BindModels.cs" />
+    <Compile Include="Models\PerformanceNameModels.cs" />
+    <Compile Include="Models\TargetProgressListNameModels.cs" />
+    <Compile Include="Models\TestCarCollisionCarManagementDepartmentModels.cs" />
+    <Compile Include="Models\TestCarCommonModels.cs" />
+    <Compile Include="Models\TestCarHistoryCompleteModels.cs" />
+    <Compile Include="Models\TestCarHistoryModels.cs" />
+    <Compile Include="Models\TestCarReminderSearchModels.cs" />
+    <Compile Include="Models\CarGroupSearchModels.cs" />
+    <Compile Include="Models\CarShareInnerSearchModels.cs" />
+    <Compile Include="Models\CarShareOuterSearchModels.cs" />
+    <Compile Include="Models\CarModelSearchModels.cs" />
+    <Compile Include="Models\CarSearchModels.cs" />
+    <Compile Include="Models\DepartmentSearchModels.cs" />
+    <Compile Include="Models\CarShareFavoriteModels.cs" />
+    <Compile Include="Models\FavoriteModels.cs" />
+    <Compile Include="Models\OuterCarFavoriteModels.cs" />
+    <Compile Include="Models\TestCarScheduleCopyModels.cs" />
+    <Compile Include="Models\CarShareManagementModels.cs" />
+    <Compile Include="Models\TruckMasterModels.cs" />
+    <Compile Include="Models\TruckScheduleModels.cs" />
+    <Compile Include="Models\TruckSearchModels.cs" />
+    <Compile Include="Models\ScheduleItemDisplayConfigurationModels.cs" />
+    <Compile Include="Models\UserDisplayConfigurationModels.cs" />
+    <Compile Include="Models\WorkCarSharingHistoryModels.cs" />
+    <Compile Include="Models\WorkProgressModels.cs" />
+    <Compile Include="Models\TestCarScheduleReserveModels.cs" />
+    <Compile Include="Models\UserAuthorityModels.cs" />
+    <Compile Include="Models\MonthlyWorkFavoriteModels.cs" />
+    <Compile Include="Models\WorkFavoriteModels.cs" />
+    <Compile Include="Models\TestCarFavoriteModels.cs" />
+    <Compile Include="Models\CarManagerModels.cs" />
+    <Compile Include="Models\FunctionAuthorityModels.cs" />
+    <Compile Include="Models\GeneralCodeSearchModels.cs" />
+    <Compile Include="Models\GoalSearchModels.cs" />
+    <Compile Include="Models\ScheduleItemCopyModels.cs" />
+    <Compile Include="Models\ScheduleItemMoveModels.cs" />
+    <Compile Include="Models\LoginModels.cs" />
+    <Compile Include="Models\MakerNameSearchModels.cs" />
+    <Compile Include="Models\ManagerNameModels.cs" />
+    <Compile Include="Models\PurposeSearchModels.cs" />
+    <Compile Include="Models\OuterCarScheduleItemModels.cs" />
+    <Compile Include="Models\OuterCarScheduleModels.cs" />
+    <Compile Include="Models\ResponseModels.cs" />
+    <Compile Include="Models\DestinationSearchModels.cs" />
+    <Compile Include="Models\LocationSearchModels.cs" />
+    <Compile Include="Models\ClassSearchModels.cs" />
+    <Compile Include="Models\SectionGroupSearchModels.cs" />
+    <Compile Include="Models\MonthlyReportModels.cs" />
+    <Compile Include="Models\CarShareReserveModels.cs" />
+    <Compile Include="Models\CarShareScheduleModels.cs" />
+    <Compile Include="Models\TestCarSearchModels.cs" />
+    <Compile Include="Models\TransmissionSearchModels.cs" />
+    <Compile Include="Models\MonthlyWorkScheduleItemModels.cs" />
+    <Compile Include="Models\MonthlyWorkScheduleModels.cs" />
+    <Compile Include="Models\WorkHistoryModels.cs" />
+    <Compile Include="Models\MonthlyWorkApproval.cs" />
+    <Compile Include="Models\WorkScheduleModels.cs" />
+    <Compile Include="Models\WorkScheduleItemModels.cs" />
+    <Compile Include="Models\SectionSearchModels.cs" />
+    <Compile Include="Models\TestCarScheduleModels.cs" />
+    <Compile Include="Models\UserSearchModels.cs" />
+    <Compile Include="Models\ReportMaterialModels.cs" />
+    <Compile Include="Models\WeeklyReportApprovalModels.cs" />
+    <Compile Include="Models\WeeklyReportModels.cs" />
+    <Compile Include="Models\XeyeSearchModels.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\WeeklyReportApprovalController.cs" />
+    <Compile Include="Controllers\WeeklyReportController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Log.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="WebAPI_ClassDiagram1.cd" />
+    <Content Include="App_Data\logrotate.bat" />
+    <None Include="Properties\PublishProfiles\Develop.pubxml" />
+    <None Include="Properties\PublishProfiles\DevPlanApi.pubxml" />
+    <None Include="Web.Subaru.Develop.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Subaru.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Subaru.Staging.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Sysexe.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Sysexe.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Sysexe.Staging.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Subaru.Staging|AnyCPU' ">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>bin\DevPlanWebAPI.XML</DocumentationFile>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Sysexe.Release|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\DevPlanWebAPI.XML</DocumentationFile>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <Optimize>true</Optimize>
+    <DocumentationFile>bin\DevPlanWebAPI.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Subaru.Develop|AnyCPU'">
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\DevPlanWebAPI.XML</DocumentationFile>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Sysexe.Staging|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>bin\DevPlanWebAPI.XML</DocumentationFile>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49728</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:8080/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>このプロジェクトは、このコンピューター上にない NuGet パッケージを参照しています。それらのパッケージをダウンロードするには、[NuGet パッケージの復元] を使用します。詳細については、http://go.microsoft.com/fwlink/?LinkID=322105 を参照してください。見つからないファイルは {0} です。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
