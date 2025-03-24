@@ -80,24 +80,21 @@
             // 
             // ContentsPanel
             // 
-            this.ContentsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.ContentsPanel.Controls.Add(this.MessageLabel);
             this.ContentsPanel.Controls.Add(this.label2);
             this.ContentsPanel.Controls.Add(this.SearchConditionButton);
             this.ContentsPanel.Controls.Add(this.ButtonPanel);
             this.ContentsPanel.Controls.Add(this.MainPanel);
             this.ContentsPanel.Controls.Add(this.SearchConditionTableLayoutPanel);
-            this.ContentsPanel.Size = new System.Drawing.Size(1480, 724);
             // 
             // DownloadButton
             // 
             this.DownloadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.DownloadButton.BackColor = System.Drawing.SystemColors.Control;
             this.DownloadButton.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.DownloadButton.Location = new System.Drawing.Point(1158, 770);
-            this.DownloadButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DownloadButton.Location = new System.Drawing.Point(926, 616);
             this.DownloadButton.Name = "DownloadButton";
-            this.DownloadButton.Size = new System.Drawing.Size(150, 25);
+            this.DownloadButton.Size = new System.Drawing.Size(120, 20);
             this.DownloadButton.TabIndex = 7;
             this.DownloadButton.Text = "Excel出力";
             this.DownloadButton.UseVisualStyleBackColor = false;
@@ -113,10 +110,9 @@
             this.MainPanel.Controls.Add(this.ListSortPictureBox);
             this.MainPanel.Controls.Add(this.RowCountLabel);
             this.MainPanel.Controls.Add(this.ListMessageLabel);
-            this.MainPanel.Location = new System.Drawing.Point(0, 94);
-            this.MainPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MainPanel.Location = new System.Drawing.Point(0, 75);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1480, 622);
+            this.MainPanel.Size = new System.Drawing.Size(1184, 506);
             this.MainPanel.TabIndex = 1010;
             // 
             // DisposalDeadlineMultiRow
@@ -163,8 +159,7 @@
             this.DisposalDeadlineMultiRow.DefaultCellStyle = cellStyle4;
             this.DisposalDeadlineMultiRow.FreezeLines = new GrapeCity.Win.MultiRow.FreezeLines(new GrapeCity.Win.MultiRow.Line(GrapeCity.Win.MultiRow.LineStyle.None, System.Drawing.Color.Empty));
             this.DisposalDeadlineMultiRow.HorizontalScrollBarMode = GrapeCity.Win.MultiRow.ScrollBarMode.Automatic;
-            this.DisposalDeadlineMultiRow.Location = new System.Drawing.Point(15, 29);
-            this.DisposalDeadlineMultiRow.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.DisposalDeadlineMultiRow.Location = new System.Drawing.Point(12, 23);
             this.DisposalDeadlineMultiRow.MultiSelect = false;
             this.DisposalDeadlineMultiRow.Name = "DisposalDeadlineMultiRow";
             cellStyle5.Padding = new System.Windows.Forms.Padding(0);
@@ -318,7 +313,7 @@
             shortcutKeyManager1.RowModeList.Add(new GrapeCity.Win.MultiRow.ShortcutKey(((GrapeCity.Win.MultiRow.Action)(GrapeCity.Win.MultiRow.SelectionActions.MoveToPreviousCellThenControl)), ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Shift | System.Windows.Forms.Keys.Tab)))));
             shortcutKeyManager1.RowModeList.Add(new GrapeCity.Win.MultiRow.ShortcutKey(((GrapeCity.Win.MultiRow.Action)(GrapeCity.Win.MultiRow.SelectionActions.MoveDown)), System.Windows.Forms.Keys.Return));
             this.DisposalDeadlineMultiRow.ShortcutKeyManager = shortcutKeyManager1;
-            this.DisposalDeadlineMultiRow.Size = new System.Drawing.Size(1450, 590);
+            this.DisposalDeadlineMultiRow.Size = new System.Drawing.Size(1160, 480);
             this.DisposalDeadlineMultiRow.TabIndex = 100;
             this.DisposalDeadlineMultiRow.Text = "gcMultiRow1";
             this.DisposalDeadlineMultiRow.VerticalScrollBarMode = GrapeCity.Win.MultiRow.ScrollBarMode.Automatic;
@@ -330,10 +325,9 @@
             this.ListConfigPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ListConfigPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ListConfigPictureBox.Image = global::DevPlan.Presentation.Properties.Resources.CommonConfigButton;
-            this.ListConfigPictureBox.Location = new System.Drawing.Point(1422, 5);
-            this.ListConfigPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ListConfigPictureBox.Location = new System.Drawing.Point(1138, 4);
             this.ListConfigPictureBox.Name = "ListConfigPictureBox";
-            this.ListConfigPictureBox.Size = new System.Drawing.Size(20, 20);
+            this.ListConfigPictureBox.Size = new System.Drawing.Size(16, 16);
             this.ListConfigPictureBox.TabIndex = 1039;
             this.ListConfigPictureBox.TabStop = false;
             this.ListConfigToolTip.SetToolTip(this.ListConfigPictureBox, "列の表示や非表示、表示順を設定します。");
@@ -344,10 +338,9 @@
             this.ListSortPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ListSortPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ListSortPictureBox.Image = global::DevPlan.Presentation.Properties.Resources.CommonSortButton;
-            this.ListSortPictureBox.Location = new System.Drawing.Point(1445, 5);
-            this.ListSortPictureBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ListSortPictureBox.Location = new System.Drawing.Point(1156, 4);
             this.ListSortPictureBox.Name = "ListSortPictureBox";
-            this.ListSortPictureBox.Size = new System.Drawing.Size(20, 20);
+            this.ListSortPictureBox.Size = new System.Drawing.Size(16, 16);
             this.ListSortPictureBox.TabIndex = 1038;
             this.ListSortPictureBox.TabStop = false;
             this.ListSortToolTip.SetToolTip(this.ListSortPictureBox, "表示データを列ごとに並び替えます。");
@@ -357,10 +350,9 @@
             // 
             this.RowCountLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RowCountLabel.Font = new System.Drawing.Font("MS UI Gothic", 9.5F);
-            this.RowCountLabel.Location = new System.Drawing.Point(1189, 5);
-            this.RowCountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.RowCountLabel.Location = new System.Drawing.Point(951, 4);
             this.RowCountLabel.Name = "RowCountLabel";
-            this.RowCountLabel.Size = new System.Drawing.Size(226, 22);
+            this.RowCountLabel.Size = new System.Drawing.Size(181, 18);
             this.RowCountLabel.TabIndex = 1037;
             this.RowCountLabel.Text = "表示件数： 9999/9999 件";
             this.RowCountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -369,10 +361,9 @@
             // 
             this.ListMessageLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ListMessageLabel.ForeColor = System.Drawing.Color.Red;
-            this.ListMessageLabel.Location = new System.Drawing.Point(804, 2);
-            this.ListMessageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ListMessageLabel.Location = new System.Drawing.Point(643, 2);
             this.ListMessageLabel.Name = "ListMessageLabel";
-            this.ListMessageLabel.Size = new System.Drawing.Size(378, 25);
+            this.ListMessageLabel.Size = new System.Drawing.Size(302, 20);
             this.ListMessageLabel.TabIndex = 1014;
             this.ListMessageLabel.Text = "※ダブルクリックで試験車情報画面を開きます。";
             this.ListMessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -381,9 +372,8 @@
             // 
             this.SearchButton.BackColor = System.Drawing.SystemColors.Control;
             this.SearchButton.Location = new System.Drawing.Point(0, 0);
-            this.SearchButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(150, 38);
+            this.SearchButton.Size = new System.Drawing.Size(120, 30);
             this.SearchButton.TabIndex = 3;
             this.SearchButton.Text = "検索";
             this.SearchButton.UseVisualStyleBackColor = false;
@@ -392,10 +382,9 @@
             // SearchConditionButton
             // 
             this.SearchConditionButton.BackColor = System.Drawing.SystemColors.Control;
-            this.SearchConditionButton.Location = new System.Drawing.Point(110, 6);
-            this.SearchConditionButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.SearchConditionButton.Location = new System.Drawing.Point(88, 5);
             this.SearchConditionButton.Name = "SearchConditionButton";
-            this.SearchConditionButton.Size = new System.Drawing.Size(25, 29);
+            this.SearchConditionButton.Size = new System.Drawing.Size(20, 23);
             this.SearchConditionButton.TabIndex = 0;
             this.SearchConditionButton.Text = "-";
             this.SearchConditionButton.UseVisualStyleBackColor = false;
@@ -404,10 +393,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 12);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(15, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 19);
+            this.label2.Size = new System.Drawing.Size(67, 15);
             this.label2.TabIndex = 0;
             this.label2.Text = "検索条件";
             // 
@@ -415,13 +403,13 @@
             // 
             this.SearchConditionTableLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.SearchConditionTableLayoutPanel.ColumnCount = 8;
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
             this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
             this.SearchConditionTableLayoutPanel.Controls.Add(this.panel2, 3, 0);
             this.SearchConditionTableLayoutPanel.Controls.Add(this.ApplicationComboBox, 7, 0);
@@ -429,12 +417,12 @@
             this.SearchConditionTableLayoutPanel.Controls.Add(this.DateLabel, 2, 0);
             this.SearchConditionTableLayoutPanel.Controls.Add(this.label3, 0, 0);
             this.SearchConditionTableLayoutPanel.Controls.Add(this.EstablishmentComboBox, 1, 0);
-            this.SearchConditionTableLayoutPanel.Location = new System.Drawing.Point(15, 36);
+            this.SearchConditionTableLayoutPanel.Location = new System.Drawing.Point(12, 29);
             this.SearchConditionTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             this.SearchConditionTableLayoutPanel.Name = "SearchConditionTableLayoutPanel";
             this.SearchConditionTableLayoutPanel.RowCount = 1;
             this.SearchConditionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.SearchConditionTableLayoutPanel.Size = new System.Drawing.Size(1249, 40);
+            this.SearchConditionTableLayoutPanel.Size = new System.Drawing.Size(999, 32);
             this.SearchConditionTableLayoutPanel.TabIndex = 2;
             // 
             // panel2
@@ -444,41 +432,38 @@
             this.panel2.Controls.Add(this.FromNullableDateTimePicker);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(439, 1);
+            this.panel2.Location = new System.Drawing.Point(351, 1);
             this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(478, 48);
+            this.panel2.Size = new System.Drawing.Size(382, 30);
             this.panel2.TabIndex = 1;
             // 
             // ToNullableDateTimePicker
             // 
             this.ToNullableDateTimePicker.CustomFormat = "yyyy/MM";
             this.ToNullableDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.ToNullableDateTimePicker.Location = new System.Drawing.Point(250, 5);
-            this.ToNullableDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ToNullableDateTimePicker.Location = new System.Drawing.Point(200, 4);
             this.ToNullableDateTimePicker.Name = "ToNullableDateTimePicker";
-            this.ToNullableDateTimePicker.Size = new System.Drawing.Size(174, 26);
+            this.ToNullableDateTimePicker.Size = new System.Drawing.Size(140, 22);
             this.ToNullableDateTimePicker.TabIndex = 22;
-            this.ToNullableDateTimePicker.Value = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
+            this.ToNullableDateTimePicker.Value = new System.DateTime(2020, 4, 1, 0, 0, 0, 0);
             // 
             // FromNullableDateTimePicker
             // 
             this.FromNullableDateTimePicker.CustomFormat = "yyyy/MM";
             this.FromNullableDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.FromNullableDateTimePicker.Location = new System.Drawing.Point(5, 5);
-            this.FromNullableDateTimePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.FromNullableDateTimePicker.Location = new System.Drawing.Point(4, 4);
             this.FromNullableDateTimePicker.Name = "FromNullableDateTimePicker";
-            this.FromNullableDateTimePicker.Size = new System.Drawing.Size(174, 26);
+            this.FromNullableDateTimePicker.Size = new System.Drawing.Size(140, 22);
             this.FromNullableDateTimePicker.TabIndex = 21;
-            this.FromNullableDateTimePicker.Value = new System.DateTime(2025, 1, 1, 0, 0, 0, 0);
+            this.FromNullableDateTimePicker.Value = new System.DateTime(2020, 4, 1, 0, 0, 0, 0);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(201, 10);
-            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Location = new System.Drawing.Point(161, 8);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(28, 19);
+            this.label11.Size = new System.Drawing.Size(22, 15);
             this.label11.TabIndex = 35;
             this.label11.Text = "～";
             // 
@@ -491,10 +476,9 @@
             "未申請",
             "申請済",
             "全て"});
-            this.ApplicationComboBox.Location = new System.Drawing.Point(1067, 5);
-            this.ApplicationComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ApplicationComboBox.Location = new System.Drawing.Point(852, 4);
             this.ApplicationComboBox.Name = "ApplicationComboBox";
-            this.ApplicationComboBox.Size = new System.Drawing.Size(177, 27);
+            this.ApplicationComboBox.Size = new System.Drawing.Size(143, 23);
             this.ApplicationComboBox.TabIndex = 23;
             // 
             // label5
@@ -502,10 +486,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Aquamarine;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(937, 1);
+            this.label5.Location = new System.Drawing.Point(748, 1);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(125, 48);
+            this.label5.Size = new System.Drawing.Size(100, 30);
             this.label5.TabIndex = 104;
             this.label5.Text = "申請状況";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -515,10 +499,10 @@
             this.DateLabel.AutoSize = true;
             this.DateLabel.BackColor = System.Drawing.Color.Aquamarine;
             this.DateLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.DateLabel.Location = new System.Drawing.Point(313, 1);
+            this.DateLabel.Location = new System.Drawing.Point(250, 1);
             this.DateLabel.Margin = new System.Windows.Forms.Padding(0);
             this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(125, 48);
+            this.DateLabel.Size = new System.Drawing.Size(100, 30);
             this.DateLabel.TabIndex = 103;
             this.DateLabel.Text = "使用期限";
             this.DateLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -531,7 +515,7 @@
             this.label3.Location = new System.Drawing.Point(1, 1);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 48);
+            this.label3.Size = new System.Drawing.Size(100, 30);
             this.label3.TabIndex = 32;
             this.label3.Text = "管理所在地";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -542,10 +526,9 @@
             this.EstablishmentComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.EstablishmentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.EstablishmentComboBox.FormattingEnabled = true;
-            this.EstablishmentComboBox.Location = new System.Drawing.Point(131, 5);
-            this.EstablishmentComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.EstablishmentComboBox.Location = new System.Drawing.Point(105, 4);
             this.EstablishmentComboBox.Name = "EstablishmentComboBox";
-            this.EstablishmentComboBox.Size = new System.Drawing.Size(177, 27);
+            this.EstablishmentComboBox.Size = new System.Drawing.Size(141, 23);
             this.EstablishmentComboBox.TabIndex = 20;
             this.EstablishmentComboBox.ValueMember = "CODE";
             this.EstablishmentComboBox.SelectedValueChanged += new System.EventHandler(this.EstablishmentComboBox_SelectedValueChanged);
@@ -554,10 +537,9 @@
             // 
             this.MessageLabel.AutoSize = true;
             this.MessageLabel.ForeColor = System.Drawing.Color.Red;
-            this.MessageLabel.Location = new System.Drawing.Point(154, 11);
-            this.MessageLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MessageLabel.Location = new System.Drawing.Point(123, 9);
             this.MessageLabel.Name = "MessageLabel";
-            this.MessageLabel.Size = new System.Drawing.Size(81, 19);
+            this.MessageLabel.Size = new System.Drawing.Size(62, 15);
             this.MessageLabel.TabIndex = 31;
             this.MessageLabel.Text = "メッセージ";
             this.MessageLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -569,10 +551,9 @@
             // ClearButton
             // 
             this.ClearButton.BackColor = System.Drawing.SystemColors.Control;
-            this.ClearButton.Location = new System.Drawing.Point(158, 0);
-            this.ClearButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ClearButton.Location = new System.Drawing.Point(126, 0);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(150, 38);
+            this.ClearButton.Size = new System.Drawing.Size(120, 30);
             this.ClearButton.TabIndex = 4;
             this.ClearButton.Text = "クリア";
             this.ClearButton.UseVisualStyleBackColor = false;
@@ -582,19 +563,17 @@
             // 
             this.ButtonPanel.Controls.Add(this.SearchButton);
             this.ButtonPanel.Controls.Add(this.ClearButton);
-            this.ButtonPanel.Location = new System.Drawing.Point(15, 79);
-            this.ButtonPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonPanel.Location = new System.Drawing.Point(12, 63);
             this.ButtonPanel.Name = "ButtonPanel";
-            this.ButtonPanel.Size = new System.Drawing.Size(309, 38);
+            this.ButtonPanel.Size = new System.Drawing.Size(247, 30);
             this.ButtonPanel.TabIndex = 1019;
             // 
             // DisposalDeadlineListForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1480, 826);
+            this.ClientSize = new System.Drawing.Size(1184, 661);
             this.Controls.Add(this.DownloadButton);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "DisposalDeadlineListForm";
             this.Text = "DisposalForm";
             this.Load += new System.EventHandler(this.DisposalDeadlineListForm_Load);
