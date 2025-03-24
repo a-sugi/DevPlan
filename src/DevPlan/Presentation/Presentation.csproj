@@ -40,11 +40,11 @@
     <TargetCulture>ja-JP</TargetCulture>
     <ProductName>開発計画表システム（開発）</ProductName>
     <PublisherName>開発計画表</PublisherName>
-    <MinimumRequiredVersion>4.3.0.11</MinimumRequiredVersion>
+    <MinimumRequiredVersion>4.3.0.12</MinimumRequiredVersion>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>11</ApplicationRevision>
-    <ApplicationVersion>4.3.0.11</ApplicationVersion>
+    <ApplicationRevision>12</ApplicationRevision>
+    <ApplicationVersion>4.3.0.12</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
