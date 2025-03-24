@@ -105,6 +105,7 @@
             // 
             // ContentsPanel
             // 
+            this.ContentsPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(230)))), ((int)(((byte)(255)))));
             this.ContentsPanel.Controls.Add(this.SearchResultLabel);
             this.ContentsPanel.Controls.Add(this.SearchConditionButton);
             this.ContentsPanel.Controls.Add(this.label27);
@@ -113,6 +114,7 @@
             this.ContentsPanel.Controls.Add(this.SearchConditionTableLayoutPanel);
             this.ContentsPanel.Controls.Add(this.AllSelectCheckBox);
             this.ContentsPanel.Controls.Add(this.SubControlPanel);
+            this.ContentsPanel.Size = new System.Drawing.Size(1480, 734);
             this.ContentsPanel.TabIndex = 0;
             // 
             // TargetComboBox
@@ -122,9 +124,10 @@
             this.TargetComboBox.FormattingEnabled = true;
             this.TargetComboBox.Items.AddRange(new object[] {
             "全て"});
-            this.TargetComboBox.Location = new System.Drawing.Point(126, 3);
+            this.TargetComboBox.Location = new System.Drawing.Point(158, 4);
+            this.TargetComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.TargetComboBox.Name = "TargetComboBox";
-            this.TargetComboBox.Size = new System.Drawing.Size(114, 23);
+            this.TargetComboBox.Size = new System.Drawing.Size(142, 27);
             this.TargetComboBox.TabIndex = 3;
             this.TargetComboBox.ValueMember = "Key";
             this.TargetComboBox.SelectedValueChanged += new System.EventHandler(this.TargetComboBox_SelectedValueChanged);
@@ -132,9 +135,10 @@
             // ClearButton
             // 
             this.ClearButton.BackColor = System.Drawing.SystemColors.Control;
-            this.ClearButton.Location = new System.Drawing.Point(246, 0);
+            this.ClearButton.Location = new System.Drawing.Point(308, 0);
+            this.ClearButton.Margin = new System.Windows.Forms.Padding(4);
             this.ClearButton.Name = "ClearButton";
-            this.ClearButton.Size = new System.Drawing.Size(120, 30);
+            this.ClearButton.Size = new System.Drawing.Size(150, 38);
             this.ClearButton.TabIndex = 4;
             this.ClearButton.Text = "クリア";
             this.ClearButton.UseVisualStyleBackColor = false;
@@ -144,8 +148,9 @@
             // 
             this.SearchButton.BackColor = System.Drawing.SystemColors.Control;
             this.SearchButton.Location = new System.Drawing.Point(0, 0);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(4);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(120, 30);
+            this.SearchButton.Size = new System.Drawing.Size(150, 38);
             this.SearchButton.TabIndex = 2;
             this.SearchButton.Text = "検索";
             this.SearchButton.UseVisualStyleBackColor = false;
@@ -155,13 +160,13 @@
             // 
             this.SearchConditionTableLayoutPanel.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.SearchConditionTableLayoutPanel.ColumnCount = 8;
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 160F));
-            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 90F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 125F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 200F));
+            this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.SearchConditionTableLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.SearchConditionTableLayoutPanel.Controls.Add(this.GeneralCodeComboBox, 5, 0);
             this.SearchConditionTableLayoutPanel.Controls.Add(this.SectionComboBox, 1, 1);
@@ -185,14 +190,14 @@
             this.SearchConditionTableLayoutPanel.Controls.Add(this.label18, 4, 1);
             this.SearchConditionTableLayoutPanel.Controls.Add(this.label24, 0, 0);
             this.SearchConditionTableLayoutPanel.Controls.Add(this.label25, 2, 0);
-            this.SearchConditionTableLayoutPanel.Location = new System.Drawing.Point(12, 29);
+            this.SearchConditionTableLayoutPanel.Location = new System.Drawing.Point(15, 36);
             this.SearchConditionTableLayoutPanel.Margin = new System.Windows.Forms.Padding(0);
             this.SearchConditionTableLayoutPanel.Name = "SearchConditionTableLayoutPanel";
             this.SearchConditionTableLayoutPanel.RowCount = 3;
-            this.SearchConditionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.SearchConditionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.SearchConditionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.SearchConditionTableLayoutPanel.Size = new System.Drawing.Size(1036, 94);
+            this.SearchConditionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.SearchConditionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.SearchConditionTableLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 38F));
+            this.SearchConditionTableLayoutPanel.Size = new System.Drawing.Size(1295, 118);
             this.SearchConditionTableLayoutPanel.TabIndex = 1;
             // 
             // GeneralCodeComboBox
@@ -200,10 +205,11 @@
             this.GeneralCodeComboBox.DisplayMember = "NAME";
             this.GeneralCodeComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GeneralCodeComboBox.FormattingEnabled = true;
-            this.GeneralCodeComboBox.Location = new System.Drawing.Point(619, 4);
+            this.GeneralCodeComboBox.Location = new System.Drawing.Point(772, 5);
+            this.GeneralCodeComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.GeneralCodeComboBox.MaxLength = 1000;
             this.GeneralCodeComboBox.Name = "GeneralCodeComboBox";
-            this.GeneralCodeComboBox.Size = new System.Drawing.Size(154, 23);
+            this.GeneralCodeComboBox.Size = new System.Drawing.Size(192, 27);
             this.GeneralCodeComboBox.TabIndex = 2;
             this.GeneralCodeComboBox.Tag = "ItemName(開発符号)";
             this.GeneralCodeComboBox.ValueMember = "CODE";
@@ -214,9 +220,10 @@
             this.SectionComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SectionComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SectionComboBox.FormattingEnabled = true;
-            this.SectionComboBox.Location = new System.Drawing.Point(105, 35);
+            this.SectionComboBox.Location = new System.Drawing.Point(131, 44);
+            this.SectionComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.SectionComboBox.Name = "SectionComboBox";
-            this.SectionComboBox.Size = new System.Drawing.Size(154, 23);
+            this.SectionComboBox.Size = new System.Drawing.Size(192, 27);
             this.SectionComboBox.TabIndex = 4;
             this.SectionComboBox.Tag = "ItemName(課)";
             this.SectionComboBox.ValueMember = "CODE";
@@ -228,9 +235,10 @@
             this.SectionGroupComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.SectionGroupComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.SectionGroupComboBox.FormattingEnabled = true;
-            this.SectionGroupComboBox.Location = new System.Drawing.Point(367, 35);
+            this.SectionGroupComboBox.Location = new System.Drawing.Point(458, 44);
+            this.SectionGroupComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.SectionGroupComboBox.Name = "SectionGroupComboBox";
-            this.SectionGroupComboBox.Size = new System.Drawing.Size(154, 23);
+            this.SectionGroupComboBox.Size = new System.Drawing.Size(192, 27);
             this.SectionGroupComboBox.TabIndex = 5;
             this.SectionGroupComboBox.Tag = "ItemName(担当)";
             this.SectionGroupComboBox.ValueMember = "CODE";
@@ -239,40 +247,44 @@
             // FixedAssetTextBox
             // 
             this.FixedAssetTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FixedAssetTextBox.Location = new System.Drawing.Point(367, 66);
+            this.FixedAssetTextBox.Location = new System.Drawing.Point(458, 83);
+            this.FixedAssetTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.FixedAssetTextBox.MaxLength = 1000;
             this.FixedAssetTextBox.Name = "FixedAssetTextBox";
-            this.FixedAssetTextBox.Size = new System.Drawing.Size(154, 22);
+            this.FixedAssetTextBox.Size = new System.Drawing.Size(192, 26);
             this.FixedAssetTextBox.TabIndex = 9;
             this.FixedAssetTextBox.Tag = "Wide(1000);ItemName(固定資産NO)";
             // 
             // CarTextBox
             // 
             this.CarTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CarTextBox.Location = new System.Drawing.Point(871, 35);
+            this.CarTextBox.Location = new System.Drawing.Point(1086, 44);
+            this.CarTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CarTextBox.MaxLength = 1000;
             this.CarTextBox.Name = "CarTextBox";
-            this.CarTextBox.Size = new System.Drawing.Size(161, 22);
+            this.CarTextBox.Size = new System.Drawing.Size(204, 26);
             this.CarTextBox.TabIndex = 7;
             this.CarTextBox.Tag = "Wide(1000);ItemName(号車)";
             // 
             // TrialProductionSeasonTextBox
             // 
             this.TrialProductionSeasonTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TrialProductionSeasonTextBox.Location = new System.Drawing.Point(619, 35);
+            this.TrialProductionSeasonTextBox.Location = new System.Drawing.Point(772, 44);
+            this.TrialProductionSeasonTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.TrialProductionSeasonTextBox.MaxLength = 1000;
             this.TrialProductionSeasonTextBox.Name = "TrialProductionSeasonTextBox";
-            this.TrialProductionSeasonTextBox.Size = new System.Drawing.Size(154, 22);
+            this.TrialProductionSeasonTextBox.Size = new System.Drawing.Size(192, 26);
             this.TrialProductionSeasonTextBox.TabIndex = 6;
             this.TrialProductionSeasonTextBox.Tag = "Wide(1000);ItemName(試作時期)";
             // 
             // ManagementNoTextBox
             // 
             this.ManagementNoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ManagementNoTextBox.Location = new System.Drawing.Point(871, 4);
+            this.ManagementNoTextBox.Location = new System.Drawing.Point(1086, 5);
+            this.ManagementNoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.ManagementNoTextBox.MaxLength = 1000;
             this.ManagementNoTextBox.Name = "ManagementNoTextBox";
-            this.ManagementNoTextBox.Size = new System.Drawing.Size(161, 22);
+            this.ManagementNoTextBox.Size = new System.Drawing.Size(204, 26);
             this.ManagementNoTextBox.TabIndex = 3;
             this.ManagementNoTextBox.Tag = "Regex(^[0-9a-zA-Z,*]{1,1000}$);ItemName(管理票NO)";
             // 
@@ -282,9 +294,10 @@
             this.AffiliationComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AffiliationComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.AffiliationComboBox.FormattingEnabled = true;
-            this.AffiliationComboBox.Location = new System.Drawing.Point(105, 4);
+            this.AffiliationComboBox.Location = new System.Drawing.Point(131, 5);
+            this.AffiliationComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.AffiliationComboBox.Name = "AffiliationComboBox";
-            this.AffiliationComboBox.Size = new System.Drawing.Size(154, 23);
+            this.AffiliationComboBox.Size = new System.Drawing.Size(192, 27);
             this.AffiliationComboBox.TabIndex = 0;
             this.AffiliationComboBox.Tag = "ItemName(管理所在地)";
             this.AffiliationComboBox.ValueMember = "CODE";
@@ -297,10 +310,10 @@
             this.ViewTargetPanel.Controls.Add(this.AllRadioButton);
             this.ViewTargetPanel.Controls.Add(this.OnlyRadioButton);
             this.ViewTargetPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ViewTargetPanel.Location = new System.Drawing.Point(616, 63);
+            this.ViewTargetPanel.Location = new System.Drawing.Point(768, 79);
             this.ViewTargetPanel.Margin = new System.Windows.Forms.Padding(0);
             this.ViewTargetPanel.Name = "ViewTargetPanel";
-            this.ViewTargetPanel.Size = new System.Drawing.Size(409, 30);
+            this.ViewTargetPanel.Size = new System.Drawing.Size(511, 38);
             this.ViewTargetPanel.TabIndex = 10;
             // 
             // ViewTargetComboBox
@@ -308,9 +321,10 @@
             this.ViewTargetComboBox.DisplayMember = "Value";
             this.ViewTargetComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ViewTargetComboBox.FormattingEnabled = true;
-            this.ViewTargetComboBox.Location = new System.Drawing.Point(3, 4);
+            this.ViewTargetComboBox.Location = new System.Drawing.Point(4, 5);
+            this.ViewTargetComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.ViewTargetComboBox.Name = "ViewTargetComboBox";
-            this.ViewTargetComboBox.Size = new System.Drawing.Size(154, 23);
+            this.ViewTargetComboBox.Size = new System.Drawing.Size(192, 27);
             this.ViewTargetComboBox.TabIndex = 0;
             this.ViewTargetComboBox.Tag = "ItemName(表示対象)";
             this.ViewTargetComboBox.ValueMember = "Key";
@@ -318,9 +332,10 @@
             // AllRadioButton
             // 
             this.AllRadioButton.AutoSize = true;
-            this.AllRadioButton.Location = new System.Drawing.Point(330, 5);
+            this.AllRadioButton.Location = new System.Drawing.Point(412, 6);
+            this.AllRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.AllRadioButton.Name = "AllRadioButton";
-            this.AllRadioButton.Size = new System.Drawing.Size(52, 19);
+            this.AllRadioButton.Size = new System.Drawing.Size(64, 23);
             this.AllRadioButton.TabIndex = 2;
             this.AllRadioButton.TabStop = true;
             this.AllRadioButton.Text = "全て";
@@ -331,9 +346,10 @@
             // 
             this.OnlyRadioButton.AutoSize = true;
             this.OnlyRadioButton.Checked = true;
-            this.OnlyRadioButton.Location = new System.Drawing.Point(163, 5);
+            this.OnlyRadioButton.Location = new System.Drawing.Point(204, 6);
+            this.OnlyRadioButton.Margin = new System.Windows.Forms.Padding(4);
             this.OnlyRadioButton.Name = "OnlyRadioButton";
-            this.OnlyRadioButton.Size = new System.Drawing.Size(161, 19);
+            this.OnlyRadioButton.Size = new System.Drawing.Size(204, 23);
             this.OnlyRadioButton.TabIndex = 1;
             this.OnlyRadioButton.TabStop = true;
             this.OnlyRadioButton.Text = "自分で処理する分のみ";
@@ -345,10 +361,10 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Aquamarine;
             this.label8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label8.Location = new System.Drawing.Point(525, 63);
+            this.label8.Location = new System.Drawing.Point(655, 79);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 30);
+            this.label8.Size = new System.Drawing.Size(112, 38);
             this.label8.TabIndex = 39;
             this.label8.Text = "表示対象";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -358,10 +374,10 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Aquamarine;
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Location = new System.Drawing.Point(525, 1);
+            this.label7.Location = new System.Drawing.Point(655, 1);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 30);
+            this.label7.Size = new System.Drawing.Size(112, 38);
             this.label7.TabIndex = 37;
             this.label7.Text = "開発符号";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -372,9 +388,10 @@
             this.ApprovalComboBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ApprovalComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.ApprovalComboBox.FormattingEnabled = true;
-            this.ApprovalComboBox.Location = new System.Drawing.Point(367, 4);
+            this.ApprovalComboBox.Location = new System.Drawing.Point(458, 5);
+            this.ApprovalComboBox.Margin = new System.Windows.Forms.Padding(4);
             this.ApprovalComboBox.Name = "ApprovalComboBox";
-            this.ApprovalComboBox.Size = new System.Drawing.Size(154, 23);
+            this.ApprovalComboBox.Size = new System.Drawing.Size(192, 27);
             this.ApprovalComboBox.TabIndex = 1;
             this.ApprovalComboBox.Tag = "temName(承認状況)";
             this.ApprovalComboBox.ValueMember = "STEP名";
@@ -382,10 +399,11 @@
             // CarBodyNoTextBox
             // 
             this.CarBodyNoTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CarBodyNoTextBox.Location = new System.Drawing.Point(105, 66);
+            this.CarBodyNoTextBox.Location = new System.Drawing.Point(131, 83);
+            this.CarBodyNoTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.CarBodyNoTextBox.MaxLength = 1000;
             this.CarBodyNoTextBox.Name = "CarBodyNoTextBox";
-            this.CarBodyNoTextBox.Size = new System.Drawing.Size(154, 22);
+            this.CarBodyNoTextBox.Size = new System.Drawing.Size(192, 26);
             this.CarBodyNoTextBox.TabIndex = 8;
             this.CarBodyNoTextBox.Tag = "Wide(1000);ItemName(車体番号)";
             // 
@@ -394,10 +412,10 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Aquamarine;
             this.label6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label6.Location = new System.Drawing.Point(1, 63);
+            this.label6.Location = new System.Drawing.Point(1, 79);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(100, 30);
+            this.label6.Size = new System.Drawing.Size(125, 38);
             this.label6.TabIndex = 34;
             this.label6.Text = "車体番号";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -407,10 +425,10 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Aquamarine;
             this.label5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label5.Location = new System.Drawing.Point(263, 32);
+            this.label5.Location = new System.Drawing.Point(328, 40);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(100, 30);
+            this.label5.Size = new System.Drawing.Size(125, 38);
             this.label5.TabIndex = 32;
             this.label5.Text = "担当";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -420,10 +438,10 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Aquamarine;
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(1, 32);
+            this.label2.Location = new System.Drawing.Point(1, 40);
             this.label2.Margin = new System.Windows.Forms.Padding(0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 30);
+            this.label2.Size = new System.Drawing.Size(125, 38);
             this.label2.TabIndex = 30;
             this.label2.Text = "課";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -433,10 +451,10 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Aquamarine;
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(263, 63);
+            this.label4.Location = new System.Drawing.Point(328, 79);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(100, 30);
+            this.label4.Size = new System.Drawing.Size(125, 38);
             this.label4.TabIndex = 29;
             this.label4.Text = "固定資産NO";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -446,10 +464,10 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Aquamarine;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(777, 32);
+            this.label3.Location = new System.Drawing.Point(969, 40);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 30);
+            this.label3.Size = new System.Drawing.Size(112, 38);
             this.label3.TabIndex = 27;
             this.label3.Text = "号車";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -459,10 +477,10 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Aquamarine;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(777, 1);
+            this.label1.Location = new System.Drawing.Point(969, 1);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(90, 30);
+            this.label1.Size = new System.Drawing.Size(112, 38);
             this.label1.TabIndex = 23;
             this.label1.Text = "管理票NO";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -472,10 +490,10 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Aquamarine;
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Location = new System.Drawing.Point(525, 32);
+            this.label18.Location = new System.Drawing.Point(655, 40);
             this.label18.Margin = new System.Windows.Forms.Padding(0);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(90, 30);
+            this.label18.Size = new System.Drawing.Size(112, 38);
             this.label18.TabIndex = 20;
             this.label18.Text = "試作時期";
             this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -488,7 +506,7 @@
             this.label24.Location = new System.Drawing.Point(1, 1);
             this.label24.Margin = new System.Windows.Forms.Padding(0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(100, 30);
+            this.label24.Size = new System.Drawing.Size(125, 38);
             this.label24.TabIndex = 3;
             this.label24.Text = "管理所在地";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -498,10 +516,10 @@
             this.label25.AutoSize = true;
             this.label25.BackColor = System.Drawing.Color.Aquamarine;
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Location = new System.Drawing.Point(263, 1);
+            this.label25.Location = new System.Drawing.Point(328, 1);
             this.label25.Margin = new System.Windows.Forms.Padding(0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(100, 30);
+            this.label25.Size = new System.Drawing.Size(125, 38);
             this.label25.TabIndex = 1;
             this.label25.Text = "承認状況";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -509,9 +527,10 @@
             // SearchConditionButton
             // 
             this.SearchConditionButton.BackColor = System.Drawing.SystemColors.Control;
-            this.SearchConditionButton.Location = new System.Drawing.Point(88, 5);
+            this.SearchConditionButton.Location = new System.Drawing.Point(110, 6);
+            this.SearchConditionButton.Margin = new System.Windows.Forms.Padding(4);
             this.SearchConditionButton.Name = "SearchConditionButton";
-            this.SearchConditionButton.Size = new System.Drawing.Size(20, 23);
+            this.SearchConditionButton.Size = new System.Drawing.Size(25, 29);
             this.SearchConditionButton.TabIndex = 0;
             this.SearchConditionButton.Text = "-";
             this.SearchConditionButton.UseVisualStyleBackColor = false;
@@ -520,9 +539,10 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(15, 10);
+            this.label27.Location = new System.Drawing.Point(19, 12);
+            this.label27.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(67, 15);
+            this.label27.Size = new System.Drawing.Size(85, 19);
             this.label27.TabIndex = 38;
             this.label27.Text = "検索条件";
             // 
@@ -536,9 +556,10 @@
             this.MainPanel.Controls.Add(this.RowCountLabel);
             this.MainPanel.Controls.Add(this.TestCarListMultiRow);
             this.MainPanel.Controls.Add(this.label14);
-            this.MainPanel.Location = new System.Drawing.Point(0, 138);
+            this.MainPanel.Location = new System.Drawing.Point(0, 172);
+            this.MainPanel.Margin = new System.Windows.Forms.Padding(4);
             this.MainPanel.Name = "MainPanel";
-            this.MainPanel.Size = new System.Drawing.Size(1184, 443);
+            this.MainPanel.Size = new System.Drawing.Size(1480, 554);
             this.MainPanel.TabIndex = 8;
             // 
             // ListConfigPictureBox
@@ -546,9 +567,10 @@
             this.ListConfigPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ListConfigPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ListConfigPictureBox.Image = global::DevPlan.Presentation.Properties.Resources.CommonConfigButton;
-            this.ListConfigPictureBox.Location = new System.Drawing.Point(1138, 4);
+            this.ListConfigPictureBox.Location = new System.Drawing.Point(1422, 5);
+            this.ListConfigPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.ListConfigPictureBox.Name = "ListConfigPictureBox";
-            this.ListConfigPictureBox.Size = new System.Drawing.Size(16, 16);
+            this.ListConfigPictureBox.Size = new System.Drawing.Size(20, 20);
             this.ListConfigPictureBox.TabIndex = 1039;
             this.ListConfigPictureBox.TabStop = false;
             this.ListConfigToolTip.SetToolTip(this.ListConfigPictureBox, "列の表示や非表示、表示順を設定します。");
@@ -559,9 +581,10 @@
             this.ListSortPictureBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ListSortPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ListSortPictureBox.Image = global::DevPlan.Presentation.Properties.Resources.CommonSortButton;
-            this.ListSortPictureBox.Location = new System.Drawing.Point(1156, 4);
+            this.ListSortPictureBox.Location = new System.Drawing.Point(1445, 5);
+            this.ListSortPictureBox.Margin = new System.Windows.Forms.Padding(4);
             this.ListSortPictureBox.Name = "ListSortPictureBox";
-            this.ListSortPictureBox.Size = new System.Drawing.Size(16, 16);
+            this.ListSortPictureBox.Size = new System.Drawing.Size(20, 20);
             this.ListSortPictureBox.TabIndex = 1038;
             this.ListSortPictureBox.TabStop = false;
             this.ListSortPictureBox.Click += new System.EventHandler(this.ListSortPictureBox_Click);
@@ -570,9 +593,10 @@
             // 
             this.RowCountLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RowCountLabel.Font = new System.Drawing.Font("MS UI Gothic", 9.5F);
-            this.RowCountLabel.Location = new System.Drawing.Point(951, 4);
+            this.RowCountLabel.Location = new System.Drawing.Point(1189, 5);
+            this.RowCountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.RowCountLabel.Name = "RowCountLabel";
-            this.RowCountLabel.Size = new System.Drawing.Size(181, 18);
+            this.RowCountLabel.Size = new System.Drawing.Size(226, 22);
             this.RowCountLabel.TabIndex = 1037;
             this.RowCountLabel.Text = "表示件数： 9999/9999 件";
             this.RowCountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -621,7 +645,8 @@
             this.TestCarListMultiRow.DefaultCellStyle = cellStyle4;
             this.TestCarListMultiRow.FreezeLines = new GrapeCity.Win.MultiRow.FreezeLines(new GrapeCity.Win.MultiRow.Line(GrapeCity.Win.MultiRow.LineStyle.None, System.Drawing.Color.Empty));
             this.TestCarListMultiRow.HorizontalScrollBarMode = GrapeCity.Win.MultiRow.ScrollBarMode.Automatic;
-            this.TestCarListMultiRow.Location = new System.Drawing.Point(12, 23);
+            this.TestCarListMultiRow.Location = new System.Drawing.Point(15, 29);
+            this.TestCarListMultiRow.Margin = new System.Windows.Forms.Padding(4);
             this.TestCarListMultiRow.MultiSelect = false;
             this.TestCarListMultiRow.Name = "TestCarListMultiRow";
             cellStyle5.Padding = new System.Windows.Forms.Padding(0);
@@ -785,7 +810,7 @@
             shortcutKeyManager1.RowModeList.Add(new GrapeCity.Win.MultiRow.ShortcutKey(((GrapeCity.Win.MultiRow.Action)(GrapeCity.Win.MultiRow.EditingActions.BeginEdit)), System.Windows.Forms.Keys.F2));
             shortcutKeyManager1.RowModeList.Add(new GrapeCity.Win.MultiRow.ShortcutKey(((GrapeCity.Win.MultiRow.Action)(GrapeCity.Win.MultiRow.SelectionActions.MoveDown)), System.Windows.Forms.Keys.Return));
             this.TestCarListMultiRow.ShortcutKeyManager = shortcutKeyManager1;
-            this.TestCarListMultiRow.Size = new System.Drawing.Size(1160, 417);
+            this.TestCarListMultiRow.Size = new System.Drawing.Size(1450, 521);
             this.TestCarListMultiRow.TabIndex = 210;
             this.TestCarListMultiRow.VerticalScrollBarMode = GrapeCity.Win.MultiRow.ScrollBarMode.Automatic;
             this.TestCarListMultiRow.VerticalScrollMode = GrapeCity.Win.MultiRow.ScrollMode.Pixel;
@@ -797,9 +822,10 @@
             // 
             this.label14.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(614, 2);
+            this.label14.Location = new System.Drawing.Point(768, 2);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(331, 20);
+            this.label14.Size = new System.Drawing.Size(414, 25);
             this.label14.TabIndex = 114;
             this.label14.Text = "※ダブルクリックで試験車使用履歴画面を開きます。";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -808,9 +834,10 @@
             // 
             this.AllSelectCheckBox.AutoSize = true;
             this.AllSelectCheckBox.BackColor = System.Drawing.Color.Blue;
-            this.AllSelectCheckBox.Location = new System.Drawing.Point(1138, 97);
+            this.AllSelectCheckBox.Location = new System.Drawing.Point(1422, 121);
+            this.AllSelectCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.AllSelectCheckBox.Name = "AllSelectCheckBox";
-            this.AllSelectCheckBox.Size = new System.Drawing.Size(15, 14);
+            this.AllSelectCheckBox.Size = new System.Drawing.Size(18, 17);
             this.AllSelectCheckBox.TabIndex = 21;
             this.AllSelectCheckBox.UseVisualStyleBackColor = false;
             this.AllSelectCheckBox.Visible = false;
@@ -821,9 +848,10 @@
             this.PersonApprovalButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.PersonApprovalButton.BackColor = System.Drawing.SystemColors.Control;
             this.PersonApprovalButton.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.PersonApprovalButton.Location = new System.Drawing.Point(139, 616);
+            this.PersonApprovalButton.Location = new System.Drawing.Point(174, 770);
+            this.PersonApprovalButton.Margin = new System.Windows.Forms.Padding(4);
             this.PersonApprovalButton.Name = "PersonApprovalButton";
-            this.PersonApprovalButton.Size = new System.Drawing.Size(120, 20);
+            this.PersonApprovalButton.Size = new System.Drawing.Size(150, 25);
             this.PersonApprovalButton.TabIndex = 5;
             this.PersonApprovalButton.Text = "担当者承認";
             this.PersonApprovalButton.UseVisualStyleBackColor = false;
@@ -835,9 +863,10 @@
             this.ChargeApproval.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ChargeApproval.BackColor = System.Drawing.SystemColors.Control;
             this.ChargeApproval.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.ChargeApproval.Location = new System.Drawing.Point(265, 616);
+            this.ChargeApproval.Location = new System.Drawing.Point(331, 770);
+            this.ChargeApproval.Margin = new System.Windows.Forms.Padding(4);
             this.ChargeApproval.Name = "ChargeApproval";
-            this.ChargeApproval.Size = new System.Drawing.Size(120, 20);
+            this.ChargeApproval.Size = new System.Drawing.Size(150, 25);
             this.ChargeApproval.TabIndex = 6;
             this.ChargeApproval.Text = "担当承認";
             this.ChargeApproval.UseVisualStyleBackColor = false;
@@ -849,9 +878,10 @@
             this.ManagerApproval.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ManagerApproval.BackColor = System.Drawing.SystemColors.Control;
             this.ManagerApproval.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.ManagerApproval.Location = new System.Drawing.Point(391, 616);
+            this.ManagerApproval.Location = new System.Drawing.Point(489, 770);
+            this.ManagerApproval.Margin = new System.Windows.Forms.Padding(4);
             this.ManagerApproval.Name = "ManagerApproval";
-            this.ManagerApproval.Size = new System.Drawing.Size(120, 20);
+            this.ManagerApproval.Size = new System.Drawing.Size(150, 25);
             this.ManagerApproval.TabIndex = 7;
             this.ManagerApproval.Text = "課長承認";
             this.ManagerApproval.UseVisualStyleBackColor = false;
@@ -863,9 +893,10 @@
             this.ApplicationButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ApplicationButton.BackColor = System.Drawing.SystemColors.Control;
             this.ApplicationButton.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.ApplicationButton.Location = new System.Drawing.Point(13, 616);
+            this.ApplicationButton.Location = new System.Drawing.Point(16, 770);
+            this.ApplicationButton.Margin = new System.Windows.Forms.Padding(4);
             this.ApplicationButton.Name = "ApplicationButton";
-            this.ApplicationButton.Size = new System.Drawing.Size(120, 20);
+            this.ApplicationButton.Size = new System.Drawing.Size(150, 25);
             this.ApplicationButton.TabIndex = 4;
             this.ApplicationButton.Text = "申請";
             this.ApplicationButton.UseVisualStyleBackColor = false;
@@ -877,9 +908,10 @@
             this.DownloadButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.DownloadButton.BackColor = System.Drawing.SystemColors.Control;
             this.DownloadButton.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.DownloadButton.Location = new System.Drawing.Point(926, 616);
+            this.DownloadButton.Location = new System.Drawing.Point(1158, 770);
+            this.DownloadButton.Margin = new System.Windows.Forms.Padding(4);
             this.DownloadButton.Name = "DownloadButton";
-            this.DownloadButton.Size = new System.Drawing.Size(120, 20);
+            this.DownloadButton.Size = new System.Drawing.Size(150, 25);
             this.DownloadButton.TabIndex = 9;
             this.DownloadButton.Text = "Excel出力";
             this.DownloadButton.UseVisualStyleBackColor = false;
@@ -890,9 +922,10 @@
             this.StopButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.StopButton.BackColor = System.Drawing.SystemColors.Control;
             this.StopButton.Font = new System.Drawing.Font("MS UI Gothic", 9F);
-            this.StopButton.Location = new System.Drawing.Point(517, 616);
+            this.StopButton.Location = new System.Drawing.Point(646, 770);
+            this.StopButton.Margin = new System.Windows.Forms.Padding(4);
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(120, 20);
+            this.StopButton.Size = new System.Drawing.Size(150, 25);
             this.StopButton.TabIndex = 8;
             this.StopButton.Text = "中止";
             this.StopButton.UseVisualStyleBackColor = false;
@@ -902,9 +935,10 @@
             // MonthlyCheckBox
             // 
             this.MonthlyCheckBox.AutoSize = true;
-            this.MonthlyCheckBox.Location = new System.Drawing.Point(41, 8);
+            this.MonthlyCheckBox.Location = new System.Drawing.Point(51, 10);
+            this.MonthlyCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.MonthlyCheckBox.Name = "MonthlyCheckBox";
-            this.MonthlyCheckBox.Size = new System.Drawing.Size(175, 19);
+            this.MonthlyCheckBox.Size = new System.Drawing.Size(220, 23);
             this.MonthlyCheckBox.TabIndex = 6;
             this.MonthlyCheckBox.Text = "2ヶ月以上未入力を表示";
             this.MonthlyCheckBox.UseVisualStyleBackColor = true;
@@ -913,9 +947,10 @@
             // EarlyCheckBox
             // 
             this.EarlyCheckBox.AutoSize = true;
-            this.EarlyCheckBox.Location = new System.Drawing.Point(222, 8);
+            this.EarlyCheckBox.Location = new System.Drawing.Point(278, 10);
+            this.EarlyCheckBox.Margin = new System.Windows.Forms.Padding(4);
             this.EarlyCheckBox.Name = "EarlyCheckBox";
-            this.EarlyCheckBox.Size = new System.Drawing.Size(142, 19);
+            this.EarlyCheckBox.Size = new System.Drawing.Size(178, 23);
             this.EarlyCheckBox.TabIndex = 7;
             this.EarlyCheckBox.Text = "期限前車両も表示";
             this.EarlyCheckBox.UseVisualStyleBackColor = true;
@@ -925,9 +960,10 @@
             // 
             this.SearchResultLabel.AutoSize = true;
             this.SearchResultLabel.ForeColor = System.Drawing.Color.Red;
-            this.SearchResultLabel.Location = new System.Drawing.Point(126, 10);
+            this.SearchResultLabel.Location = new System.Drawing.Point(158, 12);
+            this.SearchResultLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.SearchResultLabel.Name = "SearchResultLabel";
-            this.SearchResultLabel.Size = new System.Drawing.Size(0, 15);
+            this.SearchResultLabel.Size = new System.Drawing.Size(0, 19);
             this.SearchResultLabel.TabIndex = 7;
             // 
             // ButtonPanel
@@ -935,30 +971,33 @@
             this.ButtonPanel.Controls.Add(this.TargetComboBox);
             this.ButtonPanel.Controls.Add(this.SearchButton);
             this.ButtonPanel.Controls.Add(this.ClearButton);
-            this.ButtonPanel.Location = new System.Drawing.Point(12, 126);
+            this.ButtonPanel.Location = new System.Drawing.Point(15, 158);
+            this.ButtonPanel.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonPanel.Name = "ButtonPanel";
-            this.ButtonPanel.Size = new System.Drawing.Size(373, 30);
+            this.ButtonPanel.Size = new System.Drawing.Size(466, 38);
             this.ButtonPanel.TabIndex = 1019;
             // 
             // SubControlPanel
             // 
             this.SubControlPanel.Controls.Add(this.EarlyCheckBox);
             this.SubControlPanel.Controls.Add(this.MonthlyCheckBox);
-            this.SubControlPanel.Location = new System.Drawing.Point(680, 0);
+            this.SubControlPanel.Location = new System.Drawing.Point(850, 0);
+            this.SubControlPanel.Margin = new System.Windows.Forms.Padding(4);
             this.SubControlPanel.Name = "SubControlPanel";
-            this.SubControlPanel.Size = new System.Drawing.Size(368, 30);
+            this.SubControlPanel.Size = new System.Drawing.Size(460, 38);
             this.SubControlPanel.TabIndex = 1020;
             // 
             // ApplicationApprovalCarForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
-            this.ClientSize = new System.Drawing.Size(1184, 661);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.ClientSize = new System.Drawing.Size(1480, 826);
             this.Controls.Add(this.StopButton);
             this.Controls.Add(this.ManagerApproval);
             this.Controls.Add(this.ChargeApproval);
             this.Controls.Add(this.PersonApprovalButton);
             this.Controls.Add(this.ApplicationButton);
             this.Controls.Add(this.DownloadButton);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "ApplicationApprovalCarForm";
             this.Text = "タイトルが設定されていません - 試験車管理システム (Trial)";
             this.Load += new System.EventHandler(this.ApplicationApprovalCarForm_Load);

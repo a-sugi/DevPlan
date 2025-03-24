@@ -550,6 +550,10 @@ namespace DevPlan.Presentation.UITestCar.ControlSheet
 
             // 追加：受領票印刷
             this.ReceiptSlipIssueButton.Enabled = !flg;
+
+            //Append Start 2024/12/23 早見_月例点検省略部署管理
+            this.BaseMonthlyInspectionOmitCheckBox.Enabled = (this.TestCar.月例点検省略対象部署 != 1) && flg;
+            //Append End 2024/12/23 早見_月例点検省略部署管理
         }
         #endregion
 
@@ -621,8 +625,18 @@ namespace DevPlan.Presentation.UITestCar.ControlSheet
             // メモ
             this.BaseMemoTextBox.Text = this.TestCar?.メモ;
 
-            // 月例点検省略有無
-            this.BaseMonthlyInspectionOmitCheckBox.Checked = this.TestCar?.月例点検省略有無 == 1;
+            //this.BaseMonthlyInspectionOmitCheckBox.Checked = this.TestCar?.月例点検省略有無 == 1;
+            if (this.TestCar.月例点検省略対象部署 == 1)
+            {
+                this.BaseMonthlyInspectionOmitCheckBox.Checked = true;
+            }
+            else
+            {
+                // 対象部署が1以外の場合は、月例点検省略有無の値を使用
+                this.BaseMonthlyInspectionOmitCheckBox.Checked = this.TestCar.月例点検省略有無 == 1;
+            }
+            //Update End  Start2024/12/23 早見_月例点検省略部署管理
+
 
             //Append Start 2021/05/27 杉浦 要望対応_衝突試験済のチェックボックスを追加したい
             // 衝突試験済
